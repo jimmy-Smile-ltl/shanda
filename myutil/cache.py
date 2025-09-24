@@ -41,8 +41,8 @@ class Cache():
         #     'db': 1,
         #     'password': "123456"
         # }
-        self.redis_client = redis.StrictRedis(host="192.168.130.53", port=6379, db=1, decode_responses=True,
-                                              password="123456")
+        self.redis_client = redis.StrictRedis(host="127.0.0.1", port=6379, db=0, decode_responses=True,
+                                              password=None)
 
         self.key = key
 

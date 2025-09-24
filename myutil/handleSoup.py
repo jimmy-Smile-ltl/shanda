@@ -235,11 +235,17 @@ class extractSoup:
 
     @staticmethod
     # 返回字典 标签a的 文本 与url  eg:｛text:url｝ 标签常用分类
-    def extract_text_urls(soup: bs4.BeautifulSoup | bs4.element.Tag, selector: str) -> dict[str, str]:
+    def extract_text_urls(soup: bs4.BeautifulSoup | bs4.element.Tag, selector: str, base_url =None) -> dict[str, str]:
         """提取标签a的文本和URL"""
         elements = soup.select(selector)
-        return {el.get_text(separator=" ", strip=True): el["href"] for el in elements if
-                el.get_text(separator=" ", strip=True) and "href" in el.attrs}
+        if not base_url:
+            return {el.get_text(separator=" ", strip=True): el["href"] for el in elements if
+                    el.get_text(separator=" ", strip=True) and "href" in el.attrs}
+        else:
+            return {
+                el.get_text(separator=" ", strip=True): urllib.parse.urljoin(base_url,el["href"]) for el in elements if
+                    el.get_text(separator=" ", strip=True) and "href" in el.attrs
+            }
 
     # 提取正文，主要是提取 p li tr 等会换行的元素的text,进行拼接
     @staticmethod

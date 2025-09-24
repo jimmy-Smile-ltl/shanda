@@ -1,3 +1,6 @@
 ### redis start
+## path: /opt/homebrew/bin/redis-cli
+## start command
 brew services start redis
 redis-server
+#  没有配置密码，对外说不开放的，只限本机访问
