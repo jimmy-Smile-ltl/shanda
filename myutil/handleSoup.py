@@ -34,17 +34,26 @@ class extractSoup:
         return [el.get_text(separator=" ", strip=True) for el in elements if el.get_text(separator=" ", strip=True)]
 
     @staticmethod
-    def extract_href(soup: bs4.BeautifulSoup | bs4.element.Tag, selector: str):
+    def extract_href(soup: bs4.BeautifulSoup | bs4.element.Tag, selector: str, base_url=None):
         """获取链接"""
         element = soup.select_one(selector)
         if not element:
             return ""
         if "href" in element.attrs:
-            return element["href"]
+            if not base_url:
+                return element["href"]
+            else:
+                return urllib.parse.urljoin(base_url, element["href"])
         elif element.has_attr('data-src'):
-            return element['data-src']
+            if not base_url:
+                return element['data-src']
+            else:
+                return urllib.parse.urljoin(base_url, element['data-src'])
         elif "src" in element.attrs:
-            return element["src"]
+            if not base_url:
+                return element["src"]
+            else:
+                return urllib.parse.urljoin(base_url, element["src"])
         else:
             return ""
 

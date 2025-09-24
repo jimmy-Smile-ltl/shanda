@@ -14,6 +14,7 @@ class PostgreSQLHandler:
     def __init__(self, db_name, table_name, return_type="tuple"):
         self.db_name = db_name
         self.table_name = table_name
+        self.schema = 'spider'
         self.return_type = return_type
         self.connection = self.get_db_connection(self.return_type)
 
@@ -57,7 +58,7 @@ class PostgreSQLHandler:
         else:
             return None
 
-    def insert_data(self, data, unique_col = "article_url" ) -> None | str:
+    def insert_data(self, data, unique_col="article_url") -> None | str:
         if not isinstance(data, dict):
             print("数据必须是字典格式")
             return
@@ -71,26 +72,35 @@ class PostgreSQLHandler:
         placeholders = ', '.join([f'%({k})s' for k in processed_data.keys()])
 
         # 第一步：尝试插入
-        insert_query = f'INSERT INTO "spider"."{self.table_name}" ({columns}) VALUES ({placeholders})'
+        insert_query = f'INSERT INTO "{self.schema}"."{self.table_name}" ({columns}) VALUES ({placeholders})'
 
         try:
             with self.connection.cursor() as cursor:
                 cursor.execute(insert_query, processed_data)
                 self.connection.commit()
-                cursor.close()
+                # 移除 cursor.close()
                 return "insert"
         except psycopg2.IntegrityError as e:
-            # 第二步：捕获主键重复错误，执行更新
             if "duplicate key value violates unique constraint" in str(e):
                 try:
                     self.connection.rollback()
                     if unique_col and self.table_name != "source_collection_info":
-                        update_clause = ', '.join([f'"{k}" = %({k})s' for k in processed_data.keys() if k != unique_col])
-                        update_query = f'UPDATE "spider"."{self.table_name}" SET {update_clause} WHERE "{unique_col}" = %({unique_col})s'
-                        with self.connection.cursor() as cursor:
-                            cursor.execute(update_query, processed_data)
-                            self.connection.commit()
-                            cursor.close()
+                        # 关键修改：排除 id 字段和 unique_col 字段
+                        excluded_fields = {'id', unique_col}
+                        update_clause = ', '.join([
+                            f'"{k}" = %({k})s'
+                            for k in processed_data.keys()
+                            if k not in excluded_fields
+                        ])
+
+                        if update_clause:  # 确保有字段需要更新
+                            update_query = f'UPDATE "{self.schema}"."{self.table_name}" SET {update_clause} WHERE "{unique_col}" = %({unique_col})s'
+                            with self.connection.cursor() as cursor:
+                                cursor.execute(update_query, processed_data)
+                                self.connection.commit()
+                                # 移除 cursor.close()
+                        else:
+                            print("没有需要更新的字段")
                     return "update"
                 except Exception as update_e:
                     print(f"更新失败: {update_e}")
@@ -107,7 +117,7 @@ class PostgreSQLHandler:
                     self.connection = self.get_db_connection(self.return_type)
                 return None
         except Exception as e:
-            print(f"数据插入失败: {e} data:{json.dumps(data, ensure_ascii=False, indent=4)}")
+            print(f"数据插入失败: {e}")
             try:
                 self.connection.rollback()
             except Exception:
@@ -132,18 +142,49 @@ class PostgreSQLHandler:
         keys = processed_list[0].keys()
         columns = ', '.join([f'"{k}"' for k in keys])
         placeholders = ', '.join([f'%({k})s' for k in keys])
-        update_clause = ', '.join([f'"{k}" = EXCLUDED."{k}"' for k in keys if k != unique_col])
-        # query = f'INSERT INTO "spider"."{self.table_name}" ({columns}) VALUES ({placeholders}) ON CONFLICT ("{unique_col}") DO UPDATE SET {update_clause}'
-        query = f'INSERT INTO "spider"."{self.table_name}" ({columns}) VALUES ({placeholders}) '
 
+        # 关键修改：排除 id 字段
+        excluded_fields = {'id', unique_col}
+        update_clause = ', '.join([
+            f'"{k}" = EXCLUDED."{k}"'
+            for k in keys
+            if k not in excluded_fields
+        ])
+        # 这种直接就更新了,问题是更新了多少行呢,插入多少行呢? 这个其实最好做个统计的
+        query = f'INSERT INTO "{self.schema}"."{self.table_name}" ({columns}) VALUES ({placeholders}) ON CONFLICT ("{unique_col}") DO UPDATE SET {update_clause}'
+        # query = f'INSERT INTO "{self.schema}"."{self.table_name}" ({columns}) VALUES ({placeholders})
         try:
             with self.connection.cursor() as cursor:
                 psycopg2.extras.execute_batch(cursor, query, processed_list)
                 affected_rows = cursor.rowcount
+                # 获取统计结果
+                stats = cursor.fetchone()
+                if stats:
+                    insert_count, update_count, total_count = stats
+                    result = {
+                        'inserted': insert_count,
+                        'updated': update_count,
+                        'total': total_count,
+                        'input_count': len(processed_list)
+                    }
+                else:
+                    # 如果CTE方式不支持，fallback到简单统计
+                    affected_rows = cursor.rowcount
+                    result = {
+                        'inserted': 0,
+                        'updated': 0,
+                        'total': affected_rows,
+                        'input_count': len(processed_list)
+                    }
                 self.connection.commit()
-            print(f"批量数据插入/更新成功 table_name {self.table_name}: 输入数据 {len(processed_list)} 条 影响行数 {affected_rows} 条")
+                print(f"批量数据插入/更新成功 table_name {self.table_name}: "
+                      f"输入 {result['input_count']} 条, "
+                      f"插入 {result.get('inserted', '未知')} 条, "
+                      f"更新 {result.get('updated', '未知')} 条, "
+                      f"总计 {result['total']} 条")
             return "insert"
         except Exception as e:
+            # 这个不会触发了,不知道更新了多少啊 怎么办呢
             print(f"批量数据插入/更新失败,改为一个个插入:{e}")
             try:
                 self.connection.rollback()
@@ -172,7 +213,7 @@ class PostgreSQLHandler:
                 print("取消删除数据操作")
                 return False
         condition_str = ' AND '.join([f'"{key}" = %s' for key in condition.keys()])
-        delete_query = f'DELETE FROM "spider"."{self.table_name}" WHERE {condition_str}'
+        delete_query = f'DELETE FROM "{self.schema}"."{self.table_name}" WHERE {condition_str}'
         try:
             with self.connection.cursor() as cursor:
                 cursor.execute(delete_query, tuple(condition.values()))
@@ -243,7 +284,7 @@ class PostgreSQLHandler:
             return False
 
     def drop_table(self, max_num: int = 100):
-        query = f'DROP TABLE IF EXISTS "spider"."{self.table_name}"'
+        query = f'DROP TABLE IF EXISTS "{self.schema}"."{self.table_name}"'
         try:
             if not self.is_has_table(self.table_name):
                 print(f"\r表 {self.table_name} 不存在，无法删除")
@@ -270,7 +311,7 @@ class PostgreSQLHandler:
             return False
 
     def clear_table(self, max_num=100):
-        query = f'TRUNCATE TABLE "spider"."{self.table_name}"'
+        query = f'TRUNCATE TABLE "{self.schema}"."{self.table_name}"'
         try:
             if not self.is_has_table(self.table_name):
                 print(f"\r表 {self.table_name} 不存在，无法清空")
@@ -299,10 +340,10 @@ class PostgreSQLHandler:
     def isMoreOneKiloRows(self, condition: dict = None, max_num: int = 1000):
         if condition:
             condition_str = ' AND '.join([f'"{key}" = %s' for key in condition.keys()])
-            query = f'SELECT COUNT(*) FROM "spider"."{self.table_name}" WHERE {condition_str}'
+            query = f'SELECT COUNT(*) FROM "{self.schema}"."{self.table_name}" WHERE {condition_str}'
             params = tuple(condition.values())
         else:
-            query = f'SELECT COUNT(*) FROM "spider"."{self.table_name}"'
+            query = f'SELECT COUNT(*) FROM "{self.schema}"."{self.table_name}"'
             params = None
         try:
             with self.connection.cursor() as cursor:
@@ -317,7 +358,7 @@ class PostgreSQLHandler:
     def getMinMaxId(self, table_name=None):
         if not table_name:
             table_name = self.table_name
-        query = f'SELECT MIN(id) AS min_id, MAX(id) AS max_id FROM "spider"."{table_name}"'
+        query = f'SELECT MIN(id) AS min_id, MAX(id) AS max_id FROM "{self.schema}"."{table_name}"'
         try:
             with self.connection.cursor(cursor_factory=psycopg2.extras.RealDictCursor) as cursor:
                 cursor.execute(query)
@@ -334,7 +375,7 @@ class PostgreSQLHandler:
 # if __name__ == '__main__':
 #     db_handler = PostgreSQLHandler(db_name='postgres', table_name='test_articles')
 #     create_sql = """
-#         CREATE TABLE IF NOT EXISTS "spider"."test_articles" (
+#         CREATE TABLE IF NOT EXISTS "{self.schema}"."test_articles" (
 #             id SERIAL PRIMARY KEY,
 #             title VARCHAR(255) NOT NULL,
 #             content TEXT,
@@ -378,7 +419,7 @@ class PostgreSQLHandler:
 #     ]
 #     db_handler.insert_data_list(articles_list)
 #
-#     all_articles = db_handler.execute_query('SELECT * FROM  "spider"."test_articles"')
+#     all_articles = db_handler.execute_query('SELECT * FROM  "{self.schema}"."test_articles"')
 #     if all_articles:
 #         for article in all_articles:
 #             print(article)

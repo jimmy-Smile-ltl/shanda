@@ -1,0 +1,2791 @@
+{
+    "scholar_id": "DTthB48AAAAJ",
+    "name": "Vladimir Braverman",
+    "avatar_url": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=DTthB48AAAAJ&citpid=5",
+    "profile_url": "https://scholar.google.com/citations?user=DTthB48AAAAJ&hl=zh-CN&oi=sra",
+    "scholar_index": {
+        "引用": {
+            "all": 6778,
+            "after_2020": 5482
+        },
+        "h指数": {
+            "all": 39,
+            "after_2020": 36
+        },
+        "i10指数": {
+            "all": 98,
+            "after_2020": 86
+        }
+    },
+    "affiliation": "Professor of Computer Science, Johns Hopkins University; Google Research; Adjunct Professor, Rice U.",
+    "category": {
+        "Machine Learning": "https://scholar.google.com/citations?view_op=search_authors&hl=zh-CN&mauthors=label:machine_learning",
+        "Algorithms": "https://scholar.google.com/citations?view_op=search_authors&hl=zh-CN&mauthors=label:algorithms",
+        "Health": "https://scholar.google.com/citations?view_op=search_authors&hl=zh-CN&mauthors=label:health",
+        "Computer Systems": "https://scholar.google.com/citations?view_op=search_authors&hl=zh-CN&mauthors=label:computer_systems"
+    },
+    "cite_per_year": {
+        "2010": 24,
+        "2011": 25,
+        "2012": 24,
+        "2013": 56,
+        "2014": 90,
+        "2015": 110,
+        "2016": 117,
+        "2017": 164,
+        "2018": 279,
+        "2019": 368,
+        "2020": 448,
+        "2021": 706,
+        "2022": 856,
+        "2023": 1068,
+        "2024": 1293,
+        "2025": 1102
+    },
+    "open_access_num": 84,
+    "non_open_access_num": 1,
+    "collaborator_list": [
+        {
+            "id": "gsc_ucoar-wHAYz5wAAAAJ",
+            "name": "Nikita Ivkin",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=wHAYz5wAAAAJ",
+            "affiliation": "Amazon.com"
+        },
+        {
+            "id": "gsc_ucoar-qvK1_5wAAAAJ",
+            "name": "Zaoxing Liu",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=qvK1_5wAAAAJ",
+            "affiliation": "Assistant Professor of Computer Science, University of Maryland"
+        },
+        {
+            "id": "gsc_ucoar-UvFrX04AAAAJ",
+            "name": "Rafail Ostrovsky",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=UvFrX04AAAAJ",
+            "affiliation": "Norman E. Friedman Chair in Knowledge Sciences, Distinguished Prof.  of CS & MATH"
+        },
+        {
+            "id": "gsc_ucoar-z-KILD8AAAAJ",
+            "name": "Jingfeng Wu",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=z-KILD8AAAAJ",
+            "affiliation": "University of California, Berkeley"
+        },
+        {
+            "id": "gsc_ucoar-NpjsgocAAAAJ",
+            "name": "Samson Zhou",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=NpjsgocAAAAJ",
+            "affiliation": "Texas A&M University"
+        },
+        {
+            "id": "gsc_ucoar-umivlPQAAAAJ",
+            "name": "Lin F. Yang (杨林)",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=umivlPQAAAAJ",
+            "affiliation": "Assistant Professor, Department of Electrical and Computer Engineering @ UCLA"
+        },
+        {
+            "id": "gsc_ucoar-NhsdGBUAAAAJ",
+            "name": "Xin Jin",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=NhsdGBUAAAAJ",
+            "affiliation": "Peking University"
+        },
+        {
+            "id": "gsc_ucoar-M3yUD0cAAAAJ",
+            "name": "Robert Krauthgamer",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=M3yUD0cAAAAJ",
+            "affiliation": "Weizmann Institute of Science"
+        },
+        {
+            "id": "gsc_ucoar-5V852JcAAAAJ",
+            "name": "Vyas Sekar",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=5V852JcAAAAJ",
+            "affiliation": "Tan Family Chair in Electrical and Computer Engineering, Carnegie Mellon University"
+        },
+        {
+            "id": "gsc_ucoar-67QZN0gAAAAJ",
+            "name": "Dan Feldman",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=67QZN0gAAAAJ",
+            "affiliation": "University of Haifa"
+        },
+        {
+            "id": "gsc_ucoar-vN-is70AAAAJ",
+            "name": "Ion Stoica",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=vN-is70AAAAJ",
+            "affiliation": "Professor of Computer Science, UC Berkeley"
+        },
+        {
+            "id": "gsc_ucoar-kMmxbbIAAAAJ",
+            "name": "David Woodruff",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=kMmxbbIAAAAJ",
+            "affiliation": "Professor of Computer Science, Carnegie Mellon University"
+        },
+        {
+            "id": "gsc_ucoar-Cp4fcTQAAAAJ",
+            "name": "Difan Zou",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=Cp4fcTQAAAAJ",
+            "affiliation": "The University of Hong Kong"
+        },
+        {
+            "id": "gsc_ucoar-GU9HgNAAAAAJ",
+            "name": "Quanquan Gu",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=GU9HgNAAAAAJ",
+            "affiliation": "Associate Professor of Computer Science, UCLA"
+        },
+        {
+            "id": "gsc_ucoar-D6weS_kAAAAJ",
+            "name": "Michael A. Jacobs, Ph.D., DABR",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=D6weS_kAAAAJ",
+            "affiliation": "UT-Health Houston,  (Adjunct) The Johns Hopkins University School of Medicine and CS …"
+        },
+        {
+            "id": "gsc_ucoar-Spe0xdkAAAAJ",
+            "name": "Raman Arora",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=Spe0xdkAAAAJ",
+            "affiliation": "Department of Computer Science, Johns Hopkins University"
+        },
+        {
+            "id": "gsc_ucoar-ymqMT3YAAAAJ",
+            "name": "Enayat Ullah",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=ymqMT3YAAAAJ",
+            "affiliation": "Research Scientist, Meta"
+        },
+        {
+            "id": "gsc_ucoar-lmvViv8AAAAJ",
+            "name": "Xuan Wu",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=lmvViv8AAAAJ",
+            "affiliation": "NTU"
+        },
+        {
+            "id": "gsc_ucoar-ZCJQ-ZMAAAAJ",
+            "name": "Vishwa Parekh",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=ZCJQ-ZMAAAAJ",
+            "affiliation": "UTHealth Houston"
+        },
+        {
+            "id": "gsc_ucoar-wb-DKCIAAAAJ",
+            "name": "Sham M Kakade",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=wb-DKCIAAAAJ",
+            "affiliation": "Harvard University"
+        },
+        {
+            "id": "gsc_ucoar-X8Oh6IsAAAAJ",
+            "name": "Zhuolong Yu",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=X8Oh6IsAAAAJ",
+            "affiliation": "Microsoft"
+        },
+        {
+            "id": "gsc_ucoar-pcCS60IAAAAJ",
+            "name": "Xia \"Ben\" Hu",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=pcCS60IAAAAJ",
+            "affiliation": "Professor of Computer Science, Rice University"
+        },
+        {
+            "id": "gsc_ucoar-II-AXHYAAAAJ",
+            "name": "Daniel Rothchild",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=II-AXHYAAAAJ",
+            "affiliation": "UC Berkeley"
+        },
+        {
+            "id": "gsc_ucoar-0i1w_egAAAAJ",
+            "name": "Zirui (Ray) Liu",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=0i1w_egAAAAJ",
+            "affiliation": "Assistant Professor of Computer Science, University of Minnesota at Twin Cities"
+        },
+        {
+            "id": "gsc_ucoar-F41MSDYAAAAJ",
+            "name": "Shaofeng Jiang",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=F41MSDYAAAAJ",
+            "affiliation": "Peking University"
+        },
+        {
+            "id": "gsc_ucoar-k0fnG0gAAAAJ",
+            "name": "Changhoon (Chang) Kim",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=k0fnG0gAAAAJ",
+            "affiliation": "Google"
+        },
+        {
+            "id": "gsc_ucoar-6G61qDwAAAAJ",
+            "name": "Ran Ben Basat",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=6G61qDwAAAAJ",
+            "affiliation": "Associate Professor of Computer Science, University College London"
+        },
+        {
+            "id": "gsc_ucoar-kWivlnsAAAAJ",
+            "name": "Gil Einziger",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=kWivlnsAAAAJ",
+            "affiliation": "Ben Gurion University of the Negev"
+        },
+        {
+            "id": "gsc_ucoar-qhJgyt4AAAAJ",
+            "name": "Roy Friedman",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=qhJgyt4AAAAJ",
+            "affiliation": "Professor of Computer Science, Technion"
+        },
+        {
+            "id": "gsc_ucoar-2kvponoAAAAJ",
+            "name": "Guangyao Zheng",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=2kvponoAAAAJ",
+            "affiliation": "Johns Hopkins University"
+        },
+        {
+            "id": "gsc_ucoar-UyqcQxcAAAAJ",
+            "name": "Adiel Statman",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=UyqcQxcAAAAJ",
+            "affiliation": "Elbit Systems"
+        },
+        {
+            "id": "gsc_ucoar-vHm-MlUAAAAJ",
+            "name": "Aditya Krishnan",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=vHm-MlUAAAAJ",
+            "affiliation": "Pinecone"
+        },
+        {
+            "id": "gsc_ucoar-B96GkdgAAAAJ",
+            "name": "Joseph E. Gonzalez",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=B96GkdgAAAAJ",
+            "affiliation": "Professor of Computer Science, UC Berkeley"
+        },
+        {
+            "id": "gsc_ucoar-rFC3l6YAAAAJ",
+            "name": "Ashwinee Panda",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=rFC3l6YAAAAJ",
+            "affiliation": "Postdoctoral Fellow, University of Maryland"
+        },
+        {
+            "id": "gsc_ucoar-XMrlrV8AAAAJ",
+            "name": "Jiayi Yuan",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=XMrlrV8AAAAJ",
+            "affiliation": "Rice University"
+        },
+        {
+            "id": "gsc_ucoar-zB9lUvMAAAAJ",
+            "name": "Shaochen (Henry) Zhong",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=zB9lUvMAAAAJ",
+            "affiliation": "Rice University"
+        },
+        {
+            "id": "gsc_ucoar-qumjO10AAAAJ",
+            "name": "Keith D. Levin",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=qumjO10AAAAJ",
+            "affiliation": "Assistant Professor, University of Wisconsin-Madison"
+        },
+        {
+            "id": "gsc_ucoar-ONgMMA4AAAAJ",
+            "name": "Antonis Manousis",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=ONgMMA4AAAAJ",
+            "affiliation": "Meta Platforms"
+        },
+        {
+            "id": "gsc_ucoar-bjmBi78AAAAJ",
+            "name": "Hun Namkung",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=bjmBi78AAAAJ",
+            "affiliation": "Carnegie Mellon University"
+        },
+        {
+            "id": "gsc_ucoar-7tDlVAsAAAAJ",
+            "name": "Zhaozhuo Xu",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=7tDlVAsAAAAJ",
+            "affiliation": "Stevens Institute of Technology"
+        },
+        {
+            "id": "gsc_ucoar-jCNJhFcAAAAJ",
+            "name": "Beidi Chen",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=jCNJhFcAAAAJ",
+            "affiliation": "Carnegie Mellon University"
+        },
+        {
+            "id": "gsc_ucoar-bxLE68cAAAAJ",
+            "name": "Hongye Jin",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=bxLE68cAAAAJ",
+            "affiliation": "Texas A&M University"
+        },
+        {
+            "id": "gsc_ucoar-C_QXDzoAAAAJ",
+            "name": "Minlan Yu",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=C_QXDzoAAAAJ",
+            "affiliation": "Harvard University"
+        },
+        {
+            "id": "gsc_ucoar-ozfkg2sAAAAJ",
+            "name": "Zhenming Liu",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=ozfkg2sAAAAJ",
+            "affiliation": "College of William and Mary"
+        },
+        {
+            "id": "gsc_ucoar-Dzh5C9EAAAAJ",
+            "name": "Mosharaf Chowdhury",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=Dzh5C9EAAAAJ",
+            "affiliation": "University of Michigan"
+        },
+        {
+            "id": "gsc_ucoar-721xaz0AAAAJ",
+            "name": "Morad Tukan",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=721xaz0AAAAJ",
+            "affiliation": "Computer Science Department, University of Haifa"
+        },
+        {
+            "id": "gsc_ucoar-UmZnnF4AAAAJ",
+            "name": "Haoran Li",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=UmZnnF4AAAAJ",
+            "affiliation": "Shenzhen University"
+        },
+        {
+            "id": "gsc_ucoar-HXXSrNMAAAAJ",
+            "name": "Christopher Musco",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=HXXSrNMAAAAJ",
+            "affiliation": "Associate Professor, New York University"
+        },
+        {
+            "id": "gsc_ucoar-5LLV29oAAAAJ",
+            "name": "Shivaram Venkataraman",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=5LLV29oAAAAJ",
+            "affiliation": "University of Wisconsin-Madison"
+        },
+        {
+            "id": "gsc_ucoar-nZEtlZoAAAAJ",
+            "name": "Margarita Osadchy",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=nZEtlZoAAAAJ",
+            "affiliation": "Computer Science, University of Haifa"
+        },
+        {
+            "id": "gsc_ucoar-910z20QAAAAJ",
+            "name": "Daniela Rus",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=910z20QAAAAJ",
+            "affiliation": "Andrew (1956) and Erna Viterbi Professor of Computer Science, MIT"
+        },
+        {
+            "id": "gsc_ucoar-2n4_QNAAAAAJ",
+            "name": "Ben Mussay",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=2n4_QNAAAAAJ",
+            "affiliation": "University of Haifa"
+        },
+        {
+            "id": "gsc_ucoar-6nrCHr0AAAAJ",
+            "name": "Zixiang Chen",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=6nrCHr0AAAAJ",
+            "affiliation": "Salesforce AI Research"
+        },
+        {
+            "id": "gsc_ucoar-f8FjAtMAAAAJ",
+            "name": "Carlo Zaniolo",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=f8FjAtMAAAAJ",
+            "affiliation": "Professor of Computer Science, University of California, Los Angeles"
+        },
+        {
+            "id": "gsc_ucoar-vHTMzPQAAAAJ",
+            "name": "Jalaj Upadhyay",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=vHTMzPQAAAAJ",
+            "affiliation": "Assistant Professor, Rutgers"
+        },
+        {
+            "id": "gsc_ucoar-rUiWchkAAAAJ",
+            "name": "AS Szalay",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=rUiWchkAAAAJ",
+            "affiliation": "Blooomberg Distinguished Professor, Johns Hopkins University"
+        },
+        {
+            "id": "gsc_ucoar-e4_V9VIAAAAJ",
+            "name": "Daniel Baker",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=e4_V9VIAAAAJ",
+            "affiliation": "Roche Sequencing Solutions"
+        },
+        {
+            "id": "gsc_ucoar-W6gQqWcAAAAJ",
+            "name": "Jelani Nelson",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=W6gQqWcAAAAJ",
+            "affiliation": "Professor, EECS, University of California, Berkeley"
+        },
+        {
+            "id": "gsc_ucoar-pmUTG2IAAAAJ",
+            "name": "Doris G. Leung",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=pmUTG2IAAAAJ",
+            "affiliation": "Kennedy Krieger Institute"
+        },
+        {
+            "id": "gsc_ucoar-FqzVlc4AAAAJ",
+            "name": "Anand Iyer",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=FqzVlc4AAAAJ",
+            "affiliation": "Georgia Institute of Technology"
+        },
+        {
+            "id": "gsc_ucoar-73N6nSgAAAAJ",
+            "name": "Jeongkeun (JK) Lee",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=73N6nSgAAAAJ",
+            "affiliation": "Google"
+        },
+        {
+            "id": "gsc_ucoar-Wj4a98UAAAAJ",
+            "name": "Georgios Nikolaidis",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=Wj4a98UAAAAJ",
+            "affiliation": "Meta"
+        },
+        {
+            "id": "gsc_ucoar-EQ_TuKQAAAAJ",
+            "name": "Yu-Neng Chuang",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=EQ_TuKQAAAAJ",
+            "affiliation": "Rice University"
+        },
+        {
+            "id": "gsc_ucoar-CmFTksEAAAAJ",
+            "name": "Xiaozhou Li",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=CmFTksEAAAAJ",
+            "affiliation": "Princeton University"
+        },
+        {
+            "id": "gsc_ucoar-PYueTVIAAAAJ",
+            "name": "Zhihao Bai",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=PYueTVIAAAAJ",
+            "affiliation": "Johns Hopkins University"
+        },
+        {
+            "id": "gsc_ucoar-qVCbnv4AAAAJ",
+            "name": "Gerard Lemson",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=qVCbnv4AAAAJ",
+            "affiliation": "Johns Hopkins University"
+        },
+        {
+            "id": "gsc_ucoar-EJXN6tYAAAAJ",
+            "name": "Tuo Zhao",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=EJXN6tYAAAAJ",
+            "affiliation": "Associate Professor, Georgia Tech"
+        },
+        {
+            "id": "gsc_ucoar-MnDnUvcAAAAJ",
+            "name": "Sandeep Silwal",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=MnDnUvcAAAAJ",
+            "affiliation": "Assistant Professor,  University of Wisconsin-Madison"
+        },
+        {
+            "id": "gsc_ucoar-Yw2PquQAAAAJ",
+            "name": "Petros Drineas",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=Yw2PquQAAAAJ",
+            "affiliation": "Professor, Computer Science Department, Purdue University"
+        },
+        {
+            "id": "gsc_ucoar-IwSe1-MAAAAJ",
+            "name": "Yossi Matias",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=IwSe1-MAAAAJ",
+            "affiliation": "Google"
+        },
+        {
+            "id": "gsc_ucoar-pu00nBoAAAAJ",
+            "name": "Jun (Luke)  Huan",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=pu00nBoAAAAJ",
+            "affiliation": "AWS AI Labs"
+        },
+        {
+            "id": "gsc_ucoar-a2sHceIAAAAJ",
+            "name": "Zhanxing Zhu",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=a2sHceIAAAAJ",
+            "affiliation": "Associate Professor, ECS, University of Southampton"
+        },
+        {
+            "id": "gsc_ucoar-Hgvn4eQAAAAJ",
+            "name": "Wenqing Hu",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=Hgvn4eQAAAAJ",
+            "affiliation": "Missouri University of Science and Technology (formerly University of Missouri, Rolla)"
+        },
+        {
+            "id": "gsc_ucoar-f_Kcie0AAAAJ",
+            "name": "Haoyi Xiong",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=f_Kcie0AAAAJ",
+            "affiliation": "Microsoft"
+        },
+        {
+            "id": "gsc_ucoar-xEp-KWgAAAAJ",
+            "name": "Vincent Cohen-Addad",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=xEp-KWgAAAAJ",
+            "affiliation": "Google Research"
+        },
+        {
+            "id": "gsc_ucoar-SzTMW48AAAAJ",
+            "name": "Mads Toftrup",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=SzTMW48AAAAJ",
+            "affiliation": "Aahus University, PhD Student"
+        },
+        {
+            "id": "gsc_ucoar-X9Hl0LcAAAAJ",
+            "name": "Chris Schwiegelshohn",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=X9Hl0LcAAAAJ",
+            "affiliation": "Aarhus University"
+        },
+        {
+            "id": "gsc_ucoar-SnU_Ih0AAAAJ",
+            "name": "Zhenhua Liu",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=SnU_Ih0AAAAJ",
+            "affiliation": "Associate Professor at Stony Brook University"
+        },
+        {
+            "id": "gsc_ucoar-04sPOoIAAAAJ",
+            "name": "Chuheng (Michael) Hu",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=04sPOoIAAAAJ",
+            "affiliation": "Johns Hopkins University"
+        },
+        {
+            "id": "gsc_ucoar-WaNuaS8AAAAJ",
+            "name": "Xiao Sun",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=WaNuaS8AAAAJ",
+            "affiliation": "Stony Brook University"
+        },
+        {
+            "id": "gsc_ucoar-5AHlM_oAAAAJ",
+            "name": "Adam Meyerson",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=5AHlM_oAAAAJ",
+            "affiliation": "Google, Inc."
+        },
+        {
+            "id": "gsc_ucoar-qqFNGUgAAAAJ",
+            "name": "Michael Shindler",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=qqFNGUgAAAAJ",
+            "affiliation": "Associate Professor of Teaching, Computer Science, UC Irvine"
+        },
+        {
+            "id": "gsc_ucoar-5TGDcocAAAAJ",
+            "name": "Jason Uwaeze",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=5TGDcocAAAAJ",
+            "affiliation": "Rice University"
+        },
+        {
+            "id": "gsc_ucoar-LQSm7hAAAAAJ",
+            "name": "Yiwen Zhang",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=LQSm7hAAAAAJ",
+            "affiliation": "Google"
+        },
+        {
+            "id": "gsc_ucoar-yREBSy0AAAAJ",
+            "name": "Soheil Kolouri",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=yREBSy0AAAAJ",
+            "affiliation": "Computer Science, Vanderbilt University, Nashville, TN"
+        },
+        {
+            "id": "gsc_ucoar-07ds-DAAAAAJ",
+            "name": "Jennifer Rexford",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=07ds-DAAAAAJ",
+            "affiliation": "Professor of Computer Science, Princeton University"
+        },
+        {
+            "id": "gsc_ucoar-RMB9KSUAAAAJ",
+            "name": "Steven P. Rowe",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=RMB9KSUAAAAJ",
+            "affiliation": "University of Texas Southwestern Medical Center"
+        },
+        {
+            "id": "gsc_ucoar-lE0Pd6oAAAAJ",
+            "name": "Jeffrey Leal",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=lE0Pd6oAAAAJ",
+            "affiliation": "Johns Hopkins University"
+        },
+        {
+            "id": "gsc_ucoar-yQNhFGUAAAAJ",
+            "name": "Peter Bartlett",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=yQNhFGUAAAAJ",
+            "affiliation": "Professor, EECS and Statistics, UC Berkeley"
+        },
+        {
+            "id": "gsc_ucoar-VoyeryMAAAAJ",
+            "name": "Tamás Budavári",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=VoyeryMAAAAJ",
+            "affiliation": "Dept. of Applied Mathematics and Statistics, Johns Hopkins University"
+        },
+        {
+            "id": "gsc_ucoar--nzJN7oAAAAJ",
+            "name": "Mark Neyrinck",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=-nzJN7oAAAAJ",
+            "affiliation": "University of Denver, Blue Marble Space Institute of Science"
+        },
+        {
+            "id": "gsc_ucoar-6r72e-MAAAAJ",
+            "name": "Alaa Maalouf",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=6r72e-MAAAAJ",
+            "affiliation": "CSAIL, MIT"
+        },
+        {
+            "id": "gsc_ucoar-DnrU0k0AAAAJ",
+            "name": "Chen Wang",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=DnrU0k0AAAAJ",
+            "affiliation": "Rensselaer Polytechnic Institute"
+        },
+        {
+            "id": "gsc_ucoar-BCc11zIAAAAJ",
+            "name": "Dan Vilenchik",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=BCc11zIAAAAJ",
+            "affiliation": "School of Electrical and Computer Engineering, Ben-Gurion University"
+        },
+        {
+            "id": "gsc_ucoar-DK7TEvkAAAAJ",
+            "name": "Peter Steenkiste",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=DK7TEvkAAAAJ",
+            "affiliation": "Professor of CS and ECE, Carnegie Mellon University"
+        },
+        {
+            "id": "gsc_ucoar-EeYGZCwAAAAJ",
+            "name": "Cameron Musco",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=EeYGZCwAAAAJ",
+            "affiliation": "Assistant Professor, University of Massachusetts Amherst"
+        },
+        {
+            "id": "gsc_ucoar-152C73UAAAAJ",
+            "name": "Kathryn R. Wagner",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=152C73UAAAAJ",
+            "affiliation": "Johns Hopkins"
+        },
+        {
+            "id": "gsc_ucoar-vB9DcFIAAAAJ",
+            "name": "Zhengyu Wang",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=vB9DcFIAAAAJ",
+            "affiliation": "Harvard University"
+        },
+        {
+            "id": "gsc_ucoar-g3McheUAAAAJ",
+            "name": "Christian Sohler",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=g3McheUAAAAJ",
+            "affiliation": "Professor for Algorithmic Data Analysis, University of Cologne"
+        },
+        {
+            "id": "gsc_ucoar-aUsrzjgAAAAJ",
+            "name": "Zohar Karnin",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=aUsrzjgAAAAJ",
+            "affiliation": "amazon"
+        },
+        {
+            "id": "gsc_ucoar-QHS_pZAAAAAJ",
+            "name": "Edo Liberty",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=QHS_pZAAAAAJ",
+            "affiliation": "pinecone.io"
+        },
+        {
+            "id": "gsc_ucoar-2JMaTKsAAAAJ",
+            "name": "Ben Langmead",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=2JMaTKsAAAAJ",
+            "affiliation": "Professor of Computer Science, Johns Hopkins University"
+        },
+        {
+            "id": "gsc_ucoar-4T4qnL4AAAAJ",
+            "name": "Stephanie C. Hicks",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=4T4qnL4AAAAJ",
+            "affiliation": "Associate Professor, Johns Hopkins Bloomberg School of Public Health"
+        },
+        {
+            "id": "gsc_ucoar-KXKrFoAAAAAJ",
+            "name": "Nathan Dyjack",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=KXKrFoAAAAAJ",
+            "affiliation": "Johns Hopkins University"
+        },
+        {
+            "id": "gsc_ucoar-33yNvIgAAAAJ",
+            "name": "Mengdi Wang",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=33yNvIgAAAAJ",
+            "affiliation": "Professor, Princeton AI Lab, CSML&ECE, Princeton University"
+        },
+        {
+            "id": "gsc_ucoar-CnBvgwcAAAAJ",
+            "name": "avinatan hassidim",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=CnBvgwcAAAAJ",
+            "affiliation": ""
+        },
+        {
+            "id": "gsc_ucoar-NtmhkjwAAAAJ",
+            "name": "Mariano R Schain",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=NtmhkjwAAAAJ",
+            "affiliation": "Google Research"
+        },
+        {
+            "id": "gsc_ucoar-SYYd4iAAAAAJ",
+            "name": "Orion Weller",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=SYYd4iAAAAAJ",
+            "affiliation": "Johns Hopkins University"
+        },
+        {
+            "id": "gsc_ucoar-Ij9zwyoAAAAJ",
+            "name": "Dawn Lawrie",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=Ij9zwyoAAAAJ",
+            "affiliation": "Senior Research Scientist, Johns Hopkins University, Human Language Technology Center …"
+        },
+        {
+            "id": "gsc_ucoar-A9DLKmoAAAAJ",
+            "name": "Marc Marone",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=A9DLKmoAAAAJ",
+            "affiliation": "Johns Hopkins University"
+        },
+        {
+            "id": "gsc_ucoar-wIujAJoAAAAJ",
+            "name": "Benjamin Van Durme",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=wIujAJoAAAAJ",
+            "affiliation": "Johns Hopkins University / Microsoft"
+        },
+        {
+            "id": "gsc_ucoar-3B23LZIAAAAJ",
+            "name": "Prathamesh Dharangutte",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=3B23LZIAAAAJ",
+            "affiliation": "PhD student at Rutgers University"
+        },
+        {
+            "id": "gsc_ucoar-Xz1RV6AAAAAJ",
+            "name": "Shay Sapir",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=Xz1RV6AAAAAJ",
+            "affiliation": "PhD student"
+        },
+        {
+            "id": "gsc_ucoar-Q2W1p6sAAAAJ",
+            "name": "Yang Sui",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=Q2W1p6sAAAAJ",
+            "affiliation": "Postdoc, Rice University"
+        },
+        {
+            "id": "gsc_ucoar-HDzOsYAAAAAJ",
+            "name": "Dean Foster",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=HDzOsYAAAAAJ",
+            "affiliation": "Amazon, NYC"
+        },
+        {
+            "id": "gsc_ucoar-MA8PTRUAAAAJ",
+            "name": "Emanuele Viola",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=MA8PTRUAAAAJ",
+            "affiliation": "Professor of Computer Science, Northeastern University"
+        },
+        {
+            "id": "gsc_ucoar-Gkc2UeUAAAAJ",
+            "name": "Elena Grigorescu",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=Gkc2UeUAAAAJ",
+            "affiliation": "University of Waterloo"
+        },
+        {
+            "id": "gsc_ucoar-7LJaYqUAAAAJ",
+            "name": "Jay J. Pillai",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=7LJaYqUAAAAJ",
+            "affiliation": "Professor of Radiology, Mayo Clinic Rochester"
+        },
+        {
+            "id": "gsc_ucoar-Jbay8EQAAAAJ",
+            "name": "Viska Wei",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=Jbay8EQAAAAJ",
+            "affiliation": "Johns Hopkins University"
+        },
+        {
+            "id": "gsc_ucoar-BGPDtPEAAAAJ",
+            "name": "Ran Gelles",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=BGPDtPEAAAAJ",
+            "affiliation": "Bar-Ilan University"
+        },
+        {
+            "id": "gsc_ucoar-vTigGywAAAAJ",
+            "name": "Yuval Rabani",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=vTigGywAAAAJ",
+            "affiliation": "The Hebrew University of Jerusalem"
+        },
+        {
+            "id": "gsc_ucoar-w874n4sAAAAJ",
+            "name": "Zicheng Xu",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=w874n4sAAAAJ",
+            "affiliation": "CS PhD, Johns Hopkins University"
+        },
+        {
+            "id": "gsc_ucoar-w2cRIPgAAAAJ",
+            "name": "Ori Rottenstreich",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=w2cRIPgAAAAJ",
+            "affiliation": "Technion"
+        },
+        {
+            "id": "gsc_ucoar-GR_DsT0AAAAJ",
+            "name": "Jason D. Lee",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=GR_DsT0AAAAJ",
+            "affiliation": "Associate Professor of EECS & Statistics at UC Berkeley"
+        },
+        {
+            "id": "gsc_ucoar-rTJTJJ4AAAAJ",
+            "name": "Randal Burns",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=rTJTJJ4AAAAJ",
+            "affiliation": "Professor of Computer Science, Johns Hopkins University"
+        },
+        {
+            "id": "gsc_ucoar-Mc-6jGEAAAAJ",
+            "name": "Alec Sun",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=Mc-6jGEAAAAJ",
+            "affiliation": "University of Chicago"
+        },
+        {
+            "id": "gsc_ucoar-8P-bBdIAAAAJ",
+            "name": "TS Jayram",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=8P-bBdIAAAAJ",
+            "affiliation": "Lawrence Livermore National Laboratory"
+        },
+        {
+            "id": "gsc_ucoar-Bjoyv04AAAAJ",
+            "name": "Vihan Shah",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=Bjoyv04AAAAJ",
+            "affiliation": "PhD student at the University of Waterloo"
+        },
+        {
+            "id": "gsc_ucoar-rM0Orl0AAAAJ",
+            "name": "Jarosław Błasiok",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=rM0Orl0AAAAJ",
+            "affiliation": "ETH"
+        },
+        {
+            "id": "gsc_ucoar-e8aRmAsAAAAJ",
+            "name": "Michael Mitzenmacher",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=e8aRmAsAAAAJ",
+            "affiliation": "Professor of Computer Science, Harvard University"
+        },
+        {
+            "id": "gsc_ucoar-71DepqoAAAAJ",
+            "name": "Kai-Min Chung",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=71DepqoAAAAJ",
+            "affiliation": "Institute of Information Science, Academia Sinica"
+        },
+        {
+            "id": "gsc_ucoar-lyltposAAAAJ",
+            "name": "Yi Li",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=lyltposAAAAJ",
+            "affiliation": "Nanyang Technological University"
+        },
+        {
+            "id": "gsc_ucoar-JBGlsDoAAAAJ",
+            "name": "Soledad Villar",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=JBGlsDoAAAAJ",
+            "affiliation": "Johns Hopkins University"
+        },
+        {
+            "id": "gsc_ucoar-c9XXy4MAAAAJ",
+            "name": "Hamed Pirsiavash",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=c9XXy4MAAAAJ",
+            "affiliation": "Associate Professor at University of California, Davis"
+        },
+        {
+            "id": "gsc_ucoar-clTVC4UAAAAJ",
+            "name": "Carey E. Priebe",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=clTVC4UAAAAJ",
+            "affiliation": "Professor of Applied Mathematics and Statistics, Johns Hopkins University"
+        },
+        {
+            "id": "gsc_ucoar-nv4TcI8AAAAJ",
+            "name": "Chengyue Huang",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=nv4TcI8AAAAJ",
+            "affiliation": "Georgia Institute of Technology"
+        },
+        {
+            "id": "gsc_ucoar-qTKtwa0AAAAJ",
+            "name": "Parsa Nooralinejad",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=qTKtwa0AAAAJ",
+            "affiliation": "University of California, Davis"
+        },
+        {
+            "id": "gsc_ucoar-_owDH80AAAAJ",
+            "name": "Ali Abbasi",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=_owDH80AAAAJ",
+            "affiliation": "CS Ph.D. Candidate, Vanderbilt University"
+        },
+        {
+            "id": "gsc_ucoar-b1PYJN0AAAAJ",
+            "name": "Da Zheng",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=b1PYJN0AAAAJ",
+            "affiliation": "Amazon"
+        },
+        {
+            "id": "gsc_ucoar-cUQa7_kAAAAJ",
+            "name": "Ningyuan (Teresa) Huang",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=cUQa7_kAAAAJ",
+            "affiliation": "Flatiron Institute"
+        },
+        {
+            "id": "gsc_ucoar-oQ7Dy3kAAAAJ",
+            "name": "Praveen K. Pilly",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=oQ7Dy3kAAAAJ",
+            "affiliation": "Senior Research Scientist, HRL Laboratories"
+        },
+        {
+            "id": "gsc_ucoar-kIdinQIAAAAJ",
+            "name": "In cheol Jeong",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=kIdinQIAAAAJ",
+            "affiliation": "Assistant Professor, Icahn School of Medicine at Mount Sinai"
+        },
+        {
+            "id": "gsc_ucoar-H4c6rhEAAAAJ",
+            "name": "Sunghan Lee",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=H4c6rhEAAAAJ",
+            "affiliation": "Hallym University"
+        },
+        {
+            "id": "gsc_ucoar-67nE-wQ_g_cC",
+            "name": "Zinan Lin",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=67nE-wQ_g_cC",
+            "affiliation": "Microsoft Research (Redmond), Carnegie Mellon University"
+        },
+        {
+            "id": "gsc_ucoar-9mdAaEEAAAAJ",
+            "name": "Hao Liang",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=9mdAaEEAAAAJ",
+            "affiliation": "Rice University"
+        },
+        {
+            "id": "gsc_ucoar-Rn_BmTYAAAAJ",
+            "name": "Giulia Fanti",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=Rn_BmTYAAAAJ",
+            "affiliation": "Carnegie Mellon University, ECE Department"
+        },
+        {
+            "id": "gsc_ucoar-2zjLkpcAAAAJ",
+            "name": "Wei Bai",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=2zjLkpcAAAAJ",
+            "affiliation": "NVIDIA"
+        },
+        {
+            "id": "gsc_ucoar-LRE8KTcAAAAJ",
+            "name": "William Kuszmaul",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=LRE8KTcAAAAJ",
+            "affiliation": "Carnegie Mellon University (CMU)"
+        },
+        {
+            "id": "gsc_ucoar-zX3ba1kAAAAJ",
+            "name": "Moses Charikar",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=zX3ba1kAAAAJ",
+            "affiliation": "Professor of Computer Science, Stanford University"
+        },
+        {
+            "id": "gsc_ucoar-iCrL0MUAAAAJ",
+            "name": "Vinodchandran Variyam",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=iCrL0MUAAAAJ",
+            "affiliation": "Professor, Computer Science and Engineering, University of Nebraska-Lincoln"
+        },
+        {
+            "id": "gsc_ucoar-Jlv4MR4AAAAJ",
+            "name": "Avrim Blum",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=Jlv4MR4AAAAJ",
+            "affiliation": "Professor and Chief Academic Officer, Toyota Technological Institute at Chicago"
+        },
+        {
+            "id": "gsc_ucoar-tP5IBFkAAAAJ",
+            "name": "Ananya Kumar",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=tP5IBFkAAAAJ",
+            "affiliation": "Research Scientist, OpenAI"
+        },
+        {
+            "id": "gsc_ucoar-k4zZo44AAAAJ",
+            "name": "Daniel Berend",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=k4zZo44AAAAJ",
+            "affiliation": "Ben-Gurion University of the Negev"
+        },
+        {
+            "id": "gsc_ucoar-GuO4UhsAAAAJ",
+            "name": "Doina Caragea",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=GuO4UhsAAAAJ",
+            "affiliation": "Kansas State University"
+        },
+        {
+            "id": "gsc_ucoar-qEXn1-8AAAAJ",
+            "name": "Samarth Swarup",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=qEXn1-8AAAAJ",
+            "affiliation": "Biocomplexity Institute and Initiative, University of Virginia"
+        },
+        {
+            "id": "gsc_ucoar-K9R5cBgAAAAJ",
+            "name": "Xiaoqi Chen",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=K9R5cBgAAAAJ",
+            "affiliation": "Purdue University"
+        },
+        {
+            "id": "gsc_ucoar-ymaW6xoAAAAJ",
+            "name": "Shir Landau Feibish",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=ymaW6xoAAAAJ",
+            "affiliation": "Senior Lecturer (Assistant Professor), The Open University of Israel"
+        },
+        {
+            "id": "gsc_ucoar-sXvkoSkAAAAJ",
+            "name": "shahar golan",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=sXvkoSkAAAAJ",
+            "affiliation": "JCT"
+        },
+        {
+            "id": "gsc_ucoar-MbF6rTEAAAAJ",
+            "name": "Zhiwei Steven Wu",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=MbF6rTEAAAAJ",
+            "affiliation": "Carnegie Mellon University"
+        },
+        {
+            "id": "gsc_ucoar-wVH7Gp4AAAAJ",
+            "name": "----",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=wVH7Gp4AAAAJ",
+            "affiliation": ""
+        },
+        {
+            "id": "gsc_ucoar-6ztViH8AAAAJ",
+            "name": "Zhiyi Huang",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=6ztViH8AAAAJ",
+            "affiliation": "The University of Hong Kong"
+        },
+        {
+            "id": "gsc_ucoar-3Ok7MUUAAAAJ",
+            "name": "MUZAMMIL ULLAH",
+            "profile_url": "https://scholar.google.com/citations?hl=zh-CN&user=3Ok7MUUAAAAJ",
+            "affiliation": "Professor of Anatomy, Faculty of Dentistry, Universiti Teknologi MARA (UiTM), Shah Alam …"
+        }
+    ],
+    "article_list": [
+        {
+            "article_title": "One sketch to rule them all: Rethinking network flow monitoring with univmon",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:-f6ydRqryjwC",
+            "authors": "Z Liu, A Manousis, G Vorsanger, V Sekar, V Braverman",
+            "publication_info": "Proceedings of the 2016 ACM SIGCOMM Conference, 101-114, 2016",
+            "cited_num": 720,
+            "year": 2016
+        },
+        {
+            "article_title": "Fetchsgd: Communication-efficient federated learning with sketching",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:nb7KW1ujOQ8C",
+            "authors": "D Rothchild, A Panda, E Ullah, N Ivkin, I Stoica, V Braverman, J Gonzalez, ...",
+            "publication_info": "International Conference on Machine Learning, 8253-8265, 2020",
+            "cited_num": 500,
+            "year": 2020
+        },
+        {
+            "article_title": "Nitrosketch: Robust and general sketch-based monitoring in software switches",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:ZHo1McVdvXMC",
+            "authors": "Z Liu, R Ben-Basat, G Einziger, Y Kassner, V Braverman, R Friedman, ...",
+            "publication_info": "Proceedings of the ACM Special Interest Group on Data Communication, 334-350, 2019",
+            "cited_num": 266,
+            "year": 2019
+        },
+        {
+            "article_title": "Kivi: A tuning-free asymmetric 2bit quantization for kv cache",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:0KyAp5RtaNEC",
+            "authors": "Z Liu, J Yuan, H Jin, S Zhong, Z Xu, V Braverman, B Chen, X Hu",
+            "publication_info": "arXiv preprint arXiv:2402.02750, 2024",
+            "cited_num": 262,
+            "year": 2024
+        },
+        {
+            "article_title": "Communication-efficient distributed SGD with sketching",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:70eg2SAEIzsC",
+            "authors": "N Ivkin, D Rothchild, E Ullah, I Stoica, R Arora",
+            "publication_info": "Advances in Neural Information Processing Systems 32, 2019",
+            "cited_num": 253,
+            "year": 2019
+        },
+        {
+            "article_title": "Jaqen: A {High-Performance}{Switch-Native} approach for detecting and mitigating volumetric {DDoS} attacks with programmable switches",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:B3FOqHPlNUQC",
+            "authors": "Z Liu, H Namkung, G Nikolaidis, J Lee, C Kim, X Jin, V Braverman, M Yu, ...",
+            "publication_info": "30th USENIX Security Symposium (USENIX Security 21), 3829-3846, 2021",
+            "cited_num": 239,
+            "year": 2021
+        },
+        {
+            "article_title": "Methods for effective processing of time series",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:IWHjjKOFINEC",
+            "authors": "G Shaked, V Braverman, V Belyaev, G Rubin, M Sadetsky",
+            "publication_info": "US Patent 9,047,349, 2015",
+            "cited_num": 218,
+            "year": 2015
+        },
+        {
+            "article_title": "{DistCache}: Provable load balancing for {Large-Scale} storage systems with distributed caching",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:NaGl4SEjCO4C",
+            "authors": "Z Liu, Z Bai, Z Liu, X Li, C Kim, V Braverman, X Jin, I Stoica",
+            "publication_info": "17th USENIX Conference on File and Storage Technologies (FAST 19), 143-157, 2019",
+            "cited_num": 211,
+            "year": 2019
+        },
+        {
+            "article_title": "New frameworks for offline and streaming coreset constructions",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:HDshCWvjkbEC",
+            "authors": "V Braverman, D Feldman, H Lang, A Statman, S Zhou",
+            "publication_info": "arXiv preprint arXiv:1612.00889, 2016",
+            "cited_num": 180,
+            "year": 2016
+        },
+        {
+            "article_title": "Optimal sampling from sliding windows",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:u5HHmVD_uO8C",
+            "authors": "V Braverman, R Ostrovsky, C Zaniolo",
+            "publication_info": "Proceedings of the twenty-eighth ACM SIGMOD-SIGACT-SIGART symposium on …, 2009",
+            "cited_num": 175,
+            "year": 2009
+        },
+        {
+            "article_title": "On the noisy gradient descent that generalizes as sgd",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:xtRiw3GOFMkC",
+            "authors": "J Wu, W Hu, H Xiong, J Huan, V Braverman, Z Zhu",
+            "publication_info": "International Conference on Machine Learning, 10367-10376, 2020",
+            "cited_num": 128,
+            "year": 2020
+        },
+        {
+            "article_title": "Programmable packet scheduling with a single queue",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:LPZeul_q3PIC",
+            "authors": "Z Yu, C Hu, J Wu, X Sun, V Braverman, M Chowdhury, Z Liu, X Jin",
+            "publication_info": "Proceedings of the 2021 ACM SIGCOMM 2021 Conference, 179-193, 2021",
+            "cited_num": 120,
+            "year": 2021
+        },
+        {
+            "article_title": "Streaming k-means on Well-Clusterable Data",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:UeHWp8X0CEIC",
+            "authors": "V Braverman, A Meyerson, R Ostrovsky, A Roytman, M Shindler, B Tagiku",
+            "publication_info": "Proceedings of the twenty-second annual ACM-SIAM symposium on Discrete …, 2011",
+            "cited_num": 111,
+            "year": 2011
+        },
+        {
+            "article_title": "Smooth histograms for sliding windows",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:u-x6o8ySG0sC",
+            "authors": "V Braverman, R Ostrovsky",
+            "publication_info": "48th Annual IEEE Symposium on Foundations of Computer Science (FOCS'07), 283-293, 2007",
+            "cited_num": 109,
+            "year": 2007
+        },
+        {
+            "article_title": "{ASAP}: Fast, approximate graph pattern mining at scale",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:GnPB-g6toBAC",
+            "authors": "AP Iyer, Z Liu, X Jin, S Venkataraman, V Braverman, I Stoica",
+            "publication_info": "13th USENIX Symposium on Operating Systems Design and Implementation (OSDI …, 2018",
+            "cited_num": 105,
+            "year": 2018
+        },
+        {
+            "article_title": "Netlock: Fast, centralized lock management using programmable switches",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:KxtntwgDAa4C",
+            "authors": "Z Yu, Y Zhang, V Braverman, M Chowdhury, X Jin",
+            "publication_info": "Proceedings of the Annual conference of the ACM Special Interest Group on …, 2020",
+            "cited_num": 102,
+            "year": 2020
+        },
+        {
+            "article_title": "Zero-one frequency laws",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:2osOgNQ5qMEC",
+            "authors": "V Braverman, R Ostrovsky",
+            "publication_info": "Proceedings of the forty-second ACM symposium on Theory of computing, 281-290, 2010",
+            "cited_num": 97,
+            "year": 2010
+        },
+        {
+            "article_title": "Benign overfitting of constant-stepsize sgd for linear regression",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:l7t_Zn2s7bgC",
+            "authors": "D Zou, J Wu, V Braverman, Q Gu, S Kakade",
+            "publication_info": "Conference on learning theory, 4633-4635, 2021",
+            "cited_num": 90,
+            "year": 2021
+        },
+        {
+            "article_title": "How Many Pretraining Tasks Are Needed for In-Context Learning of Linear Regression?",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:z_wVstp3MssC",
+            "authors": "J Wu, D Zou, Z Chen, V Braverman, Q Gu, PL Bartlett",
+            "publication_info": "arXiv preprint arXiv:2310.08391, 2023",
+            "cited_num": 88,
+            "year": 2023
+        },
+        {
+            "article_title": "{SketchLib}: Enabling efficient sketch-based monitoring on programmable switches",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:mvPsJ3kp5DgC",
+            "authors": "H Namkung, Z Liu, D Kim, V Sekar, P Steenkiste",
+            "publication_info": "19th USENIX Symposium on Networked Systems Design and Implementation (NSDI …, 2022",
+            "cited_num": 76,
+            "year": 2022
+        },
+        {
+            "article_title": "Near optimal linear algebra in the online and sliding window models",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:hMod-77fHWUC",
+            "authors": "V Braverman, P Drineas, C Musco, C Musco, J Upadhyay, DP Woodruff, ...",
+            "publication_info": "2020 IEEE 61st Annual Symposium on Foundations of Computer Science (FOCS …, 2020",
+            "cited_num": 76,
+            "year": 2020
+        },
+        {
+            "article_title": "How hard is counting triangles in the streaming model?",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:ufrVoPGSRksC",
+            "authors": "V Braverman, R Ostrovsky, D Vilenchik",
+            "publication_info": "International Colloquium on Automata, Languages, and Programming, 244-254, 2013",
+            "cited_num": 76,
+            "year": 2013
+        },
+        {
+            "article_title": "Data-independent neural pruning via coresets",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:CHSYGLWDkRkC",
+            "authors": "B Mussay, M Osadchy, V Braverman, S Zhou, D Feldman",
+            "publication_info": "arXiv preprint arXiv:1907.04018, 2019",
+            "cited_num": 69,
+            "year": 2019
+        },
+        {
+            "article_title": "BPTree: An ℓ2 Heavy Hitters Algorithm Using Constant Memory",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:qUcmZB5y_30C",
+            "authors": "V Braverman, SR Chestnut, N Ivkin, J Nelson, Z Wang, DP Woodruff",
+            "publication_info": "Proceedings of the 36th ACM SIGMOD-SIGACT-SIGAI Symposium on Principles of …, 2017",
+            "cited_num": 68,
+            "year": 2017
+        },
+        {
+            "article_title": "Qpipe: Quantiles sketch fully in the data plane",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:cFHS6HbyZ2cC",
+            "authors": "N Ivkin, Z Yu, V Braverman, X Jin",
+            "publication_info": "Proceedings of the 15th International Conference on Emerging Networking …, 2019",
+            "cited_num": 67,
+            "year": 2019
+        },
+        {
+            "article_title": "Beating countsketch for heavy hitters in insertion streams",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:mVmsd5A6BfQC",
+            "authors": "V Braverman, SR Chestnut, N Ivkin, DP Woodruff",
+            "publication_info": "Proceedings of the forty-eighth annual ACM symposium on Theory of Computing …, 2016",
+            "cited_num": 67,
+            "year": 2016
+        },
+        {
+            "article_title": "Clustering high dimensional dynamic data streams",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:r0BpntZqJG4C",
+            "authors": "V Braverman, G Frahling, H Lang, C Sohler, LF Yang",
+            "publication_info": "International Conference on Machine Learning, 576-585, 2017",
+            "cited_num": 65,
+            "year": 2017
+        },
+        {
+            "article_title": "Generalizing the layering method of indyk and woodruff: Recursive sketches for frequency-based vectors on streams",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:_FxGoFyzp5QC",
+            "authors": "V Braverman, R Ostrovsky",
+            "publication_info": "International Workshop on Approximation Algorithms for Combinatorial …, 2013",
+            "cited_num": 59,
+            "year": 2013
+        },
+        {
+            "article_title": "Coresets for clustering in excluded-minor graphs and beyond",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:b0M2c_1WBrUC",
+            "authors": "V Braverman, SHC Jiang, R Krauthgamer, X Wu",
+            "publication_info": "Proceedings of the 2021 ACM-SIAM Symposium on Discrete Algorithms (SODA …, 2021",
+            "cited_num": 57,
+            "year": 2021
+        },
+        {
+            "article_title": "Adversarial Robustness of Streaming Algorithms through Importance Sampling",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:1qzjygNMrQYC",
+            "authors": "V Braverman, A Hasidim, Y Matias, M Schain, S Silwal, S Zhou",
+            "publication_info": "Advances in Neural Information Processing Systems 34, 2021",
+            "cited_num": 55,
+            "year": 2021
+        },
+        {
+            "article_title": "Pretrained models for multilingual federated learning",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:dTyEYWd-f8wC",
+            "authors": "O Weller, M Marone, V Braverman, D Lawrie, B Van Durme",
+            "publication_info": "arXiv preprint arXiv:2206.02291, 2022",
+            "cited_num": 54,
+            "year": 2022
+        },
+        {
+            "article_title": "Twenty years after: Hierarchical {Core-Stateless} fair queueing",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:4fKUyHm3Qg0C",
+            "authors": "Z Yu, J Wu, V Braverman, I Stoica, X Jin",
+            "publication_info": "18th USENIX Symposium on Networked Systems Design and Implementation (NSDI …, 2021",
+            "cited_num": 54,
+            "year": 2021
+        },
+        {
+            "article_title": "Clustering problems on sliding windows",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:4DMP91E08xMC",
+            "authors": "V Braverman, H Lang, K Levin, M Monemizadeh",
+            "publication_info": "Proceedings of the twenty-seventh annual ACM-SIAM symposium on Discrete …, 2016",
+            "cited_num": 54,
+            "year": 2016
+        },
+        {
+            "article_title": "The power of uniform sampling for coresets",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:LjlpjdlvIbIC",
+            "authors": "V Braverman, V Cohen-Addad, HCS Jiang, R Krauthgamer, ...",
+            "publication_info": "2022 IEEE 63rd Annual Symposium on Foundations of Computer Science (FOCS …, 2022",
+            "cited_num": 53,
+            "year": 2022
+        },
+        {
+            "article_title": "The benefits of implicit regularization from sgd in least squares problems",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:D_sINldO8mEC",
+            "authors": "D Zou, J Wu, Q Gu, V Braverman, DP Foster, S Kakade",
+            "publication_info": "Advances in Neural Information Processing Systems 34, 2021",
+            "cited_num": 46,
+            "year": 2021
+        },
+        {
+            "article_title": "Direction matters: On the implicit bias of stochastic gradient descent with moderate learning rate",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:p2g8aNsByqUC",
+            "authors": "J Wu, D Zou, V Braverman, Q Gu",
+            "publication_info": "arXiv preprint arXiv:2011.02538, 2020",
+            "cited_num": 45,
+            "year": 2020
+        },
+        {
+            "article_title": "Coresets for clustering in graphs of bounded treewidth",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:M05iB0D1s5AC",
+            "authors": "D Baker, V Braverman, L Huang, SHC Jiang, R Krauthgamer, X Wu",
+            "publication_info": "International Conference on Machine Learning, 569-579, 2020",
+            "cited_num": 44,
+            "year": 2020
+        },
+        {
+            "article_title": "An optimal algorithm for large frequency moments using o (n^(1-2/k)) bits",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:MXK_kJrjxJIC",
+            "authors": "V Braverman, J Katzman, C Seidell, G Vorsanger",
+            "publication_info": "Approximation, Randomization, and Combinatorial Optimization. Algorithms and …, 2014",
+            "cited_num": 44,
+            "year": 2014
+        },
+        {
+            "article_title": "Recursive sketching for frequency moments",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:9yKSN-GCB0IC",
+            "authors": "V Braverman, R Ostrovsky",
+            "publication_info": "arXiv preprint arXiv:1011.2571, 2010",
+            "cited_num": 39,
+            "year": 2010
+        },
+        {
+            "article_title": "A collective AI via lifelong learning and sharing at the edge",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:vDijr-p_gm4C",
+            "authors": "A Soltoggio, E Ben-Iwhiwhu, V Braverman, E Eaton, B Epstein, Y Ge, ...",
+            "publication_info": "Nature Machine Intelligence 6 (3), 251-264, 2024",
+            "cited_num": 38,
+            "year": 2024
+        },
+        {
+            "article_title": "Cross-domain federated learning in medical imaging",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:Mojj43d5GZwC",
+            "authors": "VS Parekh, S Lai, V Braverman, J Leal, S Rowe, JJ Pillai, MA Jacobs",
+            "publication_info": "arXiv preprint arXiv:2112.10001, 2021",
+            "cited_num": 38,
+            "year": 2021
+        },
+        {
+            "article_title": "Coresets for ordered weighted clustering",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:vV6vV6tmYwMC",
+            "authors": "V Braverman, SHC Jiang, R Krauthgamer, X Wu",
+            "publication_info": "International Conference on Machine Learning, 744-753, 2019",
+            "cited_num": 38,
+            "year": 2019
+        },
+        {
+            "article_title": "Nearly optimal distinct elements and heavy hitters on sliding windows",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:JV2RwH3_ST0C",
+            "authors": "V Braverman, E Grigorescu, H Lang, DP Woodruff, S Zhou",
+            "publication_info": "arXiv preprint arXiv:1805.00212, 2018",
+            "cited_num": 38,
+            "year": 2018
+        },
+        {
+            "article_title": "Sliding window algorithms",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:TFP_iSt0sucC",
+            "authors": "V Braverman",
+            "publication_info": "Encyclopedia of algorithms, 1-6, 2015",
+            "cited_num": 37,
+            "year": 2015
+        },
+        {
+            "article_title": "How to catch l2-heavy-hitters on sliding windows",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:Tyk-4Ss8FVUC",
+            "authors": "V Braverman, R Gelles, R Ostrovsky",
+            "publication_info": "Theoretical Computer Science 554, 82-94, 2014",
+            "cited_num": 37,
+            "year": 2014
+        },
+        {
+            "article_title": "Rademacher chaos, random Eulerian graphs and the sparse Johnson-Lindenstrauss transform",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:IjCSPb-OGe4C",
+            "authors": "V Braverman, R Ostrovsky, Y Rabani",
+            "publication_info": "arXiv preprint arXiv:1011.2590, 2010",
+            "cited_num": 35,
+            "year": 2010
+        },
+        {
+            "article_title": "Implicit bias of gradient descent for logistic regression at the edge of stability",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:ZfRJV9d4-WMC",
+            "authors": "J Wu, V Braverman, JD Lee",
+            "publication_info": "Advances in Neural Information Processing Systems 36, 74229-74256, 2023",
+            "cited_num": 34,
+            "year": 2023
+        },
+        {
+            "article_title": "Memory-efficient performance monitoring on programmable switches with lean algorithms",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:dfsIfKJdRG4C",
+            "authors": "Z Liu, S Zhou, O Rottenstreich, V Braverman, J Rexford",
+            "publication_info": "Symposium on Algorithmic Principles of Computer Systems, 31-44, 2020",
+            "cited_num": 34,
+            "year": 2020
+        },
+        {
+            "article_title": "Last iterate risk bounds of sgd with decaying stepsize for overparameterized linear regression",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:V3AGJWp-ZtQC",
+            "authors": "J Wu, D Zou, V Braverman, Q Gu, S Kakade",
+            "publication_info": "International conference on machine learning, 24280-24314, 2022",
+            "cited_num": 33,
+            "year": 2022
+        },
+        {
+            "article_title": "Streaming space complexity of nearly all functions of one variable on frequency vectors",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:ZeXyd9-uunAC",
+            "authors": "V Braverman, SR Chestnut, DP Woodruff, LF Yang",
+            "publication_info": "Proceedings of the 35th ACM SIGMOD-SIGACT-SIGAI Symposium on Principles of …, 2016",
+            "cited_num": 33,
+            "year": 2016
+        },
+        {
+            "article_title": "Approximating large frequency moments with pick-and-drop sampling",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:YsMSGLbcyi4C",
+            "authors": "V Braverman, R Ostrovsky",
+            "publication_info": "International Workshop on Approximation Algorithms for Combinatorial …, 2013",
+            "cited_num": 31,
+            "year": 2013
+        },
+        {
+            "article_title": "Effective computations on sliding windows",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:zYLM7Y9cAGgC",
+            "authors": "V Braverman, R Ostrovsky",
+            "publication_info": "SIAM Journal on Computing 39 (6), 2113-2131, 2010",
+            "cited_num": 31,
+            "year": 2010
+        },
+        {
+            "article_title": "The white-box adversarial data stream model",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:JoZmwDi-zQgC",
+            "authors": "M Ajtai, V Braverman, TS Jayram, S Silwal, A Sun, DP Woodruff, S Zhou",
+            "publication_info": "Proceedings of the 41st ACM SIGMOD-SIGACT-SIGAI Symposium on Principles of …, 2022",
+            "cited_num": 29,
+            "year": 2022
+        },
+        {
+            "article_title": "Sublinear time spectral density estimation",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:tS2w5q8j5-wC",
+            "authors": "V Braverman, A Krishnan, C Musco",
+            "publication_info": "Proceedings of the 54th Annual ACM SIGACT Symposium on Theory of Computing …, 2022",
+            "cited_num": 29,
+            "year": 2022
+        },
+        {
+            "article_title": "Data-independent structured pruning of neural networks via coresets",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:UxriW0iASnsC",
+            "authors": "B Mussay, D Feldman, S Zhou, V Braverman, M Osadchy",
+            "publication_info": "IEEE Transactions on Neural Networks and Learning Systems 33 (12), 7829-7841, 2021",
+            "cited_num": 29,
+            "year": 2021
+        },
+        {
+            "article_title": "Streaming quantiles algorithms with small space and update time",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:5ugPr518TE4C",
+            "authors": "N Ivkin, E Liberty, K Lang, Z Karnin, V Braverman",
+            "publication_info": "arXiv preprint arXiv:1907.00236, 2019",
+            "cited_num": 28,
+            "year": 2019
+        },
+        {
+            "article_title": "Zero-one laws for sliding windows and universal sketches",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:M3ejUd6NZC8C",
+            "authors": "V Braverman, R Ostrovsky, A Roytman",
+            "publication_info": "Approximation, Randomization, and Combinatorial Optimization. Algorithms and …, 2015",
+            "cited_num": 28,
+            "year": 2015
+        },
+        {
+            "article_title": "Fixed design analysis of regularization-based continual learning",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:NJ774b8OgUMC",
+            "authors": "H Li, J Wu, V Braverman",
+            "publication_info": "Conference on lifelong learning agents, 513-533, 2023",
+            "cited_num": 26,
+            "year": 2023
+        },
+        {
+            "article_title": "The power and limitation of pretraining-finetuning for linear regression under covariate shift",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:WqliGbK-hY8C",
+            "authors": "J Wu, D Zou, V Braverman, Q Gu, S Kakade",
+            "publication_info": "Advances in Neural Information Processing Systems 35, 33041-33053, 2022",
+            "cited_num": 26,
+            "year": 2022
+        },
+        {
+            "article_title": "New coresets for projective clustering and applications",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:_B80troHkn4C",
+            "authors": "M Tukan, X Wu, S Zhou, V Braverman, D Feldman",
+            "publication_info": "International Conference on Artificial Intelligence and Statistics, 5391-5415, 2022",
+            "cited_num": 26,
+            "year": 2022
+        },
+        {
+            "article_title": "Measuring independence of datasets",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:d1gkVwhDpl0C",
+            "authors": "V Braverman, R Ostrovsky",
+            "publication_info": "Proceedings of the forty-second ACM symposium on Theory of computing, 271-280, 2010",
+            "cited_num": 26,
+            "year": 2010
+        },
+        {
+            "article_title": "Streaming symmetric norms via measure concentration",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:R3hNpaxXUhUC",
+            "authors": "J Błasiok, V Braverman, SR Chestnut, R Krauthgamer, LF Yang",
+            "publication_info": "Proceedings of the 49th Annual ACM SIGACT Symposium on Theory of Computing …, 2017",
+            "cited_num": 25,
+            "year": 2017
+        },
+        {
+            "article_title": "Universal sketches for the frequency negative moments and other decreasing streaming sums",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:4TOpqqG69KYC",
+            "authors": "V Braverman, SR Chestnut",
+            "publication_info": "arXiv preprint arXiv:1408.5096, 2014",
+            "cited_num": 25,
+            "year": 2014
+        },
+        {
+            "article_title": "AMS without 4-wise independence on product domains",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:qjMakFHDy7sC",
+            "authors": "V Braverman, KM Chung, Z Liu, M Mitzenmacher, R Ostrovsky",
+            "publication_info": "arXiv preprint arXiv:0806.4790, 2008",
+            "cited_num": 24,
+            "year": 2008
+        },
+        {
+            "article_title": "Sparsity and heterogeneous dropout for continual learning in the null space of neural activations",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:PELIpwtuRlgC",
+            "authors": "A Abbasi, P Nooralinejad, V Braverman, H Pirsiavash, S Kolouri",
+            "publication_info": "Conference on Lifelong Learning Agents, 617-628, 2022",
+            "cited_num": 23,
+            "year": 2022
+        },
+        {
+            "article_title": "From local to global: Spectral-inspired graph neural networks",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:ZuybSZzF8UAC",
+            "authors": "N Huang, S Villar, CE Priebe, D Zheng, C Huang, L Yang, V Braverman",
+            "publication_info": "arXiv preprint arXiv:2209.12054, 2022",
+            "cited_num": 23,
+            "year": 2022
+        },
+        {
+            "article_title": "Efficient coreset constructions via sensitivity sampling",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:WA5NYHcadZ8C",
+            "authors": "V Braverman, D Feldman, H Lang, A Statman, S Zhou",
+            "publication_info": "Asian Conference on Machine Learning, 948-963, 2021",
+            "cited_num": 23,
+            "year": 2021
+        },
+        {
+            "article_title": "Matrix norms in data streams: Faster, multi-pass and row-order",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:NMxIlDl6LWMC",
+            "authors": "V Braverman, S Chestnut, R Krauthgamer, Y Li, D Woodruff, L Yang",
+            "publication_info": "International Conference on Machine Learning, 649-658, 2018",
+            "cited_num": 23,
+            "year": 2018
+        },
+        {
+            "article_title": "Streaming coreset constructions for m-estimators",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:zA6iFVUQeVQC",
+            "authors": "V Braverman, D Feldman, H Lang, D Rus",
+            "publication_info": "Approximation, Randomization, and Combinatorial Optimization. Algorithms and …, 2019",
+            "cited_num": 22,
+            "year": 2019
+        },
+        {
+            "article_title": "Coresets for Clustering with Missing Values",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:HE397vMXCloC",
+            "authors": "V Braverman, S Jiang, R Krauthgamer, X Wu",
+            "publication_info": "Advances in Neural Information Processing Systems 34, 2021",
+            "cited_num": 21,
+            "year": 2021
+        },
+        {
+            "article_title": "Lifelong learning with sketched structural regularization",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:sSrBHYA8nusC",
+            "authors": "H Li, A Krishnan, J Wu, S Kolouri, PK Pilly, V Braverman",
+            "publication_info": "Asian conference on machine learning, 985-1000, 2021",
+            "cited_num": 20,
+            "year": 2021
+        },
+        {
+            "article_title": "Longitudinal functional and imaging outcome measures in FKRP limb-girdle muscular dystrophy",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:NhqRSupF_l8C",
+            "authors": "DG Leung, AE Bocchieri, S Ahlawat, MA Jacobs, VS Parekh, V Braverman, ...",
+            "publication_info": "BMC neurology 20 (1), 196, 2020",
+            "cited_num": 20,
+            "year": 2020
+        },
+        {
+            "article_title": "BPTree: an  heavy hitters algorithm using constant memory",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:LI9QrySNdTsC",
+            "authors": "V Braverman, SR Chestnut, N Ivkin, J Nelson, Z Wang, DP Woodruff",
+            "publication_info": "arXiv preprint arXiv:1603.00759, 2016",
+            "cited_num": 20,
+            "year": 2016
+        },
+        {
+            "article_title": "Weighted sampling without replacement from data streams",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:_kc_bZDykSQC",
+            "authors": "V Braverman, R Ostrovsky, G Vorsanger",
+            "publication_info": "Information Processing Letters 115 (12), 923-926, 2015",
+            "cited_num": 20,
+            "year": 2015
+        },
+        {
+            "article_title": "Differentially private robust low-rank approximation",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:abG-DnoFyZgC",
+            "authors": "R Arora, J Upadhyay",
+            "publication_info": "Advances in neural information processing systems 31, 2018",
+            "cited_num": 19,
+            "year": 2018
+        },
+        {
+            "article_title": "The physical systems behind optimization algorithms",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:TQgYirikUcIC",
+            "authors": "L Yang, R Arora, T Zhao",
+            "publication_info": "Advances in Neural Information Processing Systems 31, 2018",
+            "cited_num": 19,
+            "year": 2018
+        },
+        {
+            "article_title": "Schatten norms in matrix streams: Hello sparsity, goodbye dimension",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:g5m5HwL7SMYC",
+            "authors": "V Braverman, R Krauthgamer, A Krishnan, R Sinoff",
+            "publication_info": "International Conference on Machine Learning, 1100-1110, 2020",
+            "cited_num": 18,
+            "year": 2020
+        },
+        {
+            "article_title": "I know what you did last summer: Network monitoring using interval queries",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:a0OBvERweLwC",
+            "authors": "N Ivkin, RB Basat, Z Liu, G Einziger, R Friedman, V Braverman",
+            "publication_info": "Proceedings of the ACM on Measurement and Analysis of Computing Systems 3 (3 …, 2019",
+            "cited_num": 17,
+            "year": 2019
+        },
+        {
+            "article_title": "Revisiting frequency moment estimation in random order streams",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:M3NEmzRMIkIC",
+            "authors": "V Braverman, E Viola, D Woodruff, LF Yang",
+            "publication_info": "arXiv preprint arXiv:1803.02270, 2018",
+            "cited_num": 17,
+            "year": 2018
+        },
+        {
+            "article_title": "Clustering on sliding windows in polylogarithmic space",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:Wp0gIr-vW9MC",
+            "authors": "V Braverman, H Lang, K Levin, M Monemizadeh",
+            "publication_info": "35th IARCS Annual Conference on Foundations of Software Technology and …, 2015",
+            "cited_num": 17,
+            "year": 2015
+        },
+        {
+            "article_title": "Gap-dependent unsupervised exploration for reinforcement learning",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:eflP2zaiRacC",
+            "authors": "J Wu, V Braverman, L Yang",
+            "publication_info": "International Conference on Artificial Intelligence and Statistics, 4109-4131, 2022",
+            "cited_num": 16,
+            "year": 2022
+        },
+        {
+            "article_title": "Accommodating picky customers: Regret bound and exploration complexity for multi-objective reinforcement learning",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:XiSMed-E-HIC",
+            "authors": "J Wu, V Braverman, L Yang",
+            "publication_info": "Advances in Neural Information Processing Systems 34, 13112-13124, 2021",
+            "cited_num": 16,
+            "year": 2021
+        },
+        {
+            "article_title": "Provable data subset selection for efficient neural networks training",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:Fu2w8maKXqMC",
+            "authors": "M Tukan, S Zhou, A Maalouf, D Rus, V Braverman, D Feldman",
+            "publication_info": "International Conference on Machine Learning, 34533-34555, 2023",
+            "cited_num": 15,
+            "year": 2023
+        },
+        {
+            "article_title": "Raregan: Generating samples for rare classes",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:SdhP9T11ey4C",
+            "authors": "Z Lin, H Liang, G Fanti, V Sekar",
+            "publication_info": "Proceedings of the AAAI Conference on Artificial Intelligence 36 (7), 7506-7515, 2022",
+            "cited_num": 15,
+            "year": 2022
+        },
+        {
+            "article_title": "Near-optimal entrywise sampling of numerically sparse matrices",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:OU6Ihb5iCvQC",
+            "authors": "V Braverman, R Krauthgamer, AR Krishnan, S Sapir",
+            "publication_info": "Conference on Learning Theory, 759-773, 2021",
+            "cited_num": 15,
+            "year": 2021
+        },
+        {
+            "article_title": "Enabling a\" risc\" approach for software-defined monitoring using universal streaming",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:dhFuZR0502QC",
+            "authors": "Z Liu, G Vorsanger, V Braverman, V Sekar",
+            "publication_info": "Proceedings of the 14th ACM Workshop on Hot Topics in Networks, 1-7, 2015",
+            "cited_num": 15,
+            "year": 2015
+        },
+        {
+            "article_title": "Assessing and enhancing large language models in rare disease question-answering",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:vbGhcppDl1QC",
+            "authors": "G Wang, J Ran, R Tang, CY Chang, YN Chuang, Z Liu, V Braverman, ...",
+            "publication_info": "arXiv preprint arXiv:2408.08422, 2024",
+            "cited_num": 14,
+            "year": 2024
+        },
+        {
+            "article_title": "Understanding the micro-behaviors of hardware offloaded network stacks with lumina",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:uJ-U7cs_P_0C",
+            "authors": "Z Yu, B Su, W Bai, S Raindel, V Braverman, X Jin",
+            "publication_info": "Proceedings of the ACM SIGCOMM 2023 Conference, 1074-1087, 2023",
+            "cited_num": 14,
+            "year": 2023
+        },
+        {
+            "article_title": "Streaming algorithms for halo finders",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:aqlVkmm33-oC",
+            "authors": "Z Liu, N Ivkin, L Yang, M Neyrinck, G Lemson, A Szalay, V Braverman, ...",
+            "publication_info": "2015 IEEE 11th International Conference on e-Science, 342-351, 2015",
+            "cited_num": 14,
+            "year": 2015
+        },
+        {
+            "article_title": "Confident or seek stronger: Exploring uncertainty-based on-device llm routing from benchmarking to generalization",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:MLfJN-KU85MC",
+            "authors": "YN Chuang, L Yu, G Wang, L Zhang, Z Liu, X Cai, Y Sui, V Braverman, ...",
+            "publication_info": "arXiv preprint arXiv:2502.04428, 2025",
+            "cited_num": 13,
+            "year": 2025
+        },
+        {
+            "article_title": "Selective experience replay compression using coresets for lifelong deep reinforcement learning in medical imaging",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:uLbwQdceFCQC",
+            "authors": "G Zheng, S Zhou, V Braverman, MA Jacobs, VS Parekh",
+            "publication_info": "Medical Imaging with Deep Learning, 1751-1764, 2024",
+            "cited_num": 13,
+            "year": 2024
+        },
+        {
+            "article_title": "The one-way communication complexity of dynamic time warping distance",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:35N4QoGY0k4C",
+            "authors": "V Braverman, M Charikar, W Kuszmaul, DP Woodruff, LF Yang",
+            "publication_info": "arXiv preprint arXiv:1903.03520, 2019",
+            "cited_num": 13,
+            "year": 2019
+        },
+        {
+            "article_title": "New bounds for the CLIQUE-GAP problem using graph decomposition theory",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:qxL8FJ1GzNcC",
+            "authors": "V Braverman, Z Liu, T Singh, NV Vinodchandran, LF Yang",
+            "publication_info": "Algorithmica 80 (2), 652-667, 2018",
+            "cited_num": 13,
+            "year": 2018
+        },
+        {
+            "article_title": "A phase Ib/IIa, open‐label, multiple ascending‐dose trial of domagrozumab in fukutin‐related protein limb‐girdle muscular dystrophy",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:AXPGKjj_ei8C",
+            "authors": "DG Leung, AE Bocchieri, S Ahlawat, MA Jacobs, VS Parekh, V Braverman, ...",
+            "publication_info": "Muscle & Nerve 64 (2), 172-179, 2021",
+            "cited_num": 11,
+            "year": 2021
+        },
+        {
+            "article_title": "Fast and memory-efficient scRNA-seq k-means clustering with various distances",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:eJXPG6dFmWUC",
+            "authors": "DN Baker, N Dyjack, V Braverman, SC Hicks, B Langmead",
+            "publication_info": "Proceedings of the 12th ACM International Conference on Bioinformatics …, 2021",
+            "cited_num": 11,
+            "year": 2021
+        },
+        {
+            "article_title": "Approximate convex hull of data streams",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:isC4tDSrTZIC",
+            "authors": "A Blum, V Braverman, A Kumar, H Lang, LF Yang",
+            "publication_info": "arXiv preprint arXiv:1712.04564, 2017",
+            "cited_num": 11,
+            "year": 2017
+        },
+        {
+            "article_title": "Risk bounds of multi-pass sgd for least squares in the interpolation regime",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:tkaPQYYpVKoC",
+            "authors": "D Zou, J Wu, V Braverman, Q Gu, S Kakade",
+            "publication_info": "Advances in Neural Information Processing Systems 35, 12909-12920, 2022",
+            "cited_num": 10,
+            "year": 2022
+        },
+        {
+            "article_title": "Linear and sublinear time spectral density estimation",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:fEOibwPWpKIC",
+            "authors": "V Braverman, A Krishnan, C Musco",
+            "publication_info": "Proceedings of the 54th Annual ACM Symposium on Theory of Computing (STOC), 2022",
+            "cited_num": 10,
+            "year": 2022
+        },
+        {
+            "article_title": "Learning-augmented maximum independent set",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:ML0RJ9NH7IQC",
+            "authors": "V Braverman, P Dharangutte, V Shah, C Wang",
+            "publication_info": "arXiv preprint arXiv:2407.11364, 2024",
+            "cited_num": 9,
+            "year": 2024
+        },
+        {
+            "article_title": "Finite-sample analysis of learning high-dimensional single ReLU neuron",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&pagesize=100&citation_for_view=DTthB48AAAAJ:evX43VCCuoAC",
+            "authors": "J Wu, D Zou, Z Chen, V Braverman, Q Gu, SM Kakade",
+            "publication_info": "International Conference on Machine Learning, 37919-37951, 2023",
+            "cited_num": 9,
+            "year": 2023
+        },
+        {
+            "article_title": "Benign overfitting of constant-stepsize SGD for linear regression",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:XD-gHx7UXLsC",
+            "authors": "D Zou, J Wu, V Braverman, Q Gu, SM Kakade",
+            "publication_info": "Journal of Machine Learning Research 24 (326), 1-58, 2023",
+            "cited_num": 9,
+            "year": 2023
+        },
+        {
+            "article_title": "Improved algorithms for time decay streams",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:pqnbT2bcN3wC",
+            "authors": "V Braverman, H Lang, E Ullah, S Zhou",
+            "publication_info": "arXiv preprint arXiv:1907.07574, 2019",
+            "cited_num": 9,
+            "year": 2019
+        },
+        {
+            "article_title": "Symmetric norm estimation and regression on sliding windows",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:q3oQSFYPqjQC",
+            "authors": "V Braverman, V Wei, S Zhou",
+            "publication_info": "International Computing and Combinatorics Conference, 528-539, 2021",
+            "cited_num": 8,
+            "year": 2021
+        },
+        {
+            "article_title": "Sketch and Scale Geo-distributed tSNE and UMAP",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:u9iWguZQMMsC",
+            "authors": "V Wei, N Ivkin, V Braverman, AS Szalay",
+            "publication_info": "2020 IEEE International Conference on Big Data (Big Data), 996-1003, 2020",
+            "cited_num": 8,
+            "year": 2020
+        },
+        {
+            "article_title": "Challenges and opportunities in big data research: Outcomes from the second annual joint pi meeting of the nsf bigdata research program and the nsf big data regional innovation …",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:rO6llkc54NcC",
+            "authors": "S Swarup, V Braverman, R Arora, D Caragea, M Cragin, J Dy, V Honavar, ...",
+            "publication_info": "NSF Workshop Reports, 2018",
+            "cited_num": 8,
+            "year": 2018
+        },
+        {
+            "article_title": "Autol2s: Auto long-short reasoning for efficient large language models",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:kz9GbA2Ns4gC",
+            "authors": "F Luo, YN Chuang, G Wang, HAD Le, S Zhong, H Liu, J Yuan, Y Sui, ...",
+            "publication_info": "arXiv preprint arXiv:2505.22662, 2025",
+            "cited_num": 7,
+            "year": 2025
+        },
+        {
+            "article_title": "Automatic active lesion tracking in multiple sclerosis using unsupervised machine learning",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:epqYDVWIO7EC",
+            "authors": "J Uwaeze, PA Narayana, A Kamali, V Braverman, MA Jacobs, ...",
+            "publication_info": "Diagnostics 14 (6), 632, 2024",
+            "cited_num": 7,
+            "year": 2024
+        },
+        {
+            "article_title": "Orbslam3-enhanced autonomous toy drones: Pioneering indoor exploration",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:9Nmd_mFXekcC",
+            "authors": "M Tukan, F Fares, Y Grufinkle, I Talmor, L Mualem, V Braverman, ...",
+            "publication_info": "arXiv preprint arXiv:2312.13385, 2023",
+            "cited_num": 7,
+            "year": 2023
+        },
+        {
+            "article_title": "Lower bounds for pseudo-deterministic counting in a stream",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:7T2F9Uy0os0C",
+            "authors": "V Braverman, R Krauthgamer, A Krishnan, S Sapir",
+            "publication_info": "arXiv preprint arXiv:2303.16287, 2023",
+            "cited_num": 7,
+            "year": 2023
+        },
+        {
+            "article_title": "Flow-level loss detection with Δ-sketches",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:VL0QpB8kHFEC",
+            "authors": "SL Feibish, Z Liu, N Ivkin, X Chen, V Braverman, J Rexford",
+            "publication_info": "Proceedings of the Symposium on SDN Research, 25-32, 2022",
+            "cited_num": 7,
+            "year": 2022
+        },
+        {
+            "article_title": "Data-independent neural pruning via coresets",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:i2xiXl-TujoC",
+            "authors": "M Ben, M Osadchy, V Braverman, S Zhou, D Feldman",
+            "publication_info": "International Conference on Learning Representations (ICLR), 2020",
+            "cited_num": 7,
+            "year": 2020
+        },
+        {
+            "article_title": "Scalable streaming tools for analyzing n-body simulations: Finding halos and investigating excursion sets in one pass",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:bEWYMUwI8FkC",
+            "authors": "N Ivkin, Z Liu, LF Yang, SS Kumar, G Lemson, M Neyrinck, AS Szalay, ...",
+            "publication_info": "Astronomy and computing 23, 166-179, 2018",
+            "cited_num": 7,
+            "year": 2018
+        },
+        {
+            "article_title": "I3s: Importance sampling subspace selection for low-rank optimization in llm pretraining",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:tuHXwOkdijsC",
+            "authors": "H Zhang, J Yin, G Wang, Z Liu, T Zhang, A Shrivastava, L Yang, ...",
+            "publication_info": "arXiv preprint arXiv:2502.05790, 2025",
+            "cited_num": 6,
+            "year": 2025
+        },
+        {
+            "article_title": "Private data stream analysis for universal symmetric norm estimation",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:JQOojiI6XY0C",
+            "authors": "V Braverman, J Manning, ZS Wu, S Zhou",
+            "publication_info": "arXiv preprint arXiv:2307.04249, 2023",
+            "cited_num": 6,
+            "year": 2023
+        },
+        {
+            "article_title": "AutoCoreset: An automatic practical coreset construction framework",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:_Re3VWB3Y0AC",
+            "authors": "A Maalouf, M Tukan, V Braverman, D Rus",
+            "publication_info": "International Conference on Machine Learning, 23451-23466, 2023",
+            "cited_num": 6,
+            "year": 2023
+        },
+        {
+            "article_title": "Multi-environment lifelong deep reinforcement learning for medical imaging",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:tzM49s52ZIMC",
+            "authors": "G Zheng, S Lai, V Braverman, MA Jacobs, VS Parekh",
+            "publication_info": "arXiv preprint arXiv:2306.00188, 2023",
+            "cited_num": 6,
+            "year": 2023
+        },
+        {
+            "article_title": "Obtaining adjustable regularization for free via iterate averaging",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:P5F9QuxV20EC",
+            "authors": "J Wu, V Braverman, L Yang",
+            "publication_info": "International Conference on Machine Learning, 10344-10354, 2020",
+            "cited_num": 6,
+            "year": 2020
+        },
+        {
+            "article_title": "Multitask radiological modality invariant landmark localization using deep reinforcement learning",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:dshw04ExmUIC",
+            "authors": "VS Parekh, V Braverman, MA Jacobs",
+            "publication_info": "Medical Imaging with Deep Learning, 588-600, 2020",
+            "cited_num": 6,
+            "year": 2020
+        },
+        {
+            "article_title": "Universal streaming of subset norms",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:RGFaLdJalmkC",
+            "authors": "V Braverman, R Krauthgamer, LF Yang",
+            "publication_info": "arXiv preprint arXiv:1812.00241, 2018",
+            "cited_num": 6,
+            "year": 2018
+        },
+        {
+            "article_title": "Approximating Large Frequency Moments with  Bits",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:LkGwnXOMwfcC",
+            "authors": "V Braverman, J Katzman, C Seidell, G Vorsanger",
+            "publication_info": "arXiv preprint arXiv:1401.1763, 2014",
+            "cited_num": 6,
+            "year": 2014
+        },
+        {
+            "article_title": "Method and system for creation and dynamic updating of best data arrangement in digital data store system",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:L8Ckcad2t8MC",
+            "authors": "Y Matias, G Shaked, V Braverman, V Belyaev, S Golan, M Sadetsky",
+            "publication_info": "US Patent 8,364,697, 2013",
+            "cited_num": 6,
+            "year": 2013
+        },
+        {
+            "article_title": "Asynchronous decentralized federated lifelong learning for landmark localization in medical imaging",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:kzcrU_BdoSEC",
+            "authors": "G Zheng, MA Jacobs, V Braverman, VS Parekh",
+            "publication_info": "arXiv preprint arXiv:2303.06783, 2023",
+            "cited_num": 5,
+            "year": 2023
+        },
+        {
+            "article_title": "Kivi: Plug-and-play 2bit kv cache quantization with streaming asymmetric quantization",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:nrtMV_XWKgEC",
+            "authors": "Z Liu, J Yuan, H Jin, S Zhong, Z Xu, V Braverman, B Chen, X Hu",
+            "publication_info": "URL, 2023",
+            "cited_num": 5,
+            "year": 2023
+        },
+        {
+            "article_title": "Metric k-median clustering in insertion-only streams",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:VOx2b1Wkg3QC",
+            "authors": "V Braverman, H Lang, K Levin, Y Rudoy",
+            "publication_info": "Discrete Applied Mathematics 304, 164-180, 2021",
+            "cited_num": 5,
+            "year": 2021
+        },
+        {
+            "article_title": "Online factorization and partition of complex networks by random walk",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:k_IJM867U9cC",
+            "authors": "L Yang, Z Yu, V Braverman, T Zhao, M Wang",
+            "publication_info": "Uncertainty in Artificial Intelligence, 820-830, 2020",
+            "cited_num": 5,
+            "year": 2020
+        },
+        {
+            "article_title": "Dynamic partition of complex networks",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:j3f4tGmQtD8C",
+            "authors": "LF Yang, V Braverman, T Zhao, M Wang",
+            "publication_info": "arXiv preprint arXiv:1705.07881, 2017",
+            "cited_num": 5,
+            "year": 2017
+        },
+        {
+            "article_title": "Sketches for matrix norms: Faster, smaller and more general",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:hFOr9nPyWt4C",
+            "authors": "V Braverman, SR Chestnut, R Krauthgamer, LF Yang",
+            "publication_info": "arXiv preprint arXiv:1609.05885, 2016",
+            "cited_num": 5,
+            "year": 2016
+        },
+        {
+            "article_title": "New frameworks for offline and streaming coreset constructions. CoRR abs/1612.00889 (2016)",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:XiVPGOgt02cC",
+            "authors": "V Braverman, D Feldman, H Lang",
+            "publication_info": "arXiv preprint arXiv:1612.00889, 2016",
+            "cited_num": 5,
+            "year": 2016
+        },
+        {
+            "article_title": "Memory-statistics tradeoff in continual learning with structural regularization",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:k8Z6L05lTy4C",
+            "authors": "H Li, J Wu, V Braverman",
+            "publication_info": "arXiv preprint arXiv:2504.04039, 2025",
+            "cited_num": 4,
+            "year": 2025
+        },
+        {
+            "article_title": "A scalable and unbiased discordance metric with H+",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:Y5dfb0dijaUC",
+            "authors": "N Dyjack, DN Baker, V Braverman, B Langmead, SC Hicks",
+            "publication_info": "Biostatistics 25 (1), 188-202, 2024",
+            "cited_num": 4,
+            "year": 2024
+        },
+        {
+            "article_title": "A framework for dynamically training and adapting deep reinforcement learning models to different, low-compute, and continuously changing radiology deployment environments",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:2KloaMYe4IUC",
+            "authors": "G Zheng, S Lai, V Braverman, MA Jacobs, VS Parekh",
+            "publication_info": "arXiv preprint arXiv:2306.05310, 2023",
+            "cited_num": 4,
+            "year": 2023
+        },
+        {
+            "article_title": "I know what you did last summer: Network monitoring using interval queries",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:WbkHhVStYXYC",
+            "authors": "N Ivkin, RB Basat, Z Liu, G Einziger, R Friedman, V Braverman",
+            "publication_info": "Abstracts of the 2020 SIGMETRICS/Performance Joint International Conference …, 2020",
+            "cited_num": 4,
+            "year": 2020
+        },
+        {
+            "article_title": "Multiparametric deep learning tissue signatures for muscular dystrophy: Preliminary results",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:HoB7MX3m0LUC",
+            "authors": "AE Bocchieri, VS Parekh, KRW Ahlawat, V Braverman, DG Leung, ...",
+            "publication_info": "arXiv preprint arXiv:1908.00175, 2019",
+            "cited_num": 4,
+            "year": 2019
+        },
+        {
+            "article_title": "Towards fast and scalable graph pattern mining",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:blknAaTinKkC",
+            "authors": "AP Iyer, Z Liu, X Jin, S Venkataraman, V Braverman, I Stoica",
+            "publication_info": "10th USENIX Workshop on Hot Topics in Cloud Computing (HotCloud 18), 2018",
+            "cited_num": 4,
+            "year": 2018
+        },
+        {
+            "article_title": "New frameworks for offline and streaming coreset constructions. CoRR, abs/1612.00889",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:wbdj-CoPYUoC",
+            "authors": "V Braverman, D Feldman, H Lang",
+            "publication_info": "arXiv preprint arXiv:1612.00889, 2016",
+            "cited_num": 4,
+            "year": 2016
+        },
+        {
+            "article_title": "Towards a Collective Medical Imaging AI: Enabling Continual Learning from Peers",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:ipzZ9siozwsC",
+            "authors": "G Zheng, V Braverman, J Leal, S Rowe, D Leung, MA Jacobs, VS Parekh",
+            "publication_info": "Medical Imaging with Deep Learning, 2024",
+            "cited_num": 3,
+            "year": 2024
+        },
+        {
+            "article_title": "Fully Dynamic Adversarially Robust Correlation Clustering in Polylogarithmic Update Time",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:KUbvn5osdkgC",
+            "authors": "V Braverman, P Dharangutte, S Pai, V Shah, C Wang",
+            "publication_info": "arXiv preprint arXiv:2411.09979, 2024",
+            "cited_num": 3,
+            "year": 2024
+        },
+        {
+            "article_title": "Learning high-dimensional single-neuron relu networks with finite samples",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:W5xh706n7nkC",
+            "authors": "J Wu, D Zou, Z Chen, V Braverman, Q Gu, SM Kakade",
+            "publication_info": "arXiv preprint arXiv:2303.02255, 2023",
+            "cited_num": 3,
+            "year": 2023
+        },
+        {
+            "article_title": "Least-Mean-Squares Coresets for Infinite Streams",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:5awf1xo2G04C",
+            "authors": "V Braverman, D Feldman, H Lang, D Rus, A Statman",
+            "publication_info": "IEEE Transactions on Knowledge and Data Engineering 35 (9), 8699-8712, 2022",
+            "cited_num": 3,
+            "year": 2022
+        },
+        {
+            "article_title": "On activation function coresets for network pruning",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:ldfaerwXgEUC",
+            "authors": "B Mussay, S Zhou, V Braverman, D Feldman",
+            "publication_info": "arXiv preprint arXiv:1907.04018, 2019",
+            "cited_num": 3,
+            "year": 2019
+        },
+        {
+            "article_title": "Dynamic factorization and partition of complex networks",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:f2IySw72cVMC",
+            "authors": "L Yang, V Braverman, T Zhao, M Wang",
+            "publication_info": "arXiv preprint arXiv:1705.07881, 2017",
+            "cited_num": 3,
+            "year": 2017
+        },
+        {
+            "article_title": "Streaming symmetric norms via measure concentration",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:_xSYboBqXhAC",
+            "authors": "V Braverman, SR Chestnut, R Krauthgamer, LF Yang",
+            "publication_info": "arXiv preprint arXiv:1511.01111, 2015",
+            "cited_num": 3,
+            "year": 2015
+        },
+        {
+            "article_title": "Streaming sums in sublinear space",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:8k81kl-MbHgC",
+            "authors": "V Braverman, SR Chestnut",
+            "publication_info": "arXiv preprint arXiv:1408.5096, 2014",
+            "cited_num": 3,
+            "year": 2014
+        },
+        {
+            "article_title": "Measuring -wise independence of streaming data",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:Y0pCki6q_DkC",
+            "authors": "V Braverman, R Ostrovsky",
+            "publication_info": "CoRR abs/0806.4790, 2008",
+            "cited_num": 3,
+            "year": 2008
+        },
+        {
+            "article_title": "Succinct sampling on streams",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:W7OEmFMy1HYC",
+            "authors": "V Braverman, R Ostrovsky, C Zaniolo",
+            "publication_info": "arXiv preprint cs/0702151, 2007",
+            "cited_num": 3,
+            "year": 2007
+        },
+        {
+            "article_title": "Convex hull for intersections of random lines",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:eQOLeE2rZwMC",
+            "authors": "D Berend, V Braverman",
+            "publication_info": "Discrete Mathematics & Theoretical Computer Science, 2005",
+            "cited_num": 3,
+            "year": 2005
+        },
+        {
+            "article_title": "Towards Fair Medical AI: Adversarial Debiasing of 3D CT Foundation Embeddings",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:gsN89kCJA0AC",
+            "authors": "G Zheng, MA Jacobs, V Braverman, VS Parekh",
+            "publication_info": "arXiv preprint arXiv:2502.04386, 2025",
+            "cited_num": 2,
+            "year": 2025
+        },
+        {
+            "article_title": "Federated learning clients clustering with adaptation to data drifts",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:g3aElNc5_aQC",
+            "authors": "M Li, D Avdiukhin, R Shahout, N Ivkin, V Braverman, M Yu",
+            "publication_info": "arXiv preprint arXiv:2411.01580, 2024",
+            "cited_num": 2,
+            "year": 2024
+        },
+        {
+            "article_title": "Hierarchical deep learning for autonomous multi-label arrhythmia detection and classification on real-world wearable electrocardiogram data",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:ILKRHgRFtOwC",
+            "authors": "G Zheng, S Lee, J Koh, K Pahwa, H Li, Z Xu, H Sun, J Su, SP Cho, SI Im, ...",
+            "publication_info": "Digital Health 10, 20552076241278942, 2024",
+            "cited_num": 2,
+            "year": 2024
+        },
+        {
+            "article_title": "Exploring the Possibility of Arrhythmia Interpretation of Time Domain ECG Using XAI: A Preliminary Study",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:4MWp96NkSFoC",
+            "authors": "S Lee, J Koh, G Zheng, V Braverman, I Jeong",
+            "publication_info": "International Conference on Artificial Intelligence in Medicine, 288-295, 2024",
+            "cited_num": 2,
+            "year": 2024
+        },
+        {
+            "article_title": "Clustering using approximate nearest neighbour oracles",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:tKAzc9rXhukC",
+            "authors": "E Ullah, H Lang",
+            "publication_info": "Transactions on machine learning research, 2023",
+            "cited_num": 2,
+            "year": 2023
+        },
+        {
+            "article_title": "Coresets for Clustering in Graphs of Bounded Treewidth",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:eq2jaN3J8jMC",
+            "authors": "V Braverman, L Huang, SHC Jiang, R Krauthgamer, X Wu",
+            "publication_info": "CoRR abs/1907.04733, 2019",
+            "cited_num": 2,
+            "year": 2019
+        },
+        {
+            "article_title": "Approximations of schatten norms via taylor expansions",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:BqipwSGYUEgC",
+            "authors": "V Braverman",
+            "publication_info": "International Computer Science Symposium in Russia, 70-79, 2019",
+            "cited_num": 2,
+            "year": 2019
+        },
+        {
+            "article_title": "Sketches for matrix norms: Faster, smaller and more general. In arXiv preprint",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:bnK-pcrLprsC",
+            "authors": "V Braverman, SR Chestnut, R Krauthgamer, LF Yang",
+            "publication_info": "",
+            "cited_num": 2,
+            "year": 2016
+        },
+        {
+            "article_title": "A unified approach for clustering problems on sliding windows",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:YOwf2qJgpHMC",
+            "authors": "V Braverman, H Lang, K Levin, M Monemizadeh",
+            "publication_info": "arXiv preprint arXiv:1504.05553, 2015",
+            "cited_num": 2,
+            "year": 2015
+        },
+        {
+            "article_title": "Universal streaming",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:5nxA0vEk-isC",
+            "authors": "V Braverman, R Ostrovsky, A Roytman",
+            "publication_info": "arXiv preprint arXiv:1408.2604, 2014",
+            "cited_num": 2,
+            "year": 2014
+        },
+        {
+            "article_title": "Approximating large frequency moments with pick-and-drop sampling. Accepted to the 16th",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:t6usbXjVLHcC",
+            "authors": "V Braverman, R Ostrovsky",
+            "publication_info": "International Workshop on Approximation Algorithms for Combinatorial …, 2013",
+            "cited_num": 2,
+            "year": 2013
+        },
+        {
+            "article_title": "Generalizing the layering method of Indyk and Woodruff: Recursive sketches for frequency-based vectors on streams. Accepted to the 16th",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:olpn-zPbct0C",
+            "authors": "V Braverman, R Ostrovsky",
+            "publication_info": "International Workshop on Approximation Algorithms for Combinatorial …, 2013",
+            "cited_num": 2,
+            "year": 2013
+        },
+        {
+            "article_title": "Learning-Augmented Hierarchical Clustering",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:oNZyr7d5Mn4C",
+            "authors": "V Braverman, JC Ergun, C Wang, S Zhou",
+            "publication_info": "arXiv preprint arXiv:2506.05495, 2025",
+            "cited_num": 1,
+            "year": 2025
+        },
+        {
+            "article_title": "Self-ensemble: Mitigating Confidence Distortion for Large Language Models",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:M7yex6snE4oC",
+            "authors": "Z Xu, G Wang, G Zheng, YN Chuang, A Szalay, X Hu, V Braverman",
+            "publication_info": "arXiv preprint arXiv:2506.01951, 2025",
+            "cited_num": 1,
+            "year": 2025
+        },
+        {
+            "article_title": "Automatic Active Lesion Tracking in Multiple Sclerosis Using Unsupervised Machine Learning. Diagnostics 2024, 14, 632",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:BwyfMAYsbu0C",
+            "authors": "J Uwaeze, PA Narayana, A Kamali, V Braverman, MA Jacobs, ...",
+            "publication_info": "doi. org/10.3390/diagnostics14060632, 2024",
+            "cited_num": 1,
+            "year": 2024
+        },
+        {
+            "article_title": "Private Federated Frequency Estimation: Adapting to the Hardness of the Instance",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:35r97b3x0nAC",
+            "authors": "J Wu, W Zhu, P Kairouz, V Braverman",
+            "publication_info": "Advances in Neural Information Processing Systems 36, 28892-28909, 2023",
+            "cited_num": 1,
+            "year": 2023
+        },
+        {
+            "article_title": "Scaling Distributed Multi-task Reinforcement Learning with Experience Sharing",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:j8SEvjWlNXcC",
+            "authors": "S Amani, K Pahwa, V Braverman, LF Yang",
+            "publication_info": "arXiv preprint arXiv:2307.05834, 2023",
+            "cited_num": 1,
+            "year": 2023
+        },
+        {
+            "article_title": "50th International Colloquium on Automata, Languages, and Programming (ICALP 2023)",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:TIZ-Mc8IlK0C",
+            "authors": "AR Karlin, R Kyng, P Baumann, M Ganardi, R Majumdar, RS Thinniyam, ...",
+            "publication_info": "Schloss Dagstuhl-Leibniz-Zentrum für Informatik GmbH, 2023",
+            "cited_num": 1,
+            "year": 2023
+        },
+        {
+            "article_title": "Bidirectional Adaptive Communication for Heterogeneous Distributed Learning",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:kRWSkSYxWN8C",
+            "authors": "D Avdiukhin, V Braverman, N Ivkin, SU Stich",
+            "publication_info": "OPT 2022: Optimization for Machine Learning (NeurIPS 2022 Workshop), 2022",
+            "cited_num": 1,
+            "year": 2022
+        },
+        {
+            "article_title": "Six Dimensional Streaming Algorithm for Cluster Finding in N-Body Simulations",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:pyW8ca7W8N0C",
+            "authors": "A Reilly, N Ivkin, G Lemson, V Braverman, A Szalay",
+            "publication_info": "arXiv preprint arXiv:1912.11432, 2019",
+            "cited_num": 1,
+            "year": 2019
+        },
+        {
+            "article_title": "DreamNLP: novel NLP system for clinical report metadata extraction using count sketch data streaming algorithm: preliminary results",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:O3NaXMp0MMsC",
+            "authors": "S Choi, N Ivkin, V Braverman, MA Jacobs",
+            "publication_info": "arXiv preprint arXiv:1809.02665, 2018",
+            "cited_num": 1,
+            "year": 2018
+        },
+        {
+            "article_title": "Approximating subadditive hadamard functions on implicit matrices",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:9ZlFYXVOiuMC",
+            "authors": "V Braverman, A Roytman, G Vorsanger",
+            "publication_info": "arXiv preprint arXiv:1511.00838, 2015",
+            "cited_num": 1,
+            "year": 2015
+        },
+        {
+            "article_title": "System and method for pick-and-drop sampling",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:Zph67rFs4hoC",
+            "authors": "V Braverman, R Ostrovsky",
+            "publication_info": "US Patent 9,158,822, 2015",
+            "cited_num": 1,
+            "year": 2015
+        },
+        {
+            "article_title": "35th IARCS Annual Conference on Foundations of Software Technology and Theoretical Computer Science (FSTTCS 2015)",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:Z5m8FVwuT1cC",
+            "authors": "MS Charikar, A Bouajjani, M Emmi, C Enea, J Hamza, J Worrell, B Barak, ...",
+            "publication_info": "Schloss Dagstuhl-Leibniz-Zentrum für Informatik GmbH, 2015",
+            "cited_num": 1,
+            "year": 2015
+        },
+        {
+            "article_title": "Measuring k-wise independence of streaming data under L2 norm",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:WF5omc3nYNoC",
+            "authors": "V Braverman, R Ostrovsky",
+            "publication_info": "arXiv preprint arXiv:0806.4790, 2008",
+            "cited_num": 1,
+            "year": 2008
+        },
+        {
+            "article_title": "Poster: Flledge: Federated lifelong learning on edge devices",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:ye4kPcJQO24C",
+            "authors": "Z Song, Z Yu, J Wu, L Yang, V Braverman",
+            "publication_info": "",
+            "cited_num": 1,
+            "year": 0
+        },
+        {
+            "article_title": "Why and How Auxiliary Tasks Improve JEPA Representations",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:SpbeaW3--B0C",
+            "authors": "J Yu, S Chen, M Liu, N Horiuchi, V Braverman, Z Xu, D Haramati, ...",
+            "publication_info": "arXiv preprint arXiv:2509.12249, 2025",
+            "cited_num": 0,
+            "year": 2025
+        },
+        {
+            "article_title": "CoVE: Compressed Vocabulary Expansion Makes Better LLM-based Recommender Systems",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:e_rmSamDkqQC",
+            "authors": "H Zhang, T Zhang, J Yin, O Gal, A Shrivastava, V Braverman",
+            "publication_info": "arXiv preprint arXiv:2506.19993, 2025",
+            "cited_num": 0,
+            "year": 2025
+        },
+        {
+            "article_title": "Optimizing beat-wise input for arrhythmia detection using 1-D convolutional neural networks: A real-world ECG study",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:-FonjvnnhkoC",
+            "authors": "S Lee, G Zheng, J Koh, H Li, Z Xu, SP Cho, SI Im, V Braverman, ...",
+            "publication_info": "Computer Methods and Programs in Biomedicine, 108898, 2025",
+            "cited_num": 0,
+            "year": 2025
+        },
+        {
+            "article_title": "Relative Error Fair Clustering in the Weak-Strong Oracle Model",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:WZBGuue-350C",
+            "authors": "V Braverman, P Dharangutte, SHC Jiang, HA Nguyen, C Wang, Y Zhang, ...",
+            "publication_info": "arXiv preprint arXiv:2506.12287, 2025",
+            "cited_num": 0,
+            "year": 2025
+        },
+        {
+            "article_title": "Machine Learning Assisted Stroke Prediction in Mechanical Circulatory Support: Predictive Role of Systemic Mitochondrial Dysfunction",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:hMsQuOkrut0C",
+            "authors": "JP Scioscia, I Murrieta-Alvarez, S Li, Z Xu, G Zheng, J Uwaeze, ...",
+            "publication_info": "ASAIO Journal 71 (5), 387-394, 2025",
+            "cited_num": 0,
+            "year": 2025
+        },
+        {
+            "article_title": "Preoperative brain volume loss is associated with postoperative delirium in advanced heart failure patients supported by left ventricular assist device",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:VaXvl8Fpj5cC",
+            "authors": "I Murrieta-Álvarez, JP Scioscia, JM Benítez-Salazar, J Uwaeze, Z Xu, ...",
+            "publication_info": "Scientific Reports 15 (1), 8884, 2025",
+            "cited_num": 0,
+            "year": 2025
+        },
+        {
+            "article_title": "Automatic data store architecture detection",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:kuK5TVdYjLIC",
+            "authors": "G Shaked, V Braverman, M Sadetsky",
+            "publication_info": "US Patent App. 18/908,588, 2025",
+            "cited_num": 0,
+            "year": 2025
+        },
+        {
+            "article_title": "Automatic data store architecture detection",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:VLnqNzywnoUC",
+            "authors": "G Shaked, V Braverman, M Sadetsky",
+            "publication_info": "US Patent 12,111,805, 2024",
+            "cited_num": 0,
+            "year": 2024
+        },
+        {
+            "article_title": "Automatic Multiple Sclerosis Lesion Tracking Using Unsupervised Machine Learning (P11-6.013)",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:uWiczbcajpAC",
+            "authors": "A Ahkbardeh, P Narayana, V Braverman, M Jacobs, J Uwaeze, J Lincoln",
+            "publication_info": "Neurology 102 (7_supplement_1), 5381, 2024",
+            "cited_num": 0,
+            "year": 2024
+        },
+        {
+            "article_title": "Private Computations on Streaming Data",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:URolC5Kub84C",
+            "authors": "V Braverman, K Garbe, E Jaffe, R Ostrovsky",
+            "publication_info": "Cryptology ePrint Archive, 2024",
+            "cited_num": 0,
+            "year": 2024
+        },
+        {
+            "article_title": "Lifelong deep reinforcement learning on the edge for medical imaging",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:zLWjf1WUPmwC",
+            "authors": "G Zheng, V Braverman, D Leung, MA Jacobs, VS Parekh",
+            "publication_info": "",
+            "cited_num": 0,
+            "year": 2024
+        },
+        {
+            "article_title": "Automatic data store architecture detection",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:D03iK_w7-QYC",
+            "authors": "G Shaked, V Braverman, M Sadetsky",
+            "publication_info": "US Patent 11,593,333, 2023",
+            "cited_num": 0,
+            "year": 2023
+        },
+        {
+            "article_title": "High Order, Entropy Stable, Positivity Preserving Discontinuous Galerkin Discretizations of Compressible Flow",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:EYYDruWGBe4C",
+            "authors": "Y Lin",
+            "publication_info": "Rice University, 2023",
+            "cited_num": 0,
+            "year": 2023
+        },
+        {
+            "article_title": "Leibniz International Proceedings in Informatics (LIPIcs): 50th International Colloquium on Automata, Languages, and Programming (ICALP 2023)",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:AvfA0Oy_GE0C",
+            "authors": "V Braverman, R Krauthgamer, A Krishnan, S Sapir",
+            "publication_info": "Schloss Dagstuhl–Leibniz-Zentrum für Informatik, 2023",
+            "cited_num": 0,
+            "year": 2023
+        },
+        {
+            "article_title": "Universal Streaming of Subset Norms",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:UHK10RUVsp4C",
+            "authors": "V Braverman, R Krauthgamer, LF Yang",
+            "publication_info": "Theory OF Computing 18 (1), 1-32, 2022",
+            "cited_num": 0,
+            "year": 2022
+        },
+        {
+            "article_title": "Method and system for a natural language processing using data streaming",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:YFjsv_pBGBYC",
+            "authors": "M Jacobs, V Braverman, N IVKIN, S Choi",
+            "publication_info": "US Patent 11,321,372, 2022",
+            "cited_num": 0,
+            "year": 2022
+        },
+        {
+            "article_title": "The Power of Uniform Sampling for Coresets",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:1yQoGdGgb4wC",
+            "authors": "C Schwiegelshohn, M Toftrup, R Krauthgamer, S Jiang, VP Cohen-addad, ...",
+            "publication_info": "",
+            "cited_num": 0,
+            "year": 2022
+        },
+        {
+            "article_title": "minicore: Fast scRNA-seq clustering with various distances",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:tOudhMTPpwUC",
+            "authors": "DN Baker, N Dyjack, V Braverman, SC Hicks, B Langmead",
+            "publication_info": "bioRxiv, 2021.03. 24.436859, 2021",
+            "cited_num": 0,
+            "year": 2021
+        },
+        {
+            "article_title": "Communication-Efficient Federated Learning with Sketching",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:1sJd4Hv_s6UC",
+            "authors": "A Panda, D Rothchild, E Ullah, N Ivkin, I Stoica, J Gonzalez, R Arora, ...",
+            "publication_info": "",
+            "cited_num": 0,
+            "year": 2020
+        },
+        {
+            "article_title": "Sparse Coresets for SVD on Infinite Streams",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:EUQCXRtRnyEC",
+            "authors": "V Braverman, D Feldman, H Lang, D Rus, A Statman",
+            "publication_info": "arXiv preprint arXiv:2002.06296, 2020",
+            "cited_num": 0,
+            "year": 2020
+        },
+        {
+            "article_title": "Six Dimensional Streaming Algorithm for Cluster Finding in N-Body Simulations",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:vRqMK49ujn8C",
+            "authors": "G Lemson, A Reilly, N Ivkin, V Braverman, A Szalay",
+            "publication_info": "Astronomical Data Analysis Software and Systems XXIX 527, 155, 2020",
+            "cited_num": 0,
+            "year": 2020
+        },
+        {
+            "article_title": "NSF Workshop Report on Programmable Networks",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:dQ2og3OwTAUC",
+            "authors": "A Sivaraman, X Jin, V Braverman, M Alizadeh",
+            "publication_info": "",
+            "cited_num": 0,
+            "year": 2019
+        },
+        {
+            "article_title": "Attack time localization using interval queries",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:SeFeTyx0c_EC",
+            "authors": "N Ivkin, R Ben Basat, Z Liu, G Einziger, R Friedman, V Braverman",
+            "publication_info": "Proceedings of the ACM SIGCOMM 2019 Conference Posters and Demos, 85-87, 2019",
+            "cited_num": 0,
+            "year": 2019
+        },
+        {
+            "article_title": "Automatic data store architecture detection",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:u_35RYKgDlwC",
+            "authors": "G Shaked, V Braverman, M Sadetsky",
+            "publication_info": "US Patent 10,223,390, 2019",
+            "cited_num": 0,
+            "year": 2019
+        },
+        {
+            "article_title": "Approximation, Randomization, and Combinatorial Optimization. Algorithms and Techniques (APPROX/RANDOM 2019)",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:tYavs44e6CUC",
+            "authors": "V Fernández, CN Chou, Z Lei, P Nakkiran, B Moseley, M Sviridenko, ...",
+            "publication_info": "Schloss Dagstuhl-Leibniz-Zentrum für Informatik GmbH, 2019",
+            "cited_num": 0,
+            "year": 2019
+        },
+        {
+            "article_title": "35th International Symposium on Computational Geometry (SoCG 2019)",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:L7CI7m0gUJcC",
+            "authors": "S Dasgupta, BR Donald, P Afshani, JM Phillips, PK Agarwal, B Aronov, ...",
+            "publication_info": "Schloss Dagstuhl-Leibniz-Zentrum für Informatik GmbH, 2019",
+            "cited_num": 0,
+            "year": 2019
+        },
+        {
+            "article_title": "ASAP: Fast, Approximate Graph Pattern Mining at Scale",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:ns9cj8rnVeAC",
+            "authors": "I Anand, Z Liu, X Jin, S Venkataraman, V Braverman, I Stoic",
+            "publication_info": "Proceedings of the USENIX conference, 2018",
+            "cited_num": 0,
+            "year": 2018
+        },
+        {
+            "article_title": "Accurate Low-Space Approximation of Metric k-Median for Insertion-Only Streams",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=100&pagesize=100&citation_for_view=DTthB48AAAAJ:_Qo2XoVZTnwC",
+            "authors": "V Braverman, H Lang, K Levin",
+            "publication_info": "Conference on Algorithms and Discrete Applied Mathematics, 72-82, 2017",
+            "cited_num": 0,
+            "year": 2017
+        },
+        {
+            "article_title": "Processing Big Data Streams (NII Shonan Meeting 2017-7).",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=200&pagesize=100&citation_for_view=DTthB48AAAAJ:J-pR_7NvFogC",
+            "authors": "V Braverman, DP Woodruff, K Yi",
+            "publication_info": "NII Shonan Meet. Rep. 2017, 2017",
+            "cited_num": 0,
+            "year": 2017
+        },
+        {
+            "article_title": "Streaming space complexity of nearly all functions of one variable",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=200&pagesize=100&citation_for_view=DTthB48AAAAJ:3s1wT3WcHBgC",
+            "authors": "V Braverman, S Chestnut, DP Woodruff, LF Yang",
+            "publication_info": "",
+            "cited_num": 0,
+            "year": 2016
+        },
+        {
+            "article_title": "System and method for pick-and-drop sampling",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=200&pagesize=100&citation_for_view=DTthB48AAAAJ:e5wmG9Sq2KIC",
+            "authors": "V Braverman, R Ostrovsky",
+            "publication_info": "US Patent App. 14/847,195, 2015",
+            "cited_num": 0,
+            "year": 2015
+        },
+        {
+            "article_title": "Sampling from Dense Streams without Penalty: Improved Bounds for Frequency Moments and Heavy Hitters",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=200&pagesize=100&citation_for_view=DTthB48AAAAJ:0EnyYjriUFMC",
+            "authors": "V Braverman, G Vorsanger",
+            "publication_info": "International Computing and Combinatorics Conference, 13-24, 2014",
+            "cited_num": 0,
+            "year": 2014
+        },
+        {
+            "article_title": "Approximation, Randomization, and Combinatorial Optimization. Algorithms and Techniques (APPROX/RANDOM 2014)",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=200&pagesize=100&citation_for_view=DTthB48AAAAJ:p__nRnzSRKYC",
+            "authors": "I Ashlagi, Y Azar, M Charikar, A Chiplunkar, O Geri, H Kaplan, ...",
+            "publication_info": "Schloss Dagstuhl-Leibniz-Zentrum für Informatik GmbH, 2014",
+            "cited_num": 0,
+            "year": 2014
+        },
+        {
+            "article_title": "LIN YANG",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=200&pagesize=100&citation_for_view=DTthB48AAAAJ:hC7cP41nSMkC",
+            "authors": "V Braverman, S Chestnut",
+            "publication_info": "Astrophysical Journal 733, 118, 2011",
+            "cited_num": 0,
+            "year": 2011
+        },
+        {
+            "article_title": "A linear algorithm for computing convex hulls for random lines",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=200&pagesize=100&citation_for_view=DTthB48AAAAJ:Se3iqnhoufwC",
+            "authors": "D Berend, V Braverman",
+            "publication_info": "ACM Transactions on Algorithms (TALG) 5 (4), 1-21, 2009",
+            "cited_num": 0,
+            "year": 2009
+        },
+        {
+            "article_title": "Batched disk scheduling with delays",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=200&pagesize=100&citation_for_view=DTthB48AAAAJ:roLk4NBRz8UC",
+            "authors": "E Bachmat, V Braverman",
+            "publication_info": "ACM SIGMETRICS Performance Evaluation Review 33 (4), 36-41, 2006",
+            "cited_num": 0,
+            "year": 2006
+        },
+        {
+            "article_title": "On Two Problems Regarding Random Geometric Structures",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=200&pagesize=100&citation_for_view=DTthB48AAAAJ:UebtZRa9Y70C",
+            "authors": "V Braverman",
+            "publication_info": "Ben Gurion University, 2004",
+            "cited_num": 0,
+            "year": 2004
+        },
+        {
+            "article_title": "A. Adamaszek and M. Adamaszek The tropical double description method........................................... 47 X. Allamigeon, S. Gaubert and E. Goubault The Remote Point …",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=200&pagesize=100&citation_for_view=DTthB48AAAAJ:S16KYo8Pm5AC",
+            "authors": "V Arvind, S Srinivasan, L Babai, A Banerjee, R Kulkarni, V Naik, ...",
+            "publication_info": "",
+            "cited_num": 0,
+            "year": 0
+        },
+        {
+            "article_title": "AUTOMATIC ACTIVE LESION TRACKING USING DIFFUSION PROBABILISTIC MODELS",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=200&pagesize=100&citation_for_view=DTthB48AAAAJ:BUYA1_V_uYcC",
+            "authors": "J Uwaeze, PA Narayana, V Braverman, MA Jacobs, A Ahkbardeh",
+            "publication_info": "",
+            "cited_num": 0,
+            "year": 0
+        },
+        {
+            "article_title": "BPTree",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=200&pagesize=100&citation_for_view=DTthB48AAAAJ:yB1At4FlUx8C",
+            "authors": "V Braverman, SR Chestnut, N Ivkin, J Nelson, Z Wang, DP Woodruff",
+            "publication_info": "Proceedings of the 36th ACM SIGMOD-SIGACT-SIGAI Symposium on Principles of …, 0",
+            "cited_num": 0,
+            "year": 0
+        },
+        {
+            "article_title": "Approximating any Function via Coreset for Radial Basis Functions: Towards Provable Data Subset Selection For Efficient Neural Networks training",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=200&pagesize=100&citation_for_view=DTthB48AAAAJ:_Ybze24A_UAC",
+            "authors": "M Tukan, S Zhou, A Maalouf, V Braverman, D Feldman",
+            "publication_info": "",
+            "cited_num": 0,
+            "year": 0
+        },
+        {
+            "article_title": "2022 IEEE 63rd Annual Symposium on Foundations of Computer Science (FOCS)| 978-1-6654-5519-0/22/$31.00© 2022 IEEE| DOI: 10.1109/FOCS54457. 2022.00116",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=200&pagesize=100&citation_for_view=DTthB48AAAAJ:hkOj_22Ku90C",
+            "authors": "A Abboud, X Allamigeon, N Anari, M Anastos, A Andoni, R Andrews, ...",
+            "publication_info": "",
+            "cited_num": 0,
+            "year": 0
+        },
+        {
+            "article_title": "2020 IEEE 61st Annual Symposium on Foundations of Computer Science (FOCS)| 978-1-7281-9621-3/20/$31.00© 2020 IEEE| DOI: 10.1109/FOCS46700. 2020.00135",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=200&pagesize=100&citation_for_view=DTthB48AAAAJ:Tiz5es2fbqcC",
+            "authors": "A Abboud, P Afshani, TD Ahle, J Alman, A Andoni, A Anshu, S Apers, ...",
+            "publication_info": "",
+            "cited_num": 0,
+            "year": 0
+        },
+        {
+            "article_title": "Obtaining Regularization for Free via Iterate Averaging",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=200&pagesize=100&citation_for_view=DTthB48AAAAJ:yD5IFk8b50cC",
+            "authors": "J Wu, V Braverman, LF Yang",
+            "publication_info": "",
+            "cited_num": 0,
+            "year": 0
+        },
+        {
+            "article_title": "Streaming Algorithms for Cosmological Simulations and Beyond",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=200&pagesize=100&citation_for_view=DTthB48AAAAJ:fPk4N6BV_jEC",
+            "authors": "V Braverman, AS Szalay, Z Liu, G Vorsanger, V Sekar, N Ivkin, LF Yang, ...",
+            "publication_info": "",
+            "cited_num": 0,
+            "year": 0
+        },
+        {
+            "article_title": "FOCS 2017 Program Committee",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=200&pagesize=100&citation_for_view=DTthB48AAAAJ:maZDTaKrznsC",
+            "authors": "A Bhaskara, A Bogdanov, V Braverman, S Chechik, G Cohen, A De, ...",
+            "publication_info": "",
+            "cited_num": 0,
+            "year": 0
+        },
+        {
+            "article_title": "Jacob Abernethy Dimitris Achlioptas Nir Ailon Adi Akavia",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=200&pagesize=100&citation_for_view=DTthB48AAAAJ:KlAtU1dfN6UC",
+            "authors": "S Albers, D Aldous, N Alon, J Alwen, R Andersen, E Anshelevich, ...",
+            "publication_info": "",
+            "cited_num": 0,
+            "year": 0
+        },
+        {
+            "article_title": "FOCS 2013",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=200&pagesize=100&citation_for_view=DTthB48AAAAJ:kNdYIx-mwKoC",
+            "authors": "E Abbe, A Abboud, J Abernethy, I Abraham, D Achlioptas, A Adamaszek, ...",
+            "publication_info": "",
+            "cited_num": 0,
+            "year": 0
+        },
+        {
+            "article_title": "Rafail Ostrovsky-Publications",
+            "article_url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DTthB48AAAAJ&cstart=200&pagesize=100&citation_for_view=DTthB48AAAAJ:hqOjcs7Dif8C",
+            "authors": "V Braverman",
+            "publication_info": "",
+            "cited_num": 0,
+            "year": 0
+        }
+    ]
+}
