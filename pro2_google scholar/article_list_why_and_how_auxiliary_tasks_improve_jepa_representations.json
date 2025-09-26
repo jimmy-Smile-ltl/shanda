@@ -1,0 +1,50 @@
+[
+    {
+        "article_title": "Why and How Auxiliary Tasks Improve JEPA Representations",
+        "article_url": "https://arxiv.org/abs/2509.12249",
+        "cited_num": null,
+        "html": "<div class=\"gs_r gs_or gs_scl gs_fmar\" data-aid=\"X2aj46s6SGwJ\" data-cid=\"X2aj46s6SGwJ\" data-did=\"X2aj46s6SGwJ\" data-lid=\"\" data-rp=\"0\"><div class=\"gs_ggs gs_fl\"><div class=\"gs_ggsd\"><div class=\"gs_or_ggsm\" ontouchstart=\"gs_evt_dsp(event)\" tabindex=\"-1\"><a data-clk=\"hl=zh-CN&amp;sa=T&amp;oi=gga&amp;ct=gga&amp;cd=0&amp;d=7802550864352339551&amp;ei=jvbUaMGAF6fQ6rQPjI3v4AI\" data-clk-atid=\"X2aj46s6SGwJ\" href=\"https://arxiv.org/pdf/2509.12249\"><span class=\"gs_ctg2\">[PDF]</span> arxiv.org</a></div></div></div><div class=\"gs_ri\"><h3 class=\"gs_rt\" ontouchstart=\"gs_evt_dsp(event)\"><a data-clk=\"hl=zh-CN&amp;sa=T&amp;ct=res&amp;cd=0&amp;d=7802550864352339551&amp;ei=jvbUaMGAF6fQ6rQPjI3v4AI\" data-clk-atid=\"X2aj46s6SGwJ\" href=\"https://arxiv.org/abs/2509.12249\" id=\"X2aj46s6SGwJ\">Why and How Auxiliary Tasks Improve JEPA Representations</a></h3><div class=\"gs_a gs_fma_s\">J Yu, <a href=\"/citations?user=wERN1aAAAAAJ&amp;hl=zh-CN&amp;oi=sra\">S Chen</a>, M Liu, N Horiuchi, <a href=\"/citations?user=DTthB48AAAAJ&amp;hl=zh-CN&amp;oi=sra\">V Braverman</a>… - arXiv preprint arXiv …, 2025 - arxiv.org</div><div class=\"gs_a gs_fma_p\"><div class=\"gs_fmaa\">J Yu, <a href=\"/citations?user=wERN1aAAAAAJ&amp;hl=zh-CN&amp;oi=sra\">S Chen</a>, M Liu, N Horiuchi, <a href=\"/citations?user=DTthB48AAAAJ&amp;hl=zh-CN&amp;oi=sra\">V Braverman</a>, <a href=\"/citations?user=w874n4sAAAAJ&amp;hl=zh-CN&amp;oi=sra\">Z Xu</a>, <a href=\"/citations?user=NrfsdRYAAAAJ&amp;hl=zh-CN&amp;oi=sra\">D Haramati</a>, <a href=\"/citations?user=S1x_xqcAAAAJ&amp;hl=zh-CN&amp;oi=sra\">R Balestriero</a></div>arXiv preprint arXiv:2509.12249, 2025<span class=\"gs_pdot\">•</span>arxiv.org</div><div class=\"gs_rs gs_fma_s\">Joint-Embedding Predictive Architecture (JEPA) is increasingly used for visual <br/>representation learning and as a component in model-based RL, but its behavior remains <br/>poorly understood. We provide a theoretical characterization of a simple, practical JEPA <br/>variant that has an auxiliary regression head trained jointly with latent dynamics. We prove a <br/>No Unhealthy Representation Collapse theorem: in deterministic MDPs, if training drives <br/>both the latent-transition consistency loss and the auxiliary regression loss to zero, then any …</div><div class=\"gs_fma gs_fma_p gs_invis\"><div class=\"gs_fma_brdr\"></div><div class=\"gs_fma_wpr\"><div class=\"gs_fma_con gs_fma_sh\" data-trk=\"/scholar_url?url=https://arxiv.org/abs/2509.12249&amp;hl=zh-CN&amp;sa=T&amp;oi=fma-abs-view&amp;ct=fma-expand&amp;d=7802550864352339551&amp;ei=jvbUaMGAF6fQ6rQPjI3v4AI&amp;tab=-1&amp;at=Why+and+How+Auxiliary+Tasks+Improve+JEPA+Representations\"><div class=\"gs_fma_abs\"><div class=\"gs_fma_grad\"></div><div class=\"gs_fma_snp\">Joint-Embedding Predictive Architecture (JEPA) is increasingly used for visual representation learning and as a component in model-based RL, but its behavior remains poorly understood. We provide a theoretical characterization of a simple, practical JEPA variant that has an auxiliary regression head trained jointly with latent dynamics. We prove a No Unhealthy Representation Collapse theorem: in deterministic MDPs, if training drives both the latent-transition consistency loss and the auxiliary regression loss to zero, then any pair of non-equivalent observations, i.e., those that do not have the same transition dynamics or auxiliary label, must map to distinct latent representations. Thus, the auxiliary task anchors which distinctions the representation must preserve. Controlled ablations in a counting environment corroborate the theory and show that training the JEPA model jointly with the auxiliary head generates a richer representation than training them separately. Our work indicates a path to improve JEPA encoders: training them with an auxiliary function that, together with the transition dynamics, encodes the right equivalence relations.</div><div class=\"gs_fma_fons\"><div class=\"gs_fma_fon\">arxiv.org</div></div></div><div class=\"gs_fma_sml\"><a class=\"gs_fma_sml_a\" data-idx=\"0\" href=\"javascript:void(0)\" role=\"presentation\"><span class=\"gs_fma_smlsm\">展开</span><span class=\"gs_fma_smlsl\">收起</span><span class=\"gs_fma_smlar\"></span></a></div></div></div></div><div class=\"gs_fl gs_flb gs_invis\"><a class=\"gs_or_sav gs_or_btn\" href=\"javascript:void(0)\" role=\"button\"><svg class=\"gs_or_svg\" viewbox=\"0 0 15 16\"><path d=\"M7.5 11.57l3.824 2.308-1.015-4.35 3.379-2.926-4.45-.378L7.5 2.122 5.761 6.224l-4.449.378 3.379 2.926-1.015 4.35z\"></path></svg><span class=\"gs_or_btn_lbl\">保存</span></a> <a aria-controls=\"gs_cit\" aria-haspopup=\"true\" class=\"gs_or_cit gs_or_btn gs_nph\" href=\"javascript:void(0)\" role=\"button\"><svg class=\"gs_or_svg\" viewbox=\"0 0 15 16\"><path d=\"M6.5 3.5H1.5V8.5H3.75L1.75 12.5H4.75L6.5 9V3.5zM13.5 3.5H8.5V8.5H10.75L8.75 12.5H11.75L13.5 9V3.5z\"></path></svg><span>引用</span></a> <a href=\"/scholar?q=related:X2aj46s6SGwJ:scholar.google.com/&amp;scioq=Why+and+How+Auxiliary+Tasks+Improve+JEPA+Representations&amp;hl=zh-CN&amp;as_sdt=0,5\">相关文章</a> <a class=\"gs_nph\" href=\"/scholar?cluster=7802550864352339551&amp;hl=zh-CN&amp;as_sdt=0,5\">所有 2 个版本</a> <a class=\"gs_or_mor\" href=\"javascript:void(0)\" role=\"button\" title=\"更多\"><svg class=\"gs_or_svg\" viewbox=\"0 0 15 16\"><path d=\"M0.75 5.5l2-2L7.25 8l-4.5 4.5-2-2L3.25 8zM7.75 5.5l2-2L14.25 8l-4.5 4.5-2-2L10.25 8z\"></path></svg></a> <a class=\"gs_or_nvi\" href=\"https://scholar.googleusercontent.com/scholar?q=cache:X2aj46s6SGwJ:scholar.google.com/+Why+and+How+Auxiliary+Tasks+Improve+JEPA+Representations&amp;hl=zh-CN&amp;as_sdt=0,5\">HTML 版</a> <a class=\"gs_or_nvi gs_or_mor\" href=\"javascript:void(0)\" role=\"button\" title=\"隐藏\"><svg class=\"gs_or_svg\" viewbox=\"0 0 15 16\"><path d=\"M7.25 5.5l-2-2L0.75 8l4.5 4.5 2-2L4.75 8zM14.25 5.5l-2-2L7.75 8l4.5 4.5 2-2L11.75 8z\"></path></svg></a></div></div></div>",
+        "author_dict_list": [
+            {
+                "name": "J Yu",
+                "order": 1,
+                "url": null
+            },
+            {
+                "name": "S Chen",
+                "order": 2,
+                "url": "https://scholar.google.com/citations?user=wERN1aAAAAAJ&hl=zh-CN&oi=sra"
+            },
+            {
+                "name": "M Liu",
+                "order": 3,
+                "url": null
+            },
+            {
+                "name": "N Horiuchi",
+                "order": 4,
+                "url": null
+            },
+            {
+                "name": "V Braverman",
+                "order": 5,
+                "url": "https://scholar.google.com/citations?user=DTthB48AAAAJ&hl=zh-CN&oi=sra"
+            },
+            {
+                "name": "Z Xu",
+                "order": 6,
+                "url": "https://scholar.google.com/citations?user=w874n4sAAAAJ&hl=zh-CN&oi=sra"
+            },
+            {
+                "name": "D Haramati",
+                "order": 7,
+                "url": "https://scholar.google.com/citations?user=NrfsdRYAAAAJ&hl=zh-CN&oi=sra"
+            },
+            {
+                "name": "R Balestriero",
+                "order": 8,
+                "url": "https://scholar.google.com/citations?user=S1x_xqcAAAAJ&hl=zh-CN&oi=sra"
+            }
+        ]
+    }
+]

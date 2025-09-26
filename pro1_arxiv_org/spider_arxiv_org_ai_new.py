@@ -259,18 +259,18 @@ class spider_arxiv_org_ai_new:
 
 
     def run(self):
-        now_date = datetime.datetime.now()
+        now_date = datetime.datetime.now().date()
         start_date = self.lod_date.get_string()
         if not start_date:
             self.log_print.print(f"没有日志记录，第一次运行，记录当前时间 {now_date.date()}")
             self.log_page.clear_value()
         else:
-            start_date = datetime.datetime.strptime(start_date, "%Y-%m-%d")
-            if now_date.date() > start_date:
-                self.log_print.print(f"新的一天 {now_date.date()} ，清除进度，重新开始 当前时间 {now_date.date()}   日志记录时间 {start_date.date()}")
+            start_date = datetime.datetime.strptime(start_date, "%Y-%m-%d").date()
+            if now_date > start_date:
+                self.log_print.print(f"新的一天 {now_date} ，清除进度，重新开始 当前时间 {now_date}   日志记录时间 {start_date}")
                 self.log_page.clear_value()
             else:
-                self.log_print.print(f"时间比较异常 报错 当前时间 {now_date.date()}   日志记录时间 {start_date.date()} 理论上日志时间应该偏小,至少要小一天")
+                self.log_print.print(f"时间比较异常 报错 当前时间 {now_date}   日志记录时间 {start_date} 理论上日志时间应该偏小,至少要小一天")
                 return
 
         start_page = self.log_page.get_int(default=1)

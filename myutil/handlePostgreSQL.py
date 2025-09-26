@@ -45,7 +45,21 @@ class PostgreSQLHandler:
                 if i == 9:
                     raise Exception("无法连接到数据库，请检查配置或网络连接。")
         return None
-
+    def excute(self,sql:str):
+        for i in range(3):
+            try:
+                with self.connection.cursor() as cursor:
+                    cursor.execute(sql)
+                    self.connection.commit()
+                    return True
+            except psycopg2.Error as e:
+                print(f"执行失败: {e}")
+                if "already exists" in  str(e):
+                    self.connection.rollback()
+                    return True
+                self.connection = self.get_db_connection(self.return_type)
+        else:
+            return False
     def execute_query(self, query, params=None):
         for i in range(5):
             try:
@@ -58,11 +72,12 @@ class PostgreSQLHandler:
         else:
             return None
 
-    def insert_data(self, data, unique_col="article_url") -> None | str:
+    def insert_data(self, data, unique_col = "article_url" , table_name = None) -> None | str:
         if not isinstance(data, dict):
             print("数据必须是字典格式")
             return
-
+        if not table_name:
+            table_name = self.table_name
         processed_data = data.copy()
         for key, value in processed_data.items():
             if isinstance(value, (list, dict)):
@@ -72,7 +87,7 @@ class PostgreSQLHandler:
         placeholders = ', '.join([f'%({k})s' for k in processed_data.keys()])
 
         # 第一步：尝试插入
-        insert_query = f'INSERT INTO "{self.schema}"."{self.table_name}" ({columns}) VALUES ({placeholders})'
+        insert_query = f'INSERT INTO "{self.schema}"."{table_name}" ({columns}) VALUES ({placeholders})'
 
         try:
             with self.connection.cursor() as cursor:
@@ -94,7 +109,7 @@ class PostgreSQLHandler:
                         ])
 
                         if update_clause:  # 确保有字段需要更新
-                            update_query = f'UPDATE "{self.schema}"."{self.table_name}" SET {update_clause} WHERE "{unique_col}" = %({unique_col})s'
+                            update_query = f'UPDATE "{self.schema}"."{table_name}" SET {update_clause} WHERE "{unique_col}" = %({unique_col})s'
                             with self.connection.cursor() as cursor:
                                 cursor.execute(update_query, processed_data)
                                 self.connection.commit()
@@ -124,11 +139,12 @@ class PostgreSQLHandler:
                 self.connection = self.get_db_connection(self.return_type)
             return None
 
-    def insert_data_list(self, data_list, unique_col="article_url") -> None | str:
+    def insert_data_list(self, data_list, unique_col="article_url", table_name = None) -> None | str:
         if not data_list or not isinstance(data_list, list) or not all(isinstance(d, dict) for d in data_list):
             print("数据必须是字典列表格式且不能为空")
             return
-
+        if not table_name:
+            table_name = self.table_name
         processed_list = []
         for data in data_list:
             processed_data = data.copy()
@@ -141,61 +157,63 @@ class PostgreSQLHandler:
 
         keys = processed_list[0].keys()
         columns = ', '.join([f'"{k}"' for k in keys])
-        placeholders = ', '.join([f'%({k})s' for k in keys])
 
-        # 关键修改：排除 id 字段
         excluded_fields = {'id', unique_col}
         update_clause = ', '.join([
             f'"{k}" = EXCLUDED."{k}"'
             for k in keys
             if k not in excluded_fields
         ])
-        # 这种直接就更新了,问题是更新了多少行呢,插入多少行呢? 这个其实最好做个统计的
-        query = f'INSERT INTO "{self.schema}"."{self.table_name}" ({columns}) VALUES ({placeholders}) ON CONFLICT ("{unique_col}") DO UPDATE SET {update_clause}'
-        # query = f'INSERT INTO "{self.schema}"."{self.table_name}" ({columns}) VALUES ({placeholders})
+
+        # 使用 xmax 系统列来判断是插入还是更新。
+        # 插入时 xmax = 0，更新时 xmax != 0。
+        query = f"""
+            INSERT INTO "{self.schema}"."{table_name}" ({columns})
+            VALUES %s
+            ON CONFLICT ("{unique_col}") DO UPDATE SET {update_clause}
+            RETURNING (xmax = 0) AS inserted;
+        """
+
+        # 将字典列表转换为元组列表以匹配 execute_values 的要求
+        data_tuples = [tuple(d.get(k) for k in keys) for d in processed_list]
+
         try:
             with self.connection.cursor() as cursor:
-                psycopg2.extras.execute_batch(cursor, query, processed_list)
-                affected_rows = cursor.rowcount
-                # 获取统计结果
-                stats = cursor.fetchone()
-                if stats:
-                    insert_count, update_count, total_count = stats
-                    result = {
-                        'inserted': insert_count,
-                        'updated': update_count,
-                        'total': total_count,
-                        'input_count': len(processed_list)
-                    }
-                else:
-                    # 如果CTE方式不支持，fallback到简单统计
-                    affected_rows = cursor.rowcount
-                    result = {
-                        'inserted': 0,
-                        'updated': 0,
-                        'total': affected_rows,
-                        'input_count': len(processed_list)
-                    }
+                # 使用 execute_values 执行批量插入/更新
+                results = psycopg2.extras.execute_values(
+                    cursor,
+                    query,
+                    data_tuples,
+                    template=None,
+                    fetch=True  # 设置 fetch=True 来获取 RETURNING 的结果
+                )
+
+                insert_count = sum(1 for row in results if row[0])
+                update_count = len(results) - insert_count
+
+                result_stats = {
+                    'inserted': insert_count,
+                    'updated': update_count,
+                    'total': len(results),
+                    'input_count': len(processed_list)
+                }
+
                 self.connection.commit()
-                print(f"批量数据插入/更新成功 table_name {self.table_name}: "
-                      f"输入 {result['input_count']} 条, "
-                      f"插入 {result.get('inserted', '未知')} 条, "
-                      f"更新 {result.get('updated', '未知')} 条, "
-                      f"总计 {result['total']} 条")
-            return "insert"
+                print(f"批量数据插入/更新成功 table_name {table_name}: "
+                      f"输入 {result_stats['input_count']} 条, "
+                      f"插入 {result_stats['inserted']} 条, "
+                      f"更新 {result_stats['updated']} 条, "
+                      f"总计 {result_stats['total']} 条")
+            return "success"
         except Exception as e:
-            # 这个不会触发了,不知道更新了多少啊 怎么办呢
-            print(f"批量数据插入/更新失败,改为一个个插入:{e}")
+            print(f"批量数据插入/更新失败,改为逐个插入: {e}")
             try:
                 self.connection.rollback()
-                # insert one by one
-                result_list = []
-                for data in processed_list:
-                    result = self.insert_data(data, unique_col=unique_col)
-                    result_list.append(result)
+                result_list = [self.insert_data(data, unique_col=unique_col) for data in processed_list]
                 count = Counter(result_list)
-                print(f"批量插入结果统计: {dict(count)}")
-            except Exception as e:
+                print(f"逐个插入结果统计: {dict(count)}")
+            except Exception as fallback_e:
+                print(f"回滚并逐个插入失败: {fallback_e}")
                 self.connection = self.get_db_connection(self.return_type)
                 self.connection.rollback()
 
@@ -257,32 +275,6 @@ class PostgreSQLHandler:
                 self.connection = self.get_db_connection(self.return_type)
                 self.connection.rollback()
 
-    def is_has_table(self, table_name):
-        try:
-            sql = """
-                SELECT COUNT(*)
-                FROM information_schema.tables
-                WHERE table_schema = %s AND table_name = %s;
-            """
-            for i in range(3):
-                with self.connection.cursor() as cursor:
-                    cursor.execute(sql, ("spider", table_name))
-                    fetchone = cursor.fetchone()
-                    cursor.close()
-                    if isinstance(fetchone, tuple):
-                        if fetchone[0] == 1:
-                            return True
-                        else:
-                            return False
-                    else:
-                        print(f"is_has_table方法 检查表是否存在时返回值异常: {fetchone}")
-                        continue
-            else:
-                return False
-        except Exception as e:
-            print(f"检查表是否存在时出错: {e}")
-            return False
-
     def drop_table(self, max_num: int = 100):
         query = f'DROP TABLE IF EXISTS "{self.schema}"."{self.table_name}"'
         try:
@@ -336,6 +328,44 @@ class PostgreSQLHandler:
                 self.connection = self.get_db_connection(self.return_type)
                 self.connection.rollback()
             return False
+
+    def is_has_table(self, table_name):
+        sql = """
+              SELECT COUNT(*)
+              FROM information_schema.tables
+              WHERE table_schema = %s \
+                AND table_name = %s; \
+              """
+        for i in range(3):
+            try:
+                with self.connection.cursor() as cursor:
+                    cursor.execute(sql, (self.schema, table_name))
+                    fetchone = cursor.fetchone()
+                    if fetchone is not None:
+                        if isinstance(fetchone,dict):
+                            return fetchone.get('count', 0) == 1
+                        else:
+                            return fetchone[0] == 1
+                    else:
+                        # 如果 fetchone 为 None，说明查询异常，重试
+                        print(f"is_has_table: 检查表是否存在时返回值异常，重试 {i + 1}/3")
+                        continue
+            except psycopg2.Error as e:
+                print(f"检查表是否存在时出错: {e}")
+                # 如果是事务中止错误，必须回滚
+                if "current transaction is aborted" in str(e):
+                    try:
+                        self.connection.rollback()
+                    except psycopg2.Error as rb_e:
+                        print(f"回滚失败，重新连接: {rb_e}")
+                        self.connection = self.get_db_connection(self.return_type)
+                else:  # 其他错误，也尝试重连
+                    self.connection = self.get_db_connection(self.return_type)
+
+                time.sleep(1)  # 等待一秒再重试
+
+        print(f"is_has_table: 经过多次重试后仍无法确定表 '{table_name}' 是否存在。")
+        return False
 
     def isMoreOneKiloRows(self, condition: dict = None, max_num: int = 1000):
         if condition:

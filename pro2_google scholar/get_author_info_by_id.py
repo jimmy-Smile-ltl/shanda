@@ -19,7 +19,7 @@ from myutil.handleSoup import extractSoup
 from myutil.log_print import LogPrint
 from myutil.maintainSourceInfo import MaintainSourceInfoPG
 
-class GetInfoById:
+class GetAuthorInfoById:
     def __init__(self, scholar_id):
         self.scholar_id = scholar_id
         self.site= "https://scholar.google.com/"
@@ -70,7 +70,8 @@ class GetInfoById:
 
     def is_has_record(self):
         """检查是否已经处理过该ID"""
-        return self.log_finished.is_member_of_set(self.scholar_id)
+        has_record =  self.log_finished.is_member_of_set(self.scholar_id)
+        return has_record
 
     def get_home_info(self, author_info):
         url = "https://scholar.google.com/citations"
@@ -131,8 +132,8 @@ class GetInfoById:
         open_access_tag = soup.select_one("div.gsc_rsb_m > div.gsc_rsb_m_a")
         # 不开放获取
         non_open_access_tag = soup.select_one("div.gsc_rsb_m > div.gsc_rsb_m_na")
-        open_access_num = open_access_tag.get_text().strip().split(" ")[0]
-        non_open_access_num = non_open_access_tag.get_text().strip().split(" ")[0]
+        open_access_num = open_access_tag.get_text().strip().split(" ")[0] if open_access_tag else "0"
+        non_open_access_num = non_open_access_tag.get_text().strip().split(" ")[0] if non_open_access_tag else "0"
         author_info['open_access_num'] = int(open_access_num) if open_access_num and open_access_num.isdigit() else 0
         author_info['non_open_access_num'] = int(non_open_access_num) if non_open_access_num and non_open_access_num.isdigit() else 0
 
@@ -147,6 +148,9 @@ class GetInfoById:
             "user": f"{self.scholar_id}",
         }
         response = self.single_handler.fetch(url, headers=self.headers, cookies=self.cookies, params=params)
+        if not response:
+            self.log_print.print(f"ID {self.scholar_id} 合作者请求失败，跳过。")
+            return
         collaborator_nore_soup = BeautifulSoup(response.text, 'html.parser')
         collaborator_tag_nore_list =  collaborator_nore_soup.select("div.gsc_ucoar")
         collaborator_list = []
@@ -238,7 +242,7 @@ class GetInfoById:
 
 if __name__ == "__main__":
     test_id = "DTthB48AAAAJ"
-    getter = GetInfoById(test_id)
+    getter = GetAuthorInfoById(test_id)
     author_info = getter.run()
     file = f"author_info_google_scholar_{test_id}.json"
     with open(file, "w", encoding="utf-8") as f:

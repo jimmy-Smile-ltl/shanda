@@ -85,13 +85,25 @@ class GetArticleByTitle:
             article_url = title_tag.a['href'] if title_tag.a else None
             article_info["article_url"] = article_url
             article_list.append(article_info)
+            cite_tag = result_item.select_one("div.gs_ri > div.gs_fl.gs_flb > a:nth-child(3)")
+            if cite_tag and "被引用次数" in cite_tag.get_text():
+                cited_by = int(re.search(r'被引用次数：(\d+)', cite_tag.get_text()).group(1))
+                article_info["cited_num"] = cited_by
+            else:
+                article_info["cited_num"] = None
+            article_info["html"] = str(result_item)
             self.extract_author_info(result_item, url, article_info)
         return article_list
 
 
     def extract_author_info(self, result_item, url , article_info):
         author_tag_p = result_item.select_one("div.gs_a.gs_fma_p")
-        author_tag = author_tag_p.select_one("div.gs_fmaa")
+        if not author_tag_p:
+            author_tag = result_item.select_one("div.gs_a")
+            publish_info = author_tag.get_text().replace("\xa0", " ").strip().split("-")[-1].strip()
+            article_info["publish_info"] = publish_info
+        else:
+            author_tag = author_tag_p.select_one("div.gs_fmaa")
         author_dict = {}
         for link in author_tag.select("a"):
             name = link.get_text().strip()
@@ -111,10 +123,15 @@ class GetArticleByTitle:
             author_dict_list.append(author_item)
         #
         article_info["author_dict_list"] = author_dict_list.copy()
+        if "publish_info" in article_info:
+            return
         author_tag.decompose()
         author_tag_p = result_item.select_one("div.gs_a.gs_fma_p")
-        publish_info = author_tag_p.get_text().replace("\xa0", " ").strip()
-        article_info["publish_info"] = publish_info
+        if not author_tag_p:
+            author_tag_p = result_item.select_one("div.gs_a")
+            if author_tag_p:
+                publish_info = author_tag_p.get_text().replace("\xa0", " ").strip()
+                article_info["publish_info"] = publish_info
 
 if __name__ == '__main__':
     title = "Why and How Auxiliary Tasks Improve JEPA Representations"
