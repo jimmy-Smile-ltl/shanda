@@ -17,7 +17,8 @@ import certifi
 import curl_cffi
 from curl_cffi import requests as curl_cffi_requests
 
-from myutil.kdlProxy import ProxyUtil
+# from myutil.kdlProxy import ProxyUtil
+from myutil.smartProxy import ProxyUtil
 
 
 # ---------------------------------------------------------------------------

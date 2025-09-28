@@ -14,7 +14,8 @@ import threading
 import certifi
 import curl_cffi
 import execjs
-from myutil.kdlProxy import ProxyUtil
+from myutil.smartProxy import ProxyUtil
+# from myutil.kdlProxy import ProxyUtil
 import json
 # asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
 import time
@@ -105,17 +106,21 @@ class CurlCffiAsyncSessionRequestHandler:
         for attempt in range(retry_count):
             try:
                 if self.method == 'POST':
-                    response = await self.curl_async_session.post(url, proxies=self.proxies,
-                                                                  impersonate=self.impersonate,
-                                                                  verify=self.ca_bundle_path,
-                                                                  timeout=10,
-                                                                    **kwargs)
+                    response = await self.curl_async_session.post(
+                        url,
+                      proxies=self.proxies,
+                      impersonate=self.impersonate,
+                      verify=self.ca_bundle_path,
+                      timeout=10,
+                        **kwargs)
                 else:
-                    response = await self.curl_async_session.get(url, proxies=self.proxies,
-                                                                 impersonate=self.impersonate,
-                                                                 verify=self.ca_bundle_path,
-                                                                 timeout=10,
-                                                                 **kwargs)
+                    response = await self.curl_async_session.get(
+                        url,
+                        proxies=self.proxies,
+                     impersonate=self.impersonate,
+                     verify=self.ca_bundle_path,
+                     timeout=10,
+                     **kwargs)
                 response.raise_for_status()
                 return {url: response.text, "status": True}
             except Exception as e:

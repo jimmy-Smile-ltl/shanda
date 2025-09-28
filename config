@@ -4,3 +4,58 @@
 brew services start redis
 redis-server
 #  没有配置密码，对外说不开放的，只限本机访问
+
+
+
+# 服务器 配置 与python 虚拟环境 文件同步
+ssh ubuntu@44.249.115.68
+
+# 替换成你的用户名和服务器IP
+USER="ubuntu"
+SERVER_IP="44.249.115.68"
+
+# 1. 在远程服务器上创建目录
+ssh ${USER}@${SERVER_IP} 'mkdir -p ~/spider'
+
+# 2. 将本地 /Users/admin/Desktop/spider 文件夹上传到服务器的 ~/spider
+scp -r /Users/admin/Desktop/spider ${USER}@${SERVER_IP}:~/spider
+
+# 1. 确保目标父目录存在 (这里是 ~，它肯定存在，但这是个好习惯)
+# ssh ${USER}@${SERVER_IP} 'mkdir -p ~/' # 这步在目标是~时可省略
+
+# 2. 将本地文件夹内容同步到远程文件夹
+rsync -avz /Users/admin/Desktop/spider/ ${USER}@${SERVER_IP}:~/spider
+ # 上面的代码建议单独建一个cmd 来,方便实时同步 代码
+
+# Step 1: Remove the old directory
+rm -rf ~/.pyenv
+
+# Step 2: Run the installer again
+curl https://pyenv.run | bash
+
+# Step 3: Add the configuration to your shell's startup file
+echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
+echo 'command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
+echo 'eval "$(pyenv init -)"' >> ~/.bashrc
+
+# Step 4: Reload your shell to apply the changes
+exec "$SHELL"
+
+# Step 5: Verify the installation
+pyenv --version
+pyenv update
+pyenv install --list | grep "3.13"
+pyenv install 3.13.7
+cd /path/to/your/project
+pyenv local 3.13.7
+# 在 ~/spider 目录下运行
+python -V
+# 输出应该是：Python 3.13.7
+
+# 离开这个目录
+cd ..
+
+# 再次运行
+python -V
+# 输出会变回你之前设置的全局版本（或者系统版本）
+pip install -r requirements.txt

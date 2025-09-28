@@ -1,0 +1,102 @@
+2025-09-27 18:48:12 - logger - INFO - create table artilce_TopPublications5Year_AI is_success: True, is_has_table: False
+2025-09-27 18:48:12 - logger - INFO - 断点重爬 Neural Information Processing Systems 当前进度 1
+2025-09-27 18:48:12 - logger - INFO - 开始处理 Neural Information Processing Systems
+2025-09-27 18:50:51 - logger - INFO - create table artilce_TopPublications5Year_AI is_success: True, is_has_table: False
+2025-09-27 18:50:51 - logger - INFO - 断点重爬 Neural Information Processing Systems 当前进度 1
+2025-09-27 18:50:51 - logger - INFO - 开始处理 Neural Information Processing Systems
+2025-09-27 18:52:29 - logger - ERROR - 数量不对 len(result_list) <= 20: https://scholar.google.es/citations?hl=en&vq=eng_artificialintelligence&view_op=list_hcore&venue=6SgK_Z8h2_wJ.2025 len(result_list)=20
+2025-09-27 18:53:42 - logger - INFO - create table artilce_TopPublications5Year_AI is_success: True, is_has_table: False
+2025-09-27 19:13:38 - logger - INFO - create table article_TopPublications5Year_AI is_success: False, is_has_table: False
+2025-09-27 19:13:39 - logger - INFO - 断点重爬 Neural Information Processing Systems 当前进度 1
+2025-09-27 19:13:39 - logger - INFO - 开始处理 Neural Information Processing Systems
+2025-09-27 19:24:06 - logger - INFO - create table article_TopPublications5Year_AI is_success: True, is_has_table: False
+2025-09-27 19:24:06 - logger - INFO - 断点重爬 Neural Information Processing Systems 当前进度 1
+2025-09-27 19:24:06 - logger - INFO - 开始处理 Neural Information Processing Systems
+2025-09-27 19:42:01 - logger - INFO - create table article_TopPublications5Year_AI is_success: True, is_has_table: False
+2025-09-27 19:42:01 - logger - INFO - 断点重爬 Neural Information Processing Systems 当前进度 1
+2025-09-27 19:42:01 - logger - INFO - 开始处理 Neural Information Processing Systems
+2025-09-27 19:49:36 - logger - INFO - create table article_TopPublications5Year_AI is_success: True, is_has_table: False
+2025-09-27 19:49:36 - logger - INFO - 断点重爬 Neural Information Processing Systems 当前进度 21
+2025-09-27 19:49:36 - logger - INFO - 开始处理 Neural Information Processing Systems
+2025-09-27 19:50:02 - logger - INFO - create table article_TopPublications5Year_AI is_success: True, is_has_table: False
+2025-09-27 19:50:02 - logger - INFO - 断点重爬 Neural Information Processing Systems 当前进度 21
+2025-09-27 19:50:02 - logger - INFO - 开始处理 Neural Information Processing Systems
+2025-09-27 19:56:55 - logger - INFO - create table article_TopPublications5Year_AI is_success: True, is_has_table: False
+2025-09-27 19:56:55 - logger - INFO - 断点重爬 Neural Information Processing Systems 当前进度 21
+2025-09-27 19:56:55 - logger - INFO - 开始处理 Neural Information Processing Systems
+2025-09-27 19:58:05 - logger - INFO - create table article_TopPublications5Year_AI is_success: True, is_has_table: True
+2025-09-27 19:58:05 - logger - INFO - 断点重爬 Neural Information Processing Systems 当前进度 21
+2025-09-27 19:58:05 - logger - INFO - 开始处理 Neural Information Processing Systems
+2025-09-27 20:06:35 - logger - INFO - create table article_TopPublications5Year_AI is_success: False, is_has_table: False
+2025-09-27 20:06:35 - logger - INFO - 断点重爬 Neural Information Processing Systems 当前进度 1
+2025-09-27 20:06:35 - logger - INFO - 开始处理 Neural Information Processing Systems
+2025-09-27 20:07:52 - logger - INFO - create table article_TopPublications5Year_AI is_success: False, is_has_table: False
+2025-09-27 20:07:52 - logger - INFO - 断点重爬 Neural Information Processing Systems 当前进度 1
+2025-09-27 20:07:52 - logger - INFO - 开始处理 Neural Information Processing Systems
+2025-09-27 20:09:20 - logger - INFO - create table article_TopPublications5Year_AI is_success: True, is_has_table: True
+2025-09-27 20:09:20 - logger - INFO - 断点重爬 Neural Information Processing Systems 当前进度 1
+2025-09-27 20:09:20 - logger - INFO - 开始处理 Neural Information Processing Systems
+2025-09-27 22:45:49 - logger - INFO - create table article_TopPublications5Year_AI is_success: True, is_has_table: True
+2025-09-27 22:45:49 - logger - INFO - 断点重爬 Neural Information Processing Systems 当前进度 1
+2025-09-27 22:45:49 - logger - INFO - 开始处理 Neural Information Processing Systems
+2025-09-28 00:48:04 - logger - INFO - create table article_TopPublications5Year_AI is_success: True, is_has_table: True
+2025-09-28 00:48:04 - logger - INFO - 断点重爬 Neural Information Processing Systems 当前进度 0
+2025-09-28 00:48:04 - logger - INFO - 开始处理 Neural Information Processing Systems
+2025-09-28 00:48:24 - logger - ERROR - 数量不对 len(result_list) <20: https://scholar.google.es/citations?hl=en&vq=eng_artificialintelligence&view_op=list_hcore&venue=6SgK_Z8h2_wJ.2025&cstart=360 len(result_list)=11
+2025-09-28 00:48:24 - logger - INFO - 开始爬取 International Conference on Learning Representations 当前进度为 0
+2025-09-28 00:48:24 - logger - INFO - 开始处理 International Conference on Learning Representations
+2025-09-28 00:48:44 - logger - ERROR - 数量不对 len(result_list) <20: https://scholar.google.es/citations?hl=en&vq=eng_artificialintelligence&view_op=list_hcore&venue=0032SoU2xY4J.2025&cstart=360 len(result_list)=2
+2025-09-28 00:48:44 - logger - INFO - 开始爬取 International Conference on Machine Learning 当前进度为 0
+2025-09-28 00:48:44 - logger - INFO - 开始处理 International Conference on Machine Learning
+2025-09-28 00:48:58 - logger - ERROR - 数量不对 len(result_list) <20: https://scholar.google.es/citations?hl=en&vq=eng_artificialintelligence&view_op=list_hcore&venue=wL2oxc9mT4YJ.2025&cstart=260 len(result_list)=12
+2025-09-28 00:48:58 - logger - INFO - 开始爬取 AAAI Conference on Artificial Intelligence 当前进度为 0
+2025-09-28 00:48:58 - logger - INFO - 开始处理 AAAI Conference on Artificial Intelligence
+2025-09-28 00:49:11 - logger - ERROR - 数量不对 len(result_list) <20: https://scholar.google.es/citations?hl=en&vq=eng_artificialintelligence&view_op=list_hcore&venue=PV9sQN5dnPsJ.2025&cstart=220 len(result_list)=12
+2025-09-28 00:49:11 - logger - INFO - 开始爬取 Expert Systems with Applications 当前进度为 0
+2025-09-28 00:49:11 - logger - INFO - 开始处理 Expert Systems with Applications
+2025-09-28 00:49:21 - logger - ERROR - 数量不对 len(result_list) <20: https://scholar.google.es/citations?hl=en&vq=eng_artificialintelligence&view_op=list_hcore&venue=AlAHN-bTk3IJ.2025&cstart=180 len(result_list)=3
+2025-09-28 00:49:21 - logger - INFO - 开始爬取 IEEE Transactions on Neural Networks and Learning Systems 当前进度为 0
+2025-09-28 00:49:21 - logger - INFO - 开始处理 IEEE Transactions on Neural Networks and Learning Systems
+2025-09-28 00:49:30 - logger - ERROR - 数量不对 len(result_list) <20: https://scholar.google.es/citations?hl=en&vq=eng_artificialintelligence&view_op=list_hcore&venue=LILlZnFGZh8J.2025&cstart=160 len(result_list)=5
+2025-09-28 00:49:30 - logger - INFO - 开始爬取 IEEE Transactions On Systems, Man And Cybernetics Part B, Cybernetics 当前进度为 0
+2025-09-28 00:49:30 - logger - INFO - 开始处理 IEEE Transactions On Systems, Man And Cybernetics Part B, Cybernetics
+2025-09-28 00:49:38 - logger - ERROR - 数量不对 len(result_list) <20: https://scholar.google.es/citations?hl=en&vq=eng_artificialintelligence&view_op=list_hcore&venue=PUrHi32sn7cJ.2025&cstart=140 len(result_list)=17
+2025-09-28 00:49:38 - logger - INFO - 开始爬取 Neurocomputing 当前进度为 0
+2025-09-28 00:49:38 - logger - INFO - 开始处理 Neurocomputing
+2025-09-28 00:49:47 - logger - ERROR - 数量不对 len(result_list) <20: https://scholar.google.es/citations?hl=en&vq=eng_artificialintelligence&view_op=list_hcore&venue=UiBaG4a78dYJ.2025&cstart=140 len(result_list)=8
+2025-09-28 00:49:47 - logger - INFO - 开始爬取 Artificial Intelligence Review 当前进度为 0
+2025-09-28 00:49:47 - logger - INFO - 开始处理 Artificial Intelligence Review
+2025-09-28 00:49:55 - logger - ERROR - 数量不对 len(result_list) <20: https://scholar.google.es/citations?hl=en&vq=eng_artificialintelligence&view_op=list_hcore&venue=ARdtvmikuQgJ.2025&cstart=140 len(result_list)=7
+2025-09-28 00:49:55 - logger - INFO - 开始爬取 Neural Computing and Applications 当前进度为 0
+2025-09-28 00:49:55 - logger - INFO - 开始处理 Neural Computing and Applications
+2025-09-28 00:50:03 - logger - ERROR - 数量不对 len(result_list) <20: https://scholar.google.es/citations?hl=en&vq=eng_artificialintelligence&view_op=list_hcore&venue=OJa50TTisMAJ.2025&cstart=140 len(result_list)=6
+2025-09-28 00:50:03 - logger - INFO - 开始爬取 Applied Soft Computing 当前进度为 0
+2025-09-28 00:50:03 - logger - INFO - 开始处理 Applied Soft Computing
+2025-09-28 00:50:11 - logger - ERROR - 数量不对 len(result_list) <20: https://scholar.google.es/citations?hl=en&vq=eng_artificialintelligence&view_op=list_hcore&venue=lFUe46cMy-8J.2025&cstart=140 len(result_list)=4
+2025-09-28 00:50:11 - logger - INFO - 开始爬取 Information Fusion 当前进度为 0
+2025-09-28 00:50:11 - logger - INFO - 开始处理 Information Fusion
+2025-09-28 00:50:20 - logger - ERROR - 数量不对 len(result_list) <20: https://scholar.google.es/citations?hl=en&vq=eng_artificialintelligence&view_op=list_hcore&venue=fh7TyPxTUh4J.2025&cstart=140 len(result_list)=3
+2025-09-28 00:50:20 - logger - INFO - 开始爬取 Knowledge-Based Systems 当前进度为 0
+2025-09-28 00:50:20 - logger - INFO - 开始处理 Knowledge-Based Systems
+2025-09-28 00:50:28 - logger - ERROR - 数量不对 len(result_list) <20: https://scholar.google.es/citations?hl=en&vq=eng_artificialintelligence&view_op=list_hcore&venue=bLMLC2tNXVYJ.2025&cstart=140 len(result_list)=1
+2025-09-28 00:50:28 - logger - INFO - 开始爬取 International Joint Conference on Artificial Intelligence (IJCAI) 当前进度为 0
+2025-09-28 00:50:28 - logger - INFO - 开始处理 International Joint Conference on Artificial Intelligence (IJCAI)
+2025-09-28 00:50:35 - logger - ERROR - 数量不对 len(result_list) <20: https://scholar.google.es/citations?hl=en&vq=eng_artificialintelligence&view_op=list_hcore&venue=4HxsSu0PUdYJ.2025&cstart=120 len(result_list)=16
+2025-09-28 00:50:35 - logger - INFO - 开始爬取 Journal of Machine Learning Research 当前进度为 0
+2025-09-28 00:50:35 - logger - INFO - 开始处理 Journal of Machine Learning Research
+2025-09-28 00:50:43 - logger - ERROR - 数量不对 len(result_list) <20: https://scholar.google.es/citations?hl=en&vq=eng_artificialintelligence&view_op=list_hcore&venue=xGmHIRXOMl0J.2025&cstart=120 len(result_list)=10
+2025-09-28 00:50:43 - logger - INFO - 开始爬取 Engineering Applications of Artificial Intelligence 当前进度为 0
+2025-09-28 00:50:43 - logger - INFO - 开始处理 Engineering Applications of Artificial Intelligence
+2025-09-28 00:50:49 - logger - ERROR - 数量不对 len(result_list) <20: https://scholar.google.es/citations?hl=en&vq=eng_artificialintelligence&view_op=list_hcore&venue=ZJCdr9rMI_sJ.2025&cstart=100 len(result_list)=17
+2025-09-28 00:50:49 - logger - INFO - 开始爬取 IEEE Transactions on Fuzzy Systems 当前进度为 0
+2025-09-28 00:50:49 - logger - INFO - 开始处理 IEEE Transactions on Fuzzy Systems
+2025-09-28 00:50:55 - logger - ERROR - 数量不对 len(result_list) <20: https://scholar.google.es/citations?hl=en&vq=eng_artificialintelligence&view_op=list_hcore&venue=DyEnkmF1XI0J.2025&cstart=100 len(result_list)=11
+2025-09-28 00:50:55 - logger - INFO - 开始爬取 Conference on Robot Learning 当前进度为 0
+2025-09-28 00:50:55 - logger - INFO - 开始处理 Conference on Robot Learning
+2025-09-28 00:51:01 - logger - ERROR - 数量不对 len(result_list) <20: https://scholar.google.es/citations?hl=en&vq=eng_artificialintelligence&view_op=list_hcore&venue=kWi-GfxuXpEJ.2025&cstart=100 len(result_list)=7
+2025-09-28 00:51:01 - logger - INFO - 开始爬取 Neural Networks 当前进度为 0
+2025-09-28 00:51:01 - logger - INFO - 开始处理 Neural Networks
+2025-09-28 00:51:08 - logger - ERROR - 数量不对 len(result_list) <20: https://scholar.google.es/citations?hl=en&vq=eng_artificialintelligence&view_op=list_hcore&venue=jTbIWNF99y0J.2025&cstart=100 len(result_list)=6
+2025-09-28 00:51:08 - logger - INFO - 开始爬取 International Conference on Artificial Intelligence and Statistics 当前进度为 0
+2025-09-28 00:51:08 - logger - INFO - 开始处理 International Conference on Artificial Intelligence and Statistics
+2025-09-28 00:51:15 - logger - ERROR - 数量不对 len(result_list) <20: https://scholar.google.es/citations?hl=en&vq=eng_artificialintelligence&view_op=list_hcore&venue=PhcE9OLs0MUJ.2025&cstart=100 len(result_list)=1

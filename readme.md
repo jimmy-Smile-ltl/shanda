@@ -252,6 +252,8 @@ https://arxiv.org/abs/2409.00001
 
 海外太贵了
 
+
+
 ![image-20250926014751256](/Users/admin/Desktop/spider/assets/image-20250926014751256.png)
 
 
@@ -301,6 +303,34 @@ https://shifter.io/pricing?product=residential-proxies&subproduct=basic-backconn
 
 
 ![image-20250926014853236](/Users/admin/Desktop/spider/assets/image-20250926014853236.png)
+
+
+
+https://www.shenlongproxy.com/buy?packageType=1
+
+![image-20250928011504799](/Users/admin/Desktop/spider/assets/image-20250928011504799.png)
+
+
+
+https://www.711proxy.com/zh-TW/pricing/regular/residential-proxies-gb
+
+![image-20250928011625935](/Users/admin/Desktop/spider/assets/image-20250928011625935.png)
+
+
+
+https://www.nextip.cc/pricing/residential-traffic/
+
+![image-20250928012024123](/Users/admin/Desktop/spider/assets/image-20250928012024123.png)
+
+
+
+
+
+https://instantproxies.com/pricing/
+
+![image-20250928012247404](/Users/admin/Desktop/spider/assets/image-20250928012247404.png)
+
+
 
 ## 2. 设计规范
 

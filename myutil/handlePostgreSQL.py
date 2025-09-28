@@ -8,12 +8,10 @@ from psycopg2 import sql
 
 """
 PostgreSQL 数据库处理类
-
-
 """
 class PostgreSQLHandler:
     def __init__(self, db_name, table_name, return_type="tuple",is_local:bool = False):
-        self.db_name = db_name
+        self.db_name = db_name # 数据库名称 无效了
         self.table_name = table_name
         self.schema = 'spider'
         self.return_type = return_type
@@ -26,18 +24,20 @@ class PostgreSQLHandler:
         #   数据库: talents
         #   用户名: postgres
         #   密码: 'BIJ$IkNkDH5{V4b_V3@T'
+
         if is_local:
             ip = '127.0.0.1'
             user =  'postgres'
             password = ''
             port = 5432
-            dbname = 'postgres'
+            db_name = 'postgres'
         else:
             ip = '10.241.132.70'
             user = 'postgres'
             password = 'BIJ$IkNkDH5{V4b_V3@T'
             port = 35432
-            dbname = 'talents'
+            db_name = 'talents'
+        db_name = self.db_name or db_name # 优先使用传入的数据库名称
 
         for i in range(20):
             try:
@@ -46,7 +46,7 @@ class PostgreSQLHandler:
                         host= ip,
                         user= user,
                         password= password,
-                        dbname=self.db_name,
+                        dbname=db_name,
                         connect_timeout=30,
                         port=port,
                         cursor_factory=psycopg2.extras.RealDictCursor
@@ -56,7 +56,7 @@ class PostgreSQLHandler:
                         host=ip,
                         user=user,
                         password=password,
-                        dbname=self.db_name,
+                        dbname=db_name,
                         connect_timeout=30,
                         port=port,
                     )
@@ -207,13 +207,13 @@ class PostgreSQLHandler:
             except Exception:
                 self.connection = self.get_db_connection(self.return_type)
             return None
-
-    def insert_data_list(self, data_list, unique_col="article_url", table_name = None) -> None | str:
+    # 批量插入数据，data_list 是字典列表
+    def insert_data_list(self, data_list, unique_col="article_url", table_name=None) -> None | str:
         if not data_list or not isinstance(data_list, list) or not all(isinstance(d, dict) for d in data_list):
             print("数据必须是字典列表格式且不能为空")
             return
-        if not table_name:
-            table_name = self.table_name
+
+        tbl_name = table_name or self.table_name
         processed_list = []
         for data in data_list:
             processed_data = data.copy()
@@ -221,43 +221,63 @@ class PostgreSQLHandler:
                 if isinstance(value, (list, dict)):
                     processed_data[key] = json.dumps(value, ensure_ascii=False)
             processed_list.append(processed_data)
+
         if not processed_list:
             return
 
         keys = processed_list[0].keys()
-        columns = ', '.join([f'"{k}"' for k in keys])
+
+        # 使用 sql.Identifier 来安全地引用表、schema 和列名
+        table_identifier = sql.Identifier(tbl_name)
+        schema_identifier = sql.Identifier(self.schema)
+        columns_identifiers = [sql.Identifier(k) for k in keys]
+        unique_col_identifier = sql.Identifier(unique_col)
 
         excluded_fields = {'id', unique_col}
-        update_clause = ', '.join([
-            f'"{k}" = EXCLUDED."{k}"'
-            for k in keys
-            if k not in excluded_fields
-        ])
+        update_clause_list = []
+        for k in keys:
+            if k not in excluded_fields:
+                col_identifier = sql.Identifier(k)
+                # 确保 EXCLUDED 也被正确引用
+                update_clause_list.append(sql.SQL("{} = EXCLUDED.{}").format(col_identifier, col_identifier))
 
-        # 使用 xmax 系统列来判断是插入还是更新。
-        # 插入时 xmax = 0，更新时 xmax != 0。
-        query = f"""
-            INSERT INTO "{self.schema}"."{table_name}" ({columns})
-            VALUES %s
-            ON CONFLICT ("{unique_col}") DO UPDATE SET {update_clause}
-            RETURNING (xmax = 0) AS inserted;
-        """
+        update_clause = sql.SQL(', ').join(update_clause_list)
 
-        # 将字典列表转换为元组列表以匹配 execute_values 的要求
+        # 构造安全的 SQL 查询
+        query = sql.SQL("""
+                        INSERT INTO {schema}.{table} ({columns})
+                        VALUES %s
+                        ON CONFLICT ({unique_col}) DO
+                        UPDATE SET {update_clause}
+                            RETURNING (xmax = 0) AS inserted;
+                        """).format(
+            schema=schema_identifier,
+            table=table_identifier,
+            columns=sql.SQL(', ').join(columns_identifiers),
+            unique_col=unique_col_identifier,
+            update_clause=update_clause
+        )
+
+        # 将字典列表转换为元组列表
         data_tuples = [tuple(d.get(k) for k in keys) for d in processed_list]
 
         try:
+            # 确保在独立的事务中执行
             with self.connection.cursor() as cursor:
-                # 使用 execute_values 执行批量插入/更新
                 results = psycopg2.extras.execute_values(
                     cursor,
-                    query,
+                    query.as_string(cursor),  # 将 sql 对象转换为字符串
                     data_tuples,
                     template=None,
-                    fetch=True  # 设置 fetch=True 来获取 RETURNING 的结果
+                    fetch=True
                 )
 
-                insert_count = sum(1 for row in results if row[0])
+                # 检查返回类型，因为游标可能不是 RealDictCursor
+                if results and isinstance(results[0], (dict, psycopg2.extras.RealDictRow)):
+                    insert_count = sum(1 for result in results if result.get('inserted', False))
+                else:
+                    insert_count = sum(1 for row in results if row[0])
+
                 update_count = len(results) - insert_count
 
                 result_stats = {
@@ -268,7 +288,7 @@ class PostgreSQLHandler:
                 }
 
                 self.connection.commit()
-                print(f"批量数据插入/更新成功 table_name {table_name}: "
+                print(f"批量数据插入/更新成功 table_name {tbl_name}: "
                       f"输入 {result_stats['input_count']} 条, "
                       f"插入 {result_stats['inserted']} 条, "
                       f"更新 {result_stats['updated']} 条, "
@@ -276,15 +296,59 @@ class PostgreSQLHandler:
             return "success"
         except Exception as e:
             print(f"批量数据插入/更新失败,改为逐个插入: {e}")
-            try:
-                self.connection.rollback()
-                result_list = [self.insert_data(data, unique_col=unique_col) for data in processed_list]
-                count = Counter(result_list)
-                print(f"逐个插入结果统计: {dict(count)}")
-            except Exception as fallback_e:
-                print(f"回滚并逐个插入失败: {fallback_e}")
-                self.connection = self.get_db_connection(self.return_type)
-                self.connection.rollback()
+            self.connection.rollback()  # 回滚失败的批量操作
+            result_list = [self.insert_data(data, unique_col=unique_col, table_name=tbl_name) for data in
+                           processed_list]
+            count = Counter(result_list)
+            print(f"逐个插入结果统计: {dict(count)}")
+            return "fallback"
+
+    def write_to_json_line(self, data: dict, table_name: str = None):
+        """
+        将单个字典对象以 JSON 格式追加到文件的末尾，占一行。
+        文件名将基于 table_name 生成。
+        :param data: 要写入的字典数据。
+        :param table_name: 表名，用于生成文件名。如果为 None，则使用 self.table_name。
+        """
+        if not isinstance(data, dict):
+            print("错误：提供的数据必须是字典。")
+            return
+
+        tbl_name = table_name or self.table_name
+        file_path = f"{tbl_name}.json"
+
+        try:
+            with open(file_path, 'a', encoding='utf-8') as f:
+                json_string = json.dumps(data, ensure_ascii=False)
+                f.write(json_string + '\n')
+            print(f"成功将 1 条记录写入到 '{file_path}'")
+        except Exception as e:
+            print(f"写入文件 '{file_path}' 失败: {e}")
+
+    def write_to_json_lines(self, data_list: list, table_name: str = None):
+        """
+        将字典列表中的每个字典对象以 JSON 格式追加到文件的末尾，每个占一行。
+        文件名将基于 table_name 生成。
+        :param data_list: 包含字典的列表。
+        :param table_name: 表名，用于生成文件名。如果为 None，则使用 self.table_name。
+        """
+        if not isinstance(data_list, list) or not all(isinstance(d, dict) for d in data_list):
+            print("错误：提供的数据必须是字典列表。")
+            return
+
+        tbl_name = table_name or self.table_name
+        file_path = f"{tbl_name}.json"
+        count = 0
+        try:
+            with open(file_path, 'a', encoding='utf-8') as f:
+                for data in data_list:
+                    json_string = json.dumps(data, ensure_ascii=False)
+                    f.write(json_string + '\n')
+                    count += 1
+            print(f"成功将 {count} 条记录写入到 '{file_path}'")
+        except Exception as e:
+            print(f"写入文件 '{file_path}' 失败: {e}")
+
 
     def delete_condition_data(self, condition, max_num: int = 1000):
         if not isinstance(condition, dict):
