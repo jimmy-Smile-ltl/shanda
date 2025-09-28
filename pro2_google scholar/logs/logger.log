@@ -1,108 +1,15 @@
-2025-09-24 01:00:01 - logger - INFO - ID VjJmBvMAAAAJ 首页请求失败，跳过。
-2025-09-24 02:10:52 - logger - INFO - 请求失败: https://scholar.google.com/scholar
-2025-09-24 20:35:09 - logger - INFO - table:article_arxiv_org max_id: 1, min_id: 1405
-2025-09-24 20:37:08 - logger - INFO - table:article_arxiv_org max_id: 1, min_id: 1405
-2025-09-24 20:37:57 - logger - INFO - table:article_arxiv_org max_id: 1, min_id: 1405
-2025-09-24 20:38:45 - logger - INFO - table:article_arxiv_org max_id: 1, min_id: 1405
-2025-09-24 20:39:22 - logger - INFO - table:article_arxiv_org max_id: 1, min_id: 1405
-2025-09-24 20:40:24 - logger - INFO - table:article_arxiv_org max_id: 1, min_id: 1405
-2025-09-24 23:01:29 - logger - INFO - table:article_arxiv_org max_id: 1, min_id: 1405
-2025-09-24 23:02:13 - logger - INFO - table:article_arxiv_org max_id: 1, min_id: 1405
-2025-09-24 23:07:16 - logger - INFO - table:article_arxiv_org max_id: 1, min_id: 1405
-2025-09-24 23:09:44 - logger - INFO - table:article_arxiv_org max_id: 1, min_id: 1405
-2025-09-24 23:41:17 - logger - INFO - table:article_arxiv_org max_id: 1, min_id: 1405
-2025-09-24 23:44:35 - logger - INFO - table:article_arxiv_org max_id: 1, min_id: 1405
-2025-09-24 23:46:32 - logger - INFO - table:article_arxiv_org max_id: 1, min_id: 1405
-2025-09-24 23:47:47 - logger - INFO - table:article_arxiv_org max_id: 1, min_id: 1405
-2025-09-24 23:52:20 - logger - INFO - table:article_arxiv_org max_id: 1, min_id: 1405
-2025-09-24 23:54:12 - logger - INFO - table:article_arxiv_org max_id: 1, min_id: 1405
-2025-09-24 23:54:17 - logger - INFO - create table spider.article_search_by_google_scholar is_success: True, is_has_table: False
-2025-09-24 23:54:56 - logger - INFO - table:article_arxiv_org max_id: 1, min_id: 1405
-2025-09-24 23:55:00 - logger - INFO - create table spider.article_search_by_google_scholar is_success: True, is_has_table: False
-2025-09-25 00:01:11 - logger - INFO - table:article_arxiv_org max_id: 1, min_id: 1405
-2025-09-25 00:03:38 - logger - INFO - table:article_arxiv_org max_id: 1, min_id: 1405
-2025-09-25 00:07:30 - logger - INFO - table:article_arxiv_org max_id: 1, min_id: 1405
-2025-09-25 00:07:30 - logger - INFO - create table spider.article_search_by_google_scholar is_success: True, is_has_table: True
-2025-09-25 00:07:30 - logger - INFO - create table spider.scholar_author is_success: False, is_has_table: False
-2025-09-25 00:09:33 - logger - INFO - table:article_arxiv_org max_id: 1, min_id: 1405
-2025-09-25 00:09:48 - logger - INFO - create table spider.article_search_by_google_scholar is_success: True, is_has_table: True
-2025-09-25 00:11:41 - logger - INFO - table:article_arxiv_org max_id: 1, min_id: 1405
-2025-09-25 00:11:44 - logger - INFO - create table spider.article_search_by_google_scholar is_success: True, is_has_table: True
-2025-09-25 00:12:06 - logger - INFO - table:article_arxiv_org max_id: 1, min_id: 1405
-2025-09-25 00:12:11 - logger - INFO - create table spider.article_search_by_google_scholar is_success: True, is_has_table: True
-2025-09-25 00:14:00 - logger - INFO - table:article_arxiv_org max_id: 1, min_id: 1405
-2025-09-25 00:14:03 - logger - INFO - create table spider.article_search_by_google_scholar is_success: True, is_has_table: True
-2025-09-25 00:14:03 - logger - INFO - create table spider.scholar_author is_success: True, is_has_table: True
-2025-09-25 00:28:53 - logger - INFO - table:article_arxiv_org max_id: 1, min_id: 1405
-2025-09-25 00:28:53 - logger - INFO - create table spider.article_search_by_google_scholar is_success: True, is_has_table: True
-2025-09-25 00:28:53 - logger - INFO - create table spider.scholar_author is_success: True, is_has_table: True
-2025-09-25 00:30:32 - logger - INFO - table:article_arxiv_org max_id: 1, min_id: 1405
-2025-09-25 00:30:32 - logger - INFO - create table spider.article_search_by_google_scholar is_success: True, is_has_table: True
-2025-09-25 00:30:32 - logger - INFO - create table spider.scholar_author is_success: True, is_has_table: True
-2025-09-25 00:32:21 - logger - INFO - table:article_arxiv_org max_id: 1, min_id: 1405
-2025-09-25 00:32:27 - logger - INFO - create table spider.article_search_by_google_scholar is_success: True, is_has_table: True
-2025-09-25 00:32:27 - logger - INFO - create table spider.scholar_author is_success: True, is_has_table: True
-2025-09-25 00:33:56 - logger - INFO - table:article_arxiv_org max_id: 1, min_id: 1405
-2025-09-25 00:33:56 - logger - INFO - create table spider.article_search_by_google_scholar is_success: True, is_has_table: True
-2025-09-25 00:33:56 - logger - INFO - create table spider.scholar_author is_success: True, is_has_table: True
-2025-09-25 00:37:47 - logger - INFO - table:article_arxiv_org max_id: 1, min_id: 1405
-2025-09-25 00:37:47 - logger - INFO - create table spider.article_search_by_google_scholar is_success: True, is_has_table: True
-2025-09-25 00:37:47 - logger - INFO - create table spider.scholar_author is_success: True, is_has_table: True
-2025-09-25 00:39:25 - logger - INFO - table:article_arxiv_org max_id: 1, min_id: 1405
-2025-09-25 00:39:25 - logger - INFO - create table spider.article_search_by_google_scholar is_success: True, is_has_table: True
-2025-09-25 00:39:25 - logger - INFO - create table spider.scholar_author is_success: True, is_has_table: True
-2025-09-25 00:43:04 - logger - INFO - table:article_arxiv_org max_id: 1, min_id: 1405
-2025-09-25 00:43:04 - logger - INFO - create table spider.article_search_by_google_scholar is_success: True, is_has_table: True
-2025-09-25 00:43:04 - logger - INFO - create table spider.scholar_author is_success: True, is_has_table: True
-2025-09-25 00:44:13 - logger - INFO - table:article_arxiv_org max_id: 1, min_id: 1405
-2025-09-25 00:44:13 - logger - INFO - create table spider.article_search_by_google_scholar is_success: True, is_has_table: True
-2025-09-25 00:44:13 - logger - INFO - create table spider.scholar_author is_success: True, is_has_table: True
-2025-09-25 00:54:08 - logger - INFO - table:article_arxiv_org max_id: 1, min_id: 1405
-2025-09-25 00:54:08 - logger - INFO - create table spider.article_search_by_google_scholar is_success: True, is_has_table: True
-2025-09-25 00:54:08 - logger - INFO - create table spider.scholar_author is_success: True, is_has_table: True
-2025-09-25 00:55:57 - logger - INFO - table:article_arxiv_org max_id: 1, min_id: 1405
-2025-09-25 00:55:57 - logger - INFO - create table spider.article_search_by_google_scholar is_success: True, is_has_table: True
-2025-09-25 00:55:57 - logger - INFO - create table spider.scholar_author is_success: True, is_has_table: True
-2025-09-25 00:56:59 - logger - INFO - table:article_arxiv_org max_id: 1, min_id: 1405
-2025-09-25 00:56:59 - logger - INFO - create table spider.article_search_by_google_scholar is_success: True, is_has_table: True
-2025-09-25 00:56:59 - logger - INFO - create table spider.scholar_author is_success: True, is_has_table: True
-2025-09-25 00:57:47 - logger - INFO - table:article_arxiv_org max_id: 1, min_id: 1405
-2025-09-25 00:57:47 - logger - INFO - create table spider.article_search_by_google_scholar is_success: True, is_has_table: True
-2025-09-25 00:57:47 - logger - INFO - create table spider.scholar_author is_success: True, is_has_table: True
-2025-09-25 00:58:48 - logger - INFO - table:article_arxiv_org max_id: 1, min_id: 1405
-2025-09-25 00:58:48 - logger - INFO - create table spider.article_search_by_google_scholar is_success: True, is_has_table: True
-2025-09-25 00:58:48 - logger - INFO - create table spider.scholar_author is_success: True, is_has_table: True
-2025-09-25 01:00:41 - logger - INFO - table:article_arxiv_org max_id: 1, min_id: 1405
-2025-09-25 01:00:41 - logger - INFO - create table spider.article_search_by_google_scholar is_success: True, is_has_table: True
-2025-09-25 01:00:41 - logger - INFO - create table spider.scholar_author is_success: True, is_has_table: True
-2025-09-25 01:01:56 - logger - INFO - table:article_arxiv_org max_id: 1, min_id: 1405
-2025-09-25 01:01:56 - logger - INFO - create table spider.article_search_by_google_scholar is_success: True, is_has_table: True
-2025-09-25 01:01:56 - logger - INFO - create table spider.scholar_author is_success: True, is_has_table: True
-2025-09-25 01:04:05 - logger - INFO - table:article_arxiv_org max_id: 1, min_id: 1405
-2025-09-25 01:04:05 - logger - INFO - create table spider.article_search_by_google_scholar is_success: True, is_has_table: True
-2025-09-25 01:04:05 - logger - INFO - create table spider.scholar_author is_success: True, is_has_table: True
-2025-09-25 01:15:20 - logger - INFO - table:article_arxiv_org max_id: 1, min_id: 1405
-2025-09-25 01:15:20 - logger - INFO - create table spider.article_search_by_google_scholar is_success: True, is_has_table: True
-2025-09-25 01:15:20 - logger - INFO - create table spider.scholar_author is_success: True, is_has_table: True
-2025-09-25 01:16:38 - logger - INFO - 未找到结果: https://scholar.google.com/scholar len(result_list)=0
-2025-09-25 01:19:48 - logger - INFO - table:article_arxiv_org max_id: 1, min_id: 1405
-2025-09-25 01:19:49 - logger - INFO - create table spider.article_search_by_google_scholar is_success: True, is_has_table: True
-2025-09-25 01:19:49 - logger - INFO - create table spider.scholar_author is_success: True, is_has_table: True
-2025-09-25 01:20:48 - logger - INFO - table:article_arxiv_org max_id: 1, min_id: 1405
-2025-09-25 01:20:48 - logger - INFO - create table spider.article_search_by_google_scholar is_success: True, is_has_table: True
-2025-09-25 01:20:48 - logger - INFO - create table spider.scholar_author is_success: True, is_has_table: True
-2025-09-25 01:21:35 - logger - INFO - table:article_arxiv_org max_id: 1, min_id: 1405
-2025-09-25 01:21:35 - logger - INFO - create table spider.article_search_by_google_scholar is_success: True, is_has_table: True
-2025-09-25 01:21:35 - logger - INFO - create table spider.scholar_author is_success: True, is_has_table: True
-2025-09-25 01:22:31 - logger - INFO - table:article_arxiv_org max_id: 1, min_id: 1405
-2025-09-25 01:22:31 - logger - INFO - create table spider.article_search_by_google_scholar is_success: True, is_has_table: True
-2025-09-25 01:22:31 - logger - INFO - create table spider.scholar_author is_success: True, is_has_table: True
-2025-09-25 01:23:03 - logger - INFO - 未找到结果: https://scholar.google.com/scholar len(result_list)=0
-2025-09-25 01:26:58 - logger - INFO - ID hxbdOuoAAAAJ 文章请求失败，跳过。
-2025-09-25 01:27:44 - logger - INFO - ID Kze5eGkAAAAJ 首页请求失败，跳过。
-2025-09-25 01:28:39 - logger - INFO - ID Kze5eGkAAAAJ 合作者请求失败，跳过。
-2025-09-25 01:30:09 - logger - INFO - ID xmwanZcAAAAJ 首页请求失败，跳过。
-2025-09-25 01:30:58 - logger - INFO - ID xmwanZcAAAAJ 合作者请求失败，跳过。
-2025-09-25 01:31:47 - logger - INFO - ID xmwanZcAAAAJ 文章请求失败，跳过。
-2025-09-25 01:32:35 - logger - INFO - ID yWZdmLYAAAAJ 首页请求失败，跳过。
-2025-09-25 01:33:32 - logger - INFO - ID yWZdmLYAAAAJ 合作者请求失败，跳过。
+2025-09-26 02:57:33 - logger - INFO - table:article_arxiv_org max_id: 1, min_id: 1720
+2025-09-26 02:57:33 - logger - INFO - create table spider.article_search_by_google_scholar is_success: True, is_has_table: True
+2025-09-26 02:57:33 - logger - INFO - create table spider.scholar_author is_success: True, is_has_table: True
+2025-09-26 03:01:46 - logger - INFO - table:article_arxiv_org max_id: 1, min_id: 1720
+2025-09-26 03:01:46 - logger - INFO - create table spider.article_search_by_google_scholar is_success: True, is_has_table: True
+2025-09-26 03:01:46 - logger - INFO - create table spider.scholar_author is_success: True, is_has_table: True
+2025-09-26 03:05:57 - logger - INFO - ID lzxv-hQAAAAJ 合作者请求失败，跳过。
+2025-09-26 03:06:57 - logger - INFO - ID lzxv-hQAAAAJ 文章请求失败，跳过。
+2025-09-26 03:07:56 - logger - INFO - ID JEr3qVwAAAAJ 首页请求失败，跳过。
+2025-09-26 03:08:51 - logger - INFO - ID JEr3qVwAAAAJ 合作者请求失败，跳过。
+2025-09-26 03:09:50 - logger - INFO - ID JEr3qVwAAAAJ 文章请求失败，跳过。
+2025-09-26 03:10:39 - logger - INFO - ID J3YtO9QAAAAJ 首页请求失败，跳过。
+2025-09-26 03:11:23 - logger - INFO - ID J3YtO9QAAAAJ 合作者请求失败，跳过。
+2025-09-26 05:30:58 - logger - INFO - 未找到结果: https://scholar.google.com/scholar len(result_list)=0
+2025-09-26 06:28:53 - logger - INFO - 未找到结果: https://scholar.google.com/scholar len(result_list)=0

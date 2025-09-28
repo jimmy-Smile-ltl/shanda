@@ -69,6 +69,8 @@ class MaintainSourceInfoPG:
         if not isinstance(data, dict):
             print("数据必须是字典格式")
             return
+        if not self.db_handler.is_has_table(self.table_name):
+            self.create_source_info_table()
 
         category = data.get('category', None)
         mysql_table = data.get('mysql_table', None)

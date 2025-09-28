@@ -65,6 +65,7 @@ class GetArtilceTopPublications5Year_AI:
         self.table_name = "artilce_TopPublications5Year_AI"
         self.postergreSQL_handler = PostgreSQLHandler(db_name=self.db_name, table_name=self.table_name,
                                                     return_type="dict")
+        self.create_table()
 
 
     def load_publication_list(self):
@@ -113,7 +114,36 @@ class GetArtilceTopPublications5Year_AI:
         return data_list
 
     def create_table(self):
-        pass
+        table_name = self.table_name
+        sql = f"""
+        CREATE TABLE IF NOT EXISTS spider.{table_name} (
+            id BIGSERIAL PRIMARY KEY,
+            publication_title VARCHAR(255) NOT NULL,
+            title VARCHAR(512) NOT NULL,
+            article_url VARCHAR(512),
+            authors VARCHAR(255),
+            publication_venue VARCHAR(255),
+            cited_num INTEGER,
+            cited_url VARCHAR(512),
+            year VARCHAR(10),
+            create_time TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP,
+            update_time TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP
+        );
+        -- 可选：触发器自动更新时间
+        CREATE OR REPLACE FUNCTION update_timestamp()
+        RETURNS TRIGGER AS $$
+        BEGIN
+            NEW.update_time = CURRENT_TIMESTAMP;
+            RETURN NEW;
+        END;
+        $$ LANGUAGE plpgsql;
+        
+        CREATE TRIGGER update_article_publication_time
+        BEFORE UPDATE ON spider.{table_name}
+        FOR EACH ROW EXECUTE FUNCTION update_timestamp();
+        
+        """
+
 
     def handle_one_publication(self, publication,start = 0):
         self.log_print.info(f"开始处理 {publication['title']}")

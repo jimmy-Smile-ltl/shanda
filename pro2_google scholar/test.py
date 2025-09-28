@@ -102,7 +102,7 @@ class TestGoogleScholar:
                 FOR EACH ROW
                 EXECUTE FUNCTION trigger_set_timestamp();
             """
-        is_success = self.postgreSQL_handler.excute(sql)
+        is_success = self.postgreSQL_handler.execute(sql)
         is_has_table = self.postgreSQL_handler.is_has_table(table_name.split(".")[-1])
         result = f"create table {table_name} is_success: {is_success}, is_has_table: {is_has_table}"
         self.log_print.print(result)
@@ -148,7 +148,7 @@ class TestGoogleScholar:
             FOR EACH ROW
             EXECUTE FUNCTION trigger_set_timestamp();
        """
-        is_success = self.postgreSQL_handler.excute(sql)
+        is_success = self.postgreSQL_handler.execute(sql)
         is_has_table = self.postgreSQL_handler.is_has_table(table_name.split(".")[-1])
         result = f"create table {table_name} is_success: {is_success}, is_has_table: {is_has_table}"
         self.log_print.print(result)
@@ -165,7 +165,7 @@ if __name__ == '__main__':
     test.create_table_article_search(table_name = table_name_aricle)
     table_name_author = "spider.scholar_author"
     test.create_table_author_info(table_name = table_name_author)
-    data_list = test.get_data_list_by_id(1, 10)
+    data_list = test.get_data_list_by_id(1, 20)
     for data in data_list:
         print(data)
         title = data['article_title']

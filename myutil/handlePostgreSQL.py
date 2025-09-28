@@ -4,6 +4,7 @@ import time
 from collections import Counter
 import psycopg2
 import psycopg2.extras
+from psycopg2 import sql
 
 """
 PostgreSQL 数据库处理类
@@ -11,32 +12,53 @@ PostgreSQL 数据库处理类
 
 """
 class PostgreSQLHandler:
-    def __init__(self, db_name, table_name, return_type="tuple"):
+    def __init__(self, db_name, table_name, return_type="tuple",is_local:bool = False):
         self.db_name = db_name
         self.table_name = table_name
         self.schema = 'spider'
         self.return_type = return_type
-        self.connection = self.get_db_connection(self.return_type)
+        self.connection = self.get_db_connection(self.return_type, is_local)
+        self.create_schema_if_not_exists(self.schema)
 
-    def get_db_connection(self, return_type="tuple"):
+    def get_db_connection(self, return_type="tuple",is_local:bool =False):
+        # 主机: 10.241.132.70
+        #   端口: 35432
+        #   数据库: talents
+        #   用户名: postgres
+        #   密码: 'BIJ$IkNkDH5{V4b_V3@T'
+        if is_local:
+            ip = '127.0.0.1'
+            user =  'postgres'
+            password = ''
+            port = 5432
+            dbname = 'postgres'
+        else:
+            ip = '10.241.132.70'
+            user = 'postgres'
+            password = 'BIJ$IkNkDH5{V4b_V3@T'
+            port = 35432
+            dbname = 'talents'
+
         for i in range(20):
             try:
                 if return_type.lower() == "dict":
                     return psycopg2.connect(
-                        host='127.0.0.1',
-                        user='postgres',
-                        password="",
+                        host= ip,
+                        user= user,
+                        password= password,
                         dbname=self.db_name,
                         connect_timeout=30,
+                        port=port,
                         cursor_factory=psycopg2.extras.RealDictCursor
                     )
                 else:
                     return psycopg2.connect(
-                        host='127.0.0.1',
-                        user='postgres',
-                        password="",
+                        host=ip,
+                        user=user,
+                        password=password,
                         dbname=self.db_name,
-                        connect_timeout=30
+                        connect_timeout=30,
+                        port=port,
                     )
             except Exception as e:
                 print(f"连接数据库失败: {e}, 重试 {i + 1}/10")
@@ -45,7 +67,54 @@ class PostgreSQLHandler:
                 if i == 9:
                     raise Exception("无法连接到数据库，请检查配置或网络连接。")
         return None
-    def excute(self,sql:str):
+
+
+    # 添加到 PostgreSQLHandler 类中
+    def schema_exists(self, schema_name: str | None = None) -> bool:
+        """
+        检测 schema 是否存在
+        """
+        name = schema_name or self.schema
+        query = "SELECT 1 FROM information_schema.schemata WHERE schema_name = %s"
+        try:
+            with self.connection.cursor() as cur:
+                cur.execute(query, (name,))
+                return cur.fetchone() is not None
+        except psycopg2.Error as e:
+            print(f"检查 schema 失败: {e}")
+            try:
+                self.connection.rollback()
+            except Exception:
+                self.connection = self.get_db_connection(self.return_type)
+            return False
+
+    def create_schema_if_not_exists(self, schema_name: str | None = None, owner: str | None = None) -> bool:
+        """
+        若 schema 不存在则创建；可选指定 owner
+        """
+        name = schema_name or self.schema
+        if self.schema_exists(name):
+            return True
+        try:
+            with self.connection.cursor() as cur:
+                if owner:
+                    stmt = sql.SQL("CREATE SCHEMA IF NOT EXISTS {} AUTHORIZATION {}") \
+                        .format(sql.Identifier(name), sql.Identifier(owner))
+                else:
+                    stmt = sql.SQL("CREATE SCHEMA IF NOT EXISTS {}") \
+                        .format(sql.Identifier(name))
+                cur.execute(stmt)
+            self.connection.commit()
+            return True
+        except psycopg2.Error as e:
+            print(f"创建 schema 失败: {e}")
+            try:
+                self.connection.rollback()
+            except Exception:
+                self.connection = self.get_db_connection(self.return_type)
+            return False
+
+    def execute(self,sql:str):
         for i in range(3):
             try:
                 with self.connection.cursor() as cursor:
