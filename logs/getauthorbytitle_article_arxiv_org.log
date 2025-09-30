@@ -1,0 +1,4 @@
+2025-09-29 19:25:12 - GetAuthorByTitle_article_arxiv_org - INFO - create table spider.article_search_by_google_scholar is_success: True, is_has_table: True
+2025-09-29 19:25:12 - GetAuthorByTitle_article_arxiv_org - INFO - create table spider.scholar_author is_success: True, is_has_table: True
+2025-09-29 19:25:12 - GetAuthorByTitle_article_arxiv_org - INFO - table:article_arxiv_org max_id: 2204, min_id: 1
+2025-09-29 19:25:12 - GetAuthorByTitle_article_arxiv_org - INFO - 开始运行，起始ID: 380, 最大并发数: 5
