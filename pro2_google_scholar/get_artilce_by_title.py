@@ -28,38 +28,37 @@ class GetArticleByTitle:
             "accept-language": "en",
             "cache-control": "max-age=0",
             "priority": "u=0, i",
-            "referer": "https://scholar.google.com/scholar?hl=zh-CN&as_sdt=0%2C5&q=Why+and+How+Auxiliary+Tasks+Improve+JEPA+Representations&btnG=",
-            "sec-ch-ua": "\"Chromium\";v=\"140\", \"Not=A?Brand\";v=\"24\", \"Google Chrome\";v=\"140\"",
-            "sec-ch-ua-arch": "\"arm\"",
-            "sec-ch-ua-bitness": "\"64\"",
-            "sec-ch-ua-full-version-list": "\"Chromium\";v=\"140.0.7339.186\", \"Not=A?Brand\";v=\"24.0.0.0\", \"Google Chrome\";v=\"140.0.7339.186\"",
-            "sec-ch-ua-mobile": "?0",
-            "sec-ch-ua-model": "\"\"",
-            "sec-ch-ua-platform": "\"macOS\"",
-            "sec-ch-ua-platform-version": "\"15.6.0\"",
-            "sec-ch-ua-wow64": "?0",
-            "sec-fetch-dest": "document",
-            "sec-fetch-mode": "navigate",
-            "sec-fetch-site": "same-origin",
-            "sec-fetch-user": "?1",
+            # "referer": "https://scholar.google.com/scholar?hl=zh-CN&as_sdt=0%2C5&q=Why+and+How+Auxiliary+Tasks+Improve+JEPA+Representations&btnG=",
+            # "sec-ch-ua": "\"Chromium\";v=\"140\", \"Not=A?Brand\";v=\"24\", \"Google Chrome\";v=\"140\"",
+            # "sec-ch-ua-arch": "\"arm\"",
+            # "sec-ch-ua-bitness": "\"64\"",
+            # "sec-ch-ua-full-version-list": "\"Chromium\";v=\"140.0.7339.186\", \"Not=A?Brand\";v=\"24.0.0.0\", \"Google Chrome\";v=\"140.0.7339.186\"",
+            # "sec-ch-ua-mobile": "?0",
+            # "sec-ch-ua-model": "\"\"",
+            # "sec-ch-ua-platform": "\"macOS\"",
+            # "sec-ch-ua-platform-version": "\"15.6.0\"",
+            # "sec-ch-ua-wow64": "?0",
+            # "sec-fetch-dest": "document",
+            # "sec-fetch-mode": "navigate",
+            # "sec-fetch-site": "same-origin",
+            # "sec-fetch-user": "?1",
             "upgrade-insecure-requests": "1",
             "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
-            "x-browser-channel": "stable",
-            "x-browser-copyright": "Copyright 2025 Google LLC. All rights reserved.",
-            "x-browser-validation": "jFliu1AvGMEE7cpr93SSytkZ8D4=",
-            "x-browser-year": "2025"
+            # "x-browser-channel": "stable",
+            # "x-browser-copyright": "Copyright 2025 Google LLC. All rights reserved.",
+            # "x-browser-validation": "jFliu1AvGMEE7cpr93SSytkZ8D4=",
+            # "x-browser-year": "2025"
         }
         self.cookies = {
-            "GSP": "LM=1758679529:S=ZOze-rRwzGbwyAih",
-            "NID": "525=lowb-5kxZdNRIhhp83qUi9wfXxM-SHfjVpZI8YPYHpp4gBxx8I1QhjZllbvKHg94uActoOavEPKKtk_FD1ocsTRshad8wJXGuayPb0yo6WzSBKwB4gPw-XgWxe1mTZUHzTol1uT2xir46SkCZ3104I3ILBKdZ12LnFLv1aFRHw-kTp6IWHac9YcIU0KRchKe8MURjePJTdbG"
-        }
+   }
         test_url = self.site
-        test_url =None
+        # test_url =None
         self.single_handler = SingleRequestHandler(
             test_url=test_url,  # 测试链接，避免请求过多导致IP被封
         )
         self.log_print = LogPrint()
     def run(self):
+        start_time = time.time()
         url = "https://scholar.google.com/scholar"
         params = {
             "hl": "zh-CN",
@@ -69,13 +68,13 @@ class GetArticleByTitle:
         }
         response = self.single_handler.fetch(url, headers=self.headers, cookies=self.cookies, params=params)
         if not response:
-            self.log_print.print(f"请求失败: {url}")
-            return None
+            info = f"请求失败: {url}"
+            return None, info
         soup = BeautifulSoup(response.text, 'html.parser')
         result_list = soup.select("#gs_res_ccl_mid > div.gs_r.gs_or.gs_scl")
         if not result_list:
-            self.log_print.print(f"未找到结果: {url} len(result_list)={len(result_list)}")
-            return None
+            info = f"未找到结果: {url} len(result_list)={len(result_list)}"
+            return None ,info
         article_list = []
         for result_item in result_list:
             article_info = {}
@@ -93,7 +92,9 @@ class GetArticleByTitle:
                 article_info["cited_num"] = None
             article_info["html"] = str(result_item)
             self.extract_author_info(result_item, url, article_info)
-        return article_list
+        end_time = time.time()
+        info = f"得到文章{len(article_list)} 用时{end_time - start_time:.2f}秒"
+        return article_list,info
 
 
     def extract_author_info(self, result_item, url , article_info):

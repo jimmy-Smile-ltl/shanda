@@ -59,3 +59,41 @@ cd ..
 python -V
 # 输出会变回你之前设置的全局版本（或者系统版本）
 pip install -r requirements.txt
+
+
+安装 PostgreSQL
+sudo apt install postgresql -y
+sudo apt install postgresql-contrib -y
+
+sudo systemctl status postgresql
+
+sudo systemctl stop postgresql    # 停止服务
+sudo systemctl start postgresql   # 启动服务
+sudo systemctl restart postgresql # 重启服务
+sudo systemctl enable postgresql  # 设置为开机自启 (默认已设置)
+sudo systemctl disable postgresql # 取消开机自启
+
+sudo systemctl status postgresql # 查看服务状态
+# 1. 切换到 postgres 系统用户
+sudo -i -u postgres
+
+# 2. 使用 psql 客户端工具连接
+psql
+
+SELECT version();
+输入 \q 然后按回车即可退出 psql 终端。
+
+\q
+
+exit 回到原来的用户
+# sudo -i -u  ubuntu
+
+# 检查 Redis 服务状态
+sudo systemctl status redis-server
+
+# 直接运行 redis-cli 进入交互式终端
+redis-cli
+
+ping
+
+INFO server

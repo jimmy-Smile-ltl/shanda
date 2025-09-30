@@ -6,6 +6,61 @@ import psycopg2
 import psycopg2.extras
 from psycopg2 import sql
 
+import re
+import psycopg2.errors
+
+
+def parse_unique_violation(e: psycopg2.errors.UniqueViolation) -> str:
+    """
+    解析 psycopg2 的 UniqueViolation 异常，并返回一个带有针对性建议的、
+    人性化的错误信息字符串。
+    """
+    error_msg = str(e)
+
+    # 尝试解析约束名称
+    constraint_match = re.search(r'violates unique constraint "([^"]+)"', error_msg)
+    constraint_name = constraint_match.group(1) if constraint_match else "未知约束"
+
+    # 尝试解析冲突的键值对
+    detail_match = re.search(r'Key \(([^)]+)\)=\(([^)]+)\)', error_msg)
+    key_column = detail_match.group(1) if detail_match else "未知列"
+    key_value = detail_match.group(2) if detail_match else "未知值"
+
+    # 根据约束名称的后缀判断冲突类型
+    if constraint_name.endswith("_pkey"):
+        # --- 场景一：主键冲突 (Primary Key Violation) ---
+        table_name_guess = constraint_name.replace("_pkey", "")
+
+        suggestion = (
+            f"这通常发生在ID序列计数器与表中现有数据不同步时。\n"
+            f"      如果您最近手动导入过数据(例如使用COPY命令)，ID序列的值可能没有自动更新。\n\n"
+            f"      ▶︎ 解决方案：请执行以下SQL命令来重置与该表关联的ID序列：\n"
+            f"      SELECT setval(pg_get_serial_sequence('\"your_schema\".\"{table_name_guess}\"', '{key_column}'), "
+            f"(SELECT MAX({key_column}) FROM \"your_schema\".\"{table_name_guess}\"));\n\n"
+            f"      (注意：请将 your_schema 和 {table_name_guess} 替换为真实的schema和表名)"
+        )
+
+        return (
+            f"【主键冲突提醒 (Primary Key Violation)】\n"
+            f"  - 表与约束: {constraint_name}\n"
+            f"  - 冲突详情: 主键列 '{key_column}' 的值 '{key_value}' 已经存在。\n"
+            f"  - 可能原因与解决方案:\n      {suggestion}"
+        )
+    else:
+        # --- 场景二：唯一约束冲突 (Unique Constraint Violation) ---
+        suggestion = (
+            f"这意味着您尝试插入或更新的数据中，'{key_column}' 字段的值必须是唯一的，但数据库中已有记录使用了相同的值。\n\n"
+            f"      ▶︎ 解决方案：\n"
+            f"        1. 检查您的输入数据源，去除或修改重复的数据。\n"
+            f"        2. 如果您期望的是更新现有记录，请确保您的代码逻辑（如 ON CONFLICT DO UPDATE）是针对 '{key_column}' 这个唯一键来设计的。"
+        )
+
+        return (
+            f"【唯一约束冲突提醒 (Unique Constraint Violation)】\n"
+            f"  - 冲突约束: {constraint_name}\n"
+            f"  - 冲突详情: 唯一键列 '{key_column}' 的值 '{key_value}' 已经存在。\n"
+            f"  - 可能原因与解决方案:\n      {suggestion}"
+        )
 """
 PostgreSQL 数据库处理类
 """
@@ -187,9 +242,11 @@ class PostgreSQLHandler:
                             print("没有需要更新的字段")
                     return "update"
                 except Exception as update_e:
-                    print(f"更新失败: {update_e}")
+                    print(f"单行操作 插入失败,而且更新失败: {update_e}")
                     try:
                         self.connection.rollback()
+                        friendly_message = parse_unique_violation(e)
+                        print(f"\n--- 数据库操作提示 ---\n{friendly_message}\n-----------------------\n")
                     except Exception:
                         self.connection = self.get_db_connection(self.return_type)
                     return None
@@ -208,7 +265,7 @@ class PostgreSQLHandler:
                 self.connection = self.get_db_connection(self.return_type)
             return None
     # 批量插入数据，data_list 是字典列表
-    def insert_data_list(self, data_list, unique_col="article_url", table_name=None) -> None | str:
+    def insert_data_list(self, data_list, unique_col="article_url", table_name=None) -> None | str | dict:
         if not data_list or not isinstance(data_list, list) or not all(isinstance(d, dict) for d in data_list):
             print("数据必须是字典列表格式且不能为空")
             return
@@ -294,6 +351,17 @@ class PostgreSQLHandler:
                       f"更新 {result_stats['updated']} 条, "
                       f"总计 {result_stats['total']} 条")
             return "success"
+        except psycopg2.errors.UniqueViolation as e:
+            # 当捕获到 UniqueViolation 时，调用我们的解析函数
+            friendly_message = parse_unique_violation(e)
+            print(f"\n--- 数据库操作提示 ---\n{friendly_message}\n-----------------------\n")
+            # 您仍然可以保留后续的更新逻辑，或者根据需要进行其他处理
+            self.connection.rollback()
+            result_list = [self.insert_data(data, unique_col=unique_col, table_name=tbl_name) for data in
+                           processed_list]
+            count = Counter(result_list)
+            print(f"逐个插入结果统计: {dict(count)}")
+            return "unique_violation_detected"  # 返回一个明确的状态
         except Exception as e:
             print(f"批量数据插入/更新失败,改为逐个插入: {e}")
             self.connection.rollback()  # 回滚失败的批量操作
@@ -301,7 +369,7 @@ class PostgreSQLHandler:
                            processed_list]
             count = Counter(result_list)
             print(f"逐个插入结果统计: {dict(count)}")
-            return "fallback"
+            return  dict(count)
 
     def write_to_json_line(self, data: dict, table_name: str = None):
         """

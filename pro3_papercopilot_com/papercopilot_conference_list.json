@@ -1,0 +1,416 @@
+[
+    {
+        "cat_name": "Artificial Intelligence",
+        "cat_stat_url": "https://papercopilot.com/statistics/#Artificial Intelligence",
+        "conf_list": [
+            {
+                "conf_name": "NeurIPS20251987",
+                "conf_url": "https://papercopilot.com/statistics/neurips-statistics/"
+            },
+            {
+                "conf_name": "ICLR20252013",
+                "conf_url": "https://papercopilot.com/statistics/iclr-statistics/"
+            },
+            {
+                "conf_name": "ICML20252013",
+                "conf_url": "https://papercopilot.com/statistics/icml-statistics/"
+            },
+            {
+                "conf_name": "AAAI20262021",
+                "conf_url": "https://papercopilot.com/statistics/aaai-statistics/"
+            },
+            {
+                "conf_name": "IJCAI20242020",
+                "conf_url": "https://papercopilot.com/statistics/ijcai-statistics/"
+            },
+            {
+                "conf_name": "AISTATS20251995",
+                "conf_url": "https://papercopilot.com/statistics/aistats-statistics/"
+            },
+            {
+                "conf_name": "CoRL20252021",
+                "conf_url": "https://papercopilot.com/statistics/corl-statistics/"
+            },
+            {
+                "conf_name": "ACML20242010",
+                "conf_url": [
+                    {
+                        "year_name": "2024",
+                        "type_text": "Paper List",
+                        "type_url": "https://papercopilot.com/paper-list/acml-paper-list/acml-2024-paper-list/"
+                    },
+                    {
+                        "year_name": "2023",
+                        "type_text": "Paper List",
+                        "type_url": "https://papercopilot.com/paper-list/acml-paper-list/acml-2023-paper-list/"
+                    },
+                    {
+                        "year_name": "2022",
+                        "type_text": "Paper List",
+                        "type_url": "https://papercopilot.com/paper-list/acml-paper-list/acml-2022-paper-list/"
+                    },
+                    {
+                        "year_name": "2021",
+                        "type_text": "Paper List",
+                        "type_url": "https://papercopilot.com/paper-list/acml-paper-list/acml-2021-paper-list/"
+                    },
+                    {
+                        "year_name": "2020",
+                        "type_text": "Paper List",
+                        "type_url": "https://papercopilot.com/paper-list/acml-paper-list/acml-2020-paper-list/"
+                    },
+                    {
+                        "year_name": "2019",
+                        "type_text": "Paper List",
+                        "type_url": "https://papercopilot.com/paper-list/acml-paper-list/acml-2019-paper-list/"
+                    },
+                    {
+                        "year_name": "2018",
+                        "type_text": "Paper List",
+                        "type_url": "https://papercopilot.com/paper-list/acml-paper-list/acml-2018-paper-list/"
+                    },
+                    {
+                        "year_name": "2017",
+                        "type_text": "Paper List",
+                        "type_url": "https://papercopilot.com/paper-list/acml-paper-list/acml-2017-paper-list/"
+                    },
+                    {
+                        "year_name": "2016",
+                        "type_text": "Paper List",
+                        "type_url": "https://papercopilot.com/paper-list/acml-paper-list/acml-2016-paper-list/"
+                    },
+                    {
+                        "year_name": "2015",
+                        "type_text": "Paper List",
+                        "type_url": "https://papercopilot.com/paper-list/acml-paper-list/acml-2015-paper-list/"
+                    },
+                    {
+                        "year_name": "2014",
+                        "type_text": "Paper List",
+                        "type_url": "https://papercopilot.com/paper-list/acml-paper-list/acml-2014-paper-list/"
+                    },
+                    {
+                        "year_name": "2013",
+                        "type_text": "Paper List",
+                        "type_url": "https://papercopilot.com/paper-list/acml-paper-list/acml-2013-paper-list/"
+                    },
+                    {
+                        "year_name": "2012",
+                        "type_text": "Paper List",
+                        "type_url": "https://papercopilot.com/paper-list/acml-paper-list/acml-2012-paper-list/"
+                    },
+                    {
+                        "year_name": "2011",
+                        "type_text": "Paper List",
+                        "type_url": "https://papercopilot.com/paper-list/acml-paper-list/acml-2011-paper-list/"
+                    },
+                    {
+                        "year_name": "2010",
+                        "type_text": "Paper List",
+                        "type_url": "https://papercopilot.com/paper-list/acml-paper-list/acml-2010-paper-list/"
+                    }
+                ]
+            },
+            {
+                "conf_name": "AI4X2025",
+                "conf_url": "https://papercopilot.com/statistics/ai4x-statistics/"
+            },
+            {
+                "conf_name": "COLT20242011",
+                "conf_url": [
+                    {
+                        "year_name": "2024",
+                        "type_text": "Paper List",
+                        "type_url": "https://papercopilot.com/paper-list/colt-paper-list/colt-2024-paper-list/"
+                    },
+                    {
+                        "year_name": "2023",
+                        "type_text": "Paper List",
+                        "type_url": "https://papercopilot.com/paper-list/colt-paper-list/colt-2023-paper-list/"
+                    },
+                    {
+                        "year_name": "2022",
+                        "type_text": "Paper List",
+                        "type_url": "https://papercopilot.com/paper-list/colt-paper-list/colt-2022-paper-list/"
+                    },
+                    {
+                        "year_name": "2021",
+                        "type_text": "Paper List",
+                        "type_url": "https://papercopilot.com/paper-list/colt-paper-list/colt-2021-paper-list/"
+                    },
+                    {
+                        "year_name": "2020",
+                        "type_text": "Paper List",
+                        "type_url": "https://papercopilot.com/paper-list/colt-paper-list/colt-2020-paper-list/"
+                    },
+                    {
+                        "year_name": "2019",
+                        "type_text": "Paper List",
+                        "type_url": "https://papercopilot.com/paper-list/colt-paper-list/colt-2019-paper-list/"
+                    },
+                    {
+                        "year_name": "2018",
+                        "type_text": "Paper List",
+                        "type_url": "https://papercopilot.com/paper-list/colt-paper-list/colt-2018-paper-list/"
+                    },
+                    {
+                        "year_name": "2017",
+                        "type_text": "Paper List",
+                        "type_url": "https://papercopilot.com/paper-list/colt-paper-list/colt-2017-paper-list/"
+                    },
+                    {
+                        "year_name": "2016",
+                        "type_text": "Paper List",
+                        "type_url": "https://papercopilot.com/paper-list/colt-paper-list/colt-2016-paper-list/"
+                    },
+                    {
+                        "year_name": "2015",
+                        "type_text": "Paper List",
+                        "type_url": "https://papercopilot.com/paper-list/colt-paper-list/colt-2015-paper-list/"
+                    },
+                    {
+                        "year_name": "2014",
+                        "type_text": "Paper List",
+                        "type_url": "https://papercopilot.com/paper-list/colt-paper-list/colt-2014-paper-list/"
+                    },
+                    {
+                        "year_name": "2013",
+                        "type_text": "Paper List",
+                        "type_url": "https://papercopilot.com/paper-list/colt-paper-list/colt-2013-paper-list/"
+                    },
+                    {
+                        "year_name": "2012",
+                        "type_text": "Paper List",
+                        "type_url": "https://papercopilot.com/paper-list/colt-paper-list/colt-2012-paper-list/"
+                    },
+                    {
+                        "year_name": "2011",
+                        "type_text": "Paper List",
+                        "type_url": "https://papercopilot.com/paper-list/colt-paper-list/colt-2011-paper-list/"
+                    }
+                ]
+            },
+            {
+                "conf_name": "UAI20242019",
+                "conf_url": "https://papercopilot.com/statistics/uai-statistics/"
+            },
+            {
+                "conf_name": "ALT2025",
+                "conf_url": "https://papercopilot.com/statistics/alt-statistics/"
+            },
+            {
+                "conf_name": "AutoML20242022",
+                "conf_url": [
+                    {
+                        "year_name": "2024",
+                        "type_text": "Paper List",
+                        "type_url": "https://papercopilot.com/paper-list/automl-paper-list/automl-2024-paper-list/"
+                    },
+                    {
+                        "year_name": "2023",
+                        "type_text": "Paper List",
+                        "type_url": "https://papercopilot.com/paper-list/automl-paper-list/automl-2023-paper-list/"
+                    },
+                    {
+                        "year_name": "2022",
+                        "type_text": "Paper List",
+                        "type_url": "https://papercopilot.com/paper-list/automl-paper-list/automl-2022-paper-list/"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "cat_name": "Computational Linguistics",
+        "cat_stat_url": "https://papercopilot.com/statistics/#Computational Linguistics",
+        "conf_list": [
+            {
+                "conf_name": "ACL20252021",
+                "conf_url": "https://papercopilot.com/statistics/acl-statistics/"
+            },
+            {
+                "conf_name": "EMNLP20252021",
+                "conf_url": "https://papercopilot.com/statistics/emnlp-statistics/"
+            },
+            {
+                "conf_name": "NAACL20252021",
+                "conf_url": [
+                    {
+                        "year_name": "2025",
+                        "type_text": "Paper List",
+                        "type_url": "https://papercopilot.com/paper-list/naacl-paper-list/naacl-2025-paper-list/"
+                    },
+                    {
+                        "year_name": "2024",
+                        "type_text": "Paper List",
+                        "type_url": "https://papercopilot.com/paper-list/naacl-paper-list/naacl-2024-paper-list/"
+                    },
+                    {
+                        "year_name": "2022",
+                        "type_text": "Paper List",
+                        "type_url": "https://papercopilot.com/paper-list/naacl-paper-list/naacl-2022-paper-list/"
+                    },
+                    {
+                        "year_name": "2021",
+                        "type_text": "Paper List",
+                        "type_url": "https://papercopilot.com/paper-list/naacl-paper-list/naacl-2021-paper-list/"
+                    }
+                ]
+            },
+            {
+                "conf_name": "COLING20252020",
+                "conf_url": [
+                    {
+                        "year_name": "2025",
+                        "type_text": "Paper List",
+                        "type_url": "https://papercopilot.com/paper-list/coling-paper-list/coling-2025-paper-list/"
+                    },
+                    {
+                        "year_name": "2024",
+                        "type_text": "Paper List",
+                        "type_url": "https://papercopilot.com/paper-list/coling-paper-list/coling-2024-paper-list/"
+                    },
+                    {
+                        "year_name": "2022",
+                        "type_text": "Paper List",
+                        "type_url": "https://papercopilot.com/paper-list/coling-paper-list/coling-2022-paper-list/"
+                    },
+                    {
+                        "year_name": "2020",
+                        "type_text": "Paper List",
+                        "type_url": "https://papercopilot.com/paper-list/coling-paper-list/coling-2020-paper-list/"
+                    }
+                ]
+            },
+            {
+                "conf_name": "ARR2025",
+                "conf_url": "https://papercopilot.com/statistics/arr-statistics/"
+            },
+            {
+                "conf_name": "COLM20252024",
+                "conf_url": "https://papercopilot.com/statistics/colm-statistics/"
+            }
+        ]
+    },
+    {
+        "cat_name": "Computer Graphics",
+        "cat_stat_url": "https://papercopilot.com/statistics/#Computer Graphics",
+        "conf_list": [
+            {
+                "conf_name": "SIGGRAPH20252010",
+                "conf_url": "https://papercopilot.com/statistics/siggraph-statistics/"
+            },
+            {
+                "conf_name": "SIGGRAPH Asia20242018",
+                "conf_url": "https://papercopilot.com/statistics/siggraph-asia-statistics/"
+            },
+            {
+                "conf_name": "EUROGRAPHICS",
+                "conf_url": []
+            }
+        ]
+    },
+    {
+        "cat_name": "Computer Networks & Wireless Communication",
+        "cat_stat_url": "https://papercopilot.com/statistics/#Computer Networks &amp; Wireless Communication",
+        "conf_list": [
+            {
+                "conf_name": "SIGCOMM",
+                "conf_url": []
+            }
+        ]
+    },
+    {
+        "cat_name": "Computer Vision & Pattern Recognition",
+        "cat_stat_url": "https://papercopilot.com/statistics/#Computer Vision &amp; Pattern Recognition",
+        "conf_list": [
+            {
+                "conf_name": "CVPR20252013",
+                "conf_url": "https://papercopilot.com/statistics/cvpr-statistics/"
+            },
+            {
+                "conf_name": "ICCV20252013",
+                "conf_url": "https://papercopilot.com/statistics/iccv-statistics/"
+            },
+            {
+                "conf_name": "ECCV20242018",
+                "conf_url": "https://papercopilot.com/statistics/eccv-statistics/"
+            },
+            {
+                "conf_name": "WACV20252020",
+                "conf_url": "https://papercopilot.com/statistics/wacv-statistics/"
+            },
+            {
+                "conf_name": "BMVC",
+                "conf_url": []
+            },
+            {
+                "conf_name": "3DV2025",
+                "conf_url": "https://papercopilot.com/statistics/3dv-statistics/"
+            }
+        ]
+    },
+    {
+        "cat_name": "Data Mining & Analysis",
+        "cat_stat_url": "https://papercopilot.com/statistics/#Data Mining &amp; Analysis",
+        "conf_list": [
+            {
+                "conf_name": "KDD20252023",
+                "conf_url": "https://papercopilot.com/statistics/kdd-statistics/"
+            }
+        ]
+    },
+    {
+        "cat_name": "Databases & Information Systems",
+        "cat_stat_url": "https://papercopilot.com/statistics/#Databases &amp; Information Systems",
+        "conf_list": [
+            {
+                "conf_name": "WWW20252024",
+                "conf_url": "https://papercopilot.com/statistics/www-statistics/"
+            },
+            {
+                "conf_name": "SIGIR",
+                "conf_url": []
+            }
+        ]
+    },
+    {
+        "cat_name": "Multimedia",
+        "cat_stat_url": "https://papercopilot.com/statistics/#Multimedia",
+        "conf_list": [
+            {
+                "conf_name": "ACM-MM20252024",
+                "conf_url": [
+                    {
+                        "year_name": "2025",
+                        "type_text": "Review Stats",
+                        "type_url": "https://papercopilot.com/statistics/acmmm-statistics/acmmm-2025-statistics/"
+                    },
+                    {
+                        "year_name": "2024",
+                        "type_text": "Review Stats",
+                        "type_url": "https://papercopilot.com/statistics/acmmm-statistics/acmmm-2024-statistics/"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "cat_name": "Robotics",
+        "cat_stat_url": "https://papercopilot.com/statistics/#Robotics",
+        "conf_list": [
+            {
+                "conf_name": "ICRA20252000",
+                "conf_url": "https://papercopilot.com/statistics/icra-statistics/"
+            },
+            {
+                "conf_name": "IROS20252000",
+                "conf_url": "https://papercopilot.com/statistics/iros-statistics/"
+            },
+            {
+                "conf_name": "RSS20252005",
+                "conf_url": "https://papercopilot.com/statistics/rss-statistics/"
+            }
+        ]
+    }
+]

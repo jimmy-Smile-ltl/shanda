@@ -1,11 +1,14 @@
 import json
 import os.path
 import urllib.parse
+import datetime
 from urllib.parse import urljoin
 import requests
 from bs4 import BeautifulSoup
 import re
 import time
+
+
 from myutil.cache import Cache
 from myutil.handleDatetime import convert_date_robust
 from myutil.handlePostgreSQL import PostgreSQLHandler
@@ -18,7 +21,9 @@ from myutil.maintainSourceInfo import MaintainSourceInfoPG
 class spider_arxiv_org_cs_all:
     def __init__(self):
         """
-        其实 含有 html 页面  ，但是呢都是根据作者的latex渲染的，结果不太一样，页面千奇百怪，邮件等需要信息提取困难，只访问摘要页 这个是规范的内容
+        最大 50 * 200 一万个 搜索条件需要细化
+        https://arxiv.org/search/advanced?advanced=&terms-0-operator=AND&terms-0-term=&terms-0-field=title&classification-computer_science=y&classification-physics_archives=all&classification-include_cross_list=include&date-filter_by=specific_year&date-year=2025&date-from_date=&date-to_date=&date-date_type=submitted_date&abstracts=show&size=200&order=announced_date_first&start=9800
+
         """
         self.db_name = "postgres"
         self.table_name = "article_arxiv_org"
@@ -27,19 +32,19 @@ class spider_arxiv_org_cs_all:
         self.category = "预印本"
 
         self.language = "en"
-        self.log_print = LogPrint()
+        self.log_print = LogPrint("cs_all")
         self.delete_table_if_less = 20  # 删除表的条件，少于1000条数据就删除
-        self.log_page = Cache(f"log_page_{self.table_name}")
+        self.log_page = Cache(f"log_page_cs_all_{self.table_name}")
+        self.log_date = Cache(f"log_date_cs_all_{self.table_name}") # 2020-01-01 开始 累加 10 天
         # 日志
         self.postgreSQL_handler = PostgreSQLHandler(db_name=self.db_name, table_name=self.table_name)
         test_url = self.site  #
-        test_url = None
+        # test_url = None
         self.headers = {
             "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
             "accept-language": "en,en-CN;q=0.9,zh-CN;q=0.8,zh;q=0.7",
-            "cache-control": "max-age=0",
             "priority": "u=0, i",
-            "referer": "https://arxiv.org/list/cs.AI/recent",
+            "referer": "https://arxiv.org/search/advanced?advanced=&terms-0-operator=AND&terms-0-term=&terms-0-field=title&classification-computer_science=y&classification-physics_archives=all&classification-include_cross_list=include&date-filter_by=specific_year&date-year=2025&date-from_date=&date-to_date=&date-date_type=submitted_date&abstracts=show&size=200&order=announced_date_first",
             "sec-ch-ua": "\"Chromium\";v=\"140\", \"Not=A?Brand\";v=\"24\", \"Google Chrome\";v=\"140\"",
             "sec-ch-ua-mobile": "?0",
             "sec-ch-ua-platform": "\"macOS\"",
@@ -50,7 +55,9 @@ class spider_arxiv_org_cs_all:
             "upgrade-insecure-requests": "1",
             "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
         }
-        self.cookies =  None
+        self.cookies =  {
+
+        }
         self.single_handler = CurlRequestHandler(
             test_url=test_url,  # 测试链接，避免请求过多导致IP被封
         )
@@ -117,45 +124,29 @@ class spider_arxiv_org_cs_all:
         maintain_table = MaintainSourceInfoPG()
         maintain_table.insert_source_info(source_info_data, debug=True)
 
-    def get_page(self, page_num):
-        page_url = "https://arxiv.org/list/cs.AI/recent"
-        # params = {
-        #     "skip": "800",
-        #     "show": "50"
-        # }
+    def get_page(self, start_date, end_date,page_num):
+        page_url = "https://arxiv.org/search/advanced"
         params = {
-            "skip": f"{(page_num - 1) * self.page_size}",
-            "show": f"{self.page_size}"
+            "advanced": "",
+            "terms-0-operator": "AND",
+            "terms-0-term": "",
+            "terms-0-field": "title",
+            "classification-computer_science": "y",
+            "classification-physics_archives": "all",
+            "classification-include_cross_list": "include",
+            "date-year": "",
+            "date-filter_by": "date_range",
+            "date-from_date": f"{start_date}",
+            "date-to_date": f"{end_date}",
+            "date-date_type": "submitted_date",
+            "abstracts": "show",
+            "order": "announced_date_first",
+            "size": f"{self.page_size}",
+            "start": f"{(page_num - 1) * self.page_size}"  # 0-based index
         }
+
         response = self.single_handler.fetch(url=page_url, headers=self.headers, cookies=self.cookies, params=params)
-        # headers = {
-        #     "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
-        #     "accept-language": "en,en-CN;q=0.9,zh-CN;q=0.8,zh;q=0.7",
-        #     "priority": "u=0, i",
-        #     "referer": "https://arxiv.org/list/cs.AI/recent?skip=0&show=50",
-        #     "sec-ch-ua": "\"Chromium\";v=\"140\", \"Not=A?Brand\";v=\"24\", \"Google Chrome\";v=\"140\"",
-        #     "sec-ch-ua-mobile": "?0",
-        #     "sec-ch-ua-platform": "\"macOS\"",
-        #     "sec-fetch-dest": "document",
-        #     "sec-fetch-mode": "navigate",
-        #     "sec-fetch-site": "same-origin",
-        #     "sec-fetch-user": "?1",
-        #     "upgrade-insecure-requests": "1",
-        #     "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
-        # }
-        # cookies = {
-        #     "_ga": "GA1.1.1070728378.1758572327",
-        #     "_ga_B1RR0QKWGQ": "GS2.1.s1758572327$o1$g1$t1758572386$j1$l0$h0",
-        #     "arxiv-search-parameters": "\"{\\\"order\\\": \\\"-announced_date_first\\\"\\054 \\\"size\\\": \\\"50\\\"\\054 \\\"abstracts\\\": \\\"show\\\"\\054 \\\"date-date_type\\\": \\\"submitted_date\\\"}\"",
-        #     "arxiv_bibex": "{%22active%22:false%2C%22ds_cs%22:%22S2%22}",
-        #     "arxiv_labs": "{%22sameSite%22:%22strict%22%2C%22expires%22:365%2C%22last_tab%22:%22tabtwo%22%2C%22bibex-toggle%22:%22disabled%22%2C%22connectedpapers-toggle%22:%22disabled%22%2C%22alphaxiv-toggle%22:%22enabled%22%2C%22gotitpub-toggle%22:%22enabled%22}"
-        # }
-        # url = "https://arxiv.org/list/cs.AI/recent"
-        # params = {
-        #     "skip": f" {(page_num - 1)  * self.page_size}",
-        #     "show": f"{self.page_size}"
-        # }
-        # response = requests.get(url, headers=headers, cookies=cookies, params=params)
+
         return response
 
     def extract_page_articles(self, page_res, start_page):
@@ -165,23 +156,18 @@ class spider_arxiv_org_cs_all:
                 f"page {start_page} 页面请求失败，状态码：{page_res.status_code if page_res else '无响应'}")
             return False, all_articles
         soup = BeautifulSoup(page_res.text, 'html.parser')
-        #  get article list only url is needed
-        post_list = soup.select('#articles > dt')
+        article_list = soup.select("ol.breathe-horizontal > li.arxiv-result")
         has_next = not soup.select_one("div.paging> span:last-child")
-        for article in post_list:
-            a_list = article.select('a')
+        for article in article_list:
+            a_list = article.select('p.list-title > span > a')
             text_url_dict = {}
             for a in a_list:
                 if "href" not in a.attrs:
                     continue
                 url = urllib.parse.urljoin(base=self.site, url=a.attrs['href'])
                 text = a.get_text(strip=True)
-                if text.startswith("arXiv"):
-                    text_url_dict["abstract"] = url
-                else:
-                    text_url_dict[text] = url
-            article_url = text_url_dict.get("abstract", "") if "abstract" in text_url_dict else text_url_dict.get(
-                "html", "")
+                text_url_dict[text] = url
+            article_url = extractSoup.extract_href(soup = article ,selector="p.list-title > a")
             article_info = {
                 "file_info": json.dumps(text_url_dict, ensure_ascii=False),
                 "article_url": article_url,
@@ -230,7 +216,6 @@ class spider_arxiv_org_cs_all:
 
             doi_tag = article_soup.select_one("td.arxivdoi a")
             doi_url = doi_tag.attrs.get("href")
-
             article.update({
                 "article_title": title_text,
                 "abstract": abstract_text,
@@ -242,11 +227,9 @@ class spider_arxiv_org_cs_all:
                 "content": "",
             })
 
-    def run(self):
-        self.log_page.clear_value()
-        start_page = self.log_page.get_int(default=1)
+    def handle_ten_days(self, start_date, end_date,start_page):
         while True:
-            page_res = self.get_page(start_page)
+            page_res = self.get_page(start_date, end_date, start_page)
             has_next, page_articles = self.extract_page_articles(page_res, start_page)
             if not page_articles:
                 self.log_print.info(f"结束 当前page: {start_page} check url")
@@ -262,10 +245,34 @@ class spider_arxiv_org_cs_all:
                 self.log_print.print(f"完成 page {start_page} 数据插入，准备处理下一页")
                 start_page += 1
                 self.log_page.record_int(start_page)
-                time.sleep(30)
+                time.sleep(3)
             else:
                 self.log_print.info(f"结束 当前page: {start_page} check url  没有下一页")
                 break
+
+    def run(self):
+        current_date = self.log_date.get_string(default="2020-01-01")
+        current_page = self.log_page.get_int(default=1)
+        tenDays = datetime.timedelta(days=10)
+        end_date = datetime.datetime.now()
+        start_date = datetime.datetime.strptime(current_date, "%Y-%m-%d")
+        while start_date <= end_date:
+            start_date_str = start_date.strftime("%Y-%m-%d")
+            temp_end_date = start_date + tenDays
+            if temp_end_date > end_date:
+                temp_end_date = end_date
+            end_date_str = temp_end_date.strftime("%Y-%m-%d")
+            self.log_print.info(f"处理时间段: {start_date_str} - {end_date_str} 当前页: {current_page}")
+            if current_page != 1:
+                self.handle_ten_days(start_date_str, end_date_str,current_page)
+                current_page = 1
+            else:
+                self.handle_ten_days(start_date_str, end_date_str, start_page = 1)
+            self.log_print.info(f"处理时间段: {start_date_str} - {end_date_str} , 完成")
+            start_date  += tenDays
+            end_date = datetime.datetime.now() # 每次循环更新结束时间，防止运行时间过长
+            self.log_date.record_string(start_date.strftime("%Y-%m-%d"))
+
 
 
 if __name__ == "__main__":

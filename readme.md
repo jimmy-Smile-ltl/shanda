@@ -228,6 +228,57 @@ https://arxiv.org/abs/2409.00001
    ]
    ```
 
+#### 1.2.3 作者信息(搜索标题)
+
+该脚本是一个爬虫程序，其核心功能是从数据库中读取文章标题，使用这些标题在 Google Scholar 上进行搜索，抓取相关的文章和作者信息，并将结果存入新的数据库表中。
+
+##### 1. 初始化 (`__init__`)
+- **设置**: 定义目标网站 (`scholar.google.com`) 和请求头。
+- **工具**: 初始化数据库处理器 (`PostgreSQLHandler`)、日志 (`LogPrint`) 和缓存 (`Cache`)。
+- **表定义**:
+    - `self.table_name_read`: 数据源表 (如 `article_arxiv_org`)。
+    - `self.table_name_article`: 存储 Google Scholar 文章搜索结果的表。
+    - `self.table_name_author`: 存储 Google Scholar 作者详细信息的表。
+- **表创建**: 调用 `create_table_*` 方法，确保目标数据表在数据库中存在。
+
+##### 2. 核心处理逻辑 (`handle_one_title`)
+- **输入**: 单个文章标题 (`title`) 和其在源表中的ID (`article_id`)。
+- **搜索**: 使用 `GetArticleByTitle` 类根据标题搜索文章。
+- **存储文章**: 将搜索到的每篇文章信息存入 `article_search_by_google_scholar` 表。
+- **处理作者**:
+    - 如果文章是新插入的，则继续处理其作者列表。
+    - 对有主页链接的作者，解析出 `author_id`。
+    - 使用 `GetAuthorInfoById` 类根据 `author_id` 抓取作者的详细主页信息。
+    - 将作者信息存入 `scholar_author` 表。
+- **延时**: 方法最后会 `time.sleep(2)` 以降低请求频率。
+
+##### 3. 主执行循环 (`run`)
+- **断点续传**: 从缓存中获取上次处理的ID，实现从中断处继续。
+- **批处理**: 在 `while` 循环中，分批次（每次20个）从源数据表中获取文章。
+- **调用处理**: 对批次中的每一篇文章，调用 `handle_one_title` 方法进行处理。
+- **延时**: 每个批次处理完毕后，会 `time.sleep(5)` 以控制爬取速度。
+- **结束**: 循环直到处理完所有文章。
+
+---
+
+##### 依赖
+
+- **外部库**:
+    - `requests`: 用于网络请求。
+    - `beautifulsoup4`: 用于HTML解析。
+- **内部模块**:
+    - `myutil.*`: 自定义的工具类，用于处理数据库、HTTP请求、日志、缓存等。
+    - `GetArticleByTitle`: 封装了按标题搜索 Google Scholar 的逻辑。
+    - `GetAuthorInfoById`: 封装了按作者ID抓取其主页信息的逻辑。
+
+
+
+
+
+
+
+
+
 #### 待分析数据源
 
 1. https://papercopilot.com/paper-list/iclr-paper-list/iclr-2024-paper-list/   # 会议,这个聚合了一下

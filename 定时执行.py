@@ -14,8 +14,8 @@ def run_spider_job():
 
 
 if __name__ == "__main__":
-    # 设置定时任务：每天凌晨 02:30 执行一次 run_spider_job 函数
-    schedule.every().day.at("02:30").do(run_spider_job)
+    # 设置定时任务：每天凌晨 19:00 执行一次 run_spider_job 函数 也就是10点 上班的时候
+    schedule.every().day.at("19:00").do(run_spider_job)
     print("爬虫定时器已启动，将在每天 02:30 自动运行。")
     print("请保持此窗口/进程在后台运行。")
 

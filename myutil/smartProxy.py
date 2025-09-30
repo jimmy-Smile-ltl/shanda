@@ -18,8 +18,7 @@ class ProxyUtil():
                 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3'
             }
     def get_proxy(self):
-        proxy = self.proxy_manager.get_proxy()
-        return proxy
+        return  self.get_proxy_tunel()
     def get_proxy_tunel(self):
         return {
             'http': f'http://{self.user_name}:{self.pwd}@{self.host}:{self.port}',
@@ -28,7 +27,7 @@ class ProxyUtil():
     def test_tunel(self,url):
         try:
             print(f"正在测试代理: {url}")
-            response = requests.get(url, headers=self.headers, cookies=self.cookies, timeout=10, proxies=self.get_proxy_tunel())
+            response = requests.get(url, headers=self.headers, cookies=self.cookies, timeout=10, proxies=self.get_proxy())
             if response.status_code == 200:
                 print(f"代理测试成功: {response.text[:200]}")
                 return True

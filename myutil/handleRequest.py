@@ -11,7 +11,7 @@ import random
 import sys
 import time
 from typing import List, Dict, Optional
-
+import functools
 import aiohttp
 import certifi
 import curl_cffi
@@ -223,6 +223,7 @@ class SingleRequestHandler:
             self.proxies = None
 
     def fetch(self, url, headers=None, cookies=None, method='GET', retry_count=10, **kwargs):
+        start_time = time.time()
         for attempt in range(retry_count):
             try:
                 if attempt < retry_count/2 + 1  :
@@ -246,22 +247,42 @@ class SingleRequestHandler:
                     # print(f"文件太小 ，小于1kb ， check by url：{url}")
                     continue
                 res.encoding = res.apparent_encoding
-                if res.status_code == 404 or res.status_code == 403 or res.text == "" or  res.text.find("<title>反作弊页面_360问答</title>") != -1:
-                    sleep_duration = random.randint(1, 6)
+                if res.status_code == 404 or res.status_code == 403 or res.text == "" or  res.text.find("<title>反作弊页面_360问答</title>") != -1 or res.text.find("请进行人机身份验证") != -1:
+                    sleep_duration = random.randint(1, 3)
                     time.sleep(sleep_duration)
                     if self.proxies:
                         self.proxies = self.proxyUtil.get_proxy()
                     continue
                     # 无内容返回
+                end_time = time.time()
+                print(f"请求成功: {url} 用时{end_time - start_time:.2f}秒 状态码: {res.status_code} 内容大小: {len(res.content)}字节 重试次数: {attempt + 1}")
                 return res
             except Exception as e:
-                sleep_duration = random.randint(1, 6)
+                sleep_duration = random.randint(1, 3)
                 time.sleep(sleep_duration)
                 if self.proxies:
                     self.proxies = self.proxyUtil.get_proxy()
                 if attempt == retry_count - 1:
+                    end_time = time.time()
+                    print(
+                        f"请求成功: {url} 用时{end_time - start_time:.2f}秒 状态码: {res.status_code} 内容大小: {len(res.content)}字节 重试次数: {attempt + 1}")
                     return None
         return None
+
+    async def fetch_async(self, url, headers=None, cookies=None, method='GET', retry_count=10, **kwargs):
+        """
+        fetch 方法的异步版本。
+        它在线程池中运行同步的 fetch 方法，使其在协程中可以被 await。
+        """
+        loop = asyncio.get_running_loop()
+        # 使用 functools.partial 打包同步方法及其所有参数
+        blocking_call = functools.partial(
+            self.fetch, url, headers=headers, cookies=cookies,
+            method=method, retry_count=retry_count, **kwargs
+        )
+        # 在默认的线程池执行器中运行打包好的阻塞调用
+        # loop.run_in_executor 会返回一个 future，可以直接 await
+        return await loop.run_in_executor(None, blocking_call)
 
 
 # curl_requests.get(article_url, headers=headers,impersonate="chrome110")

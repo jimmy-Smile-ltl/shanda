@@ -14,6 +14,7 @@ from myutil.handleRequest import SingleRequestHandler, AsyncRequestHandler, Thre
 from myutil.handleSoup import extractSoup
 from myutil.log_print import LogPrint
 from myutil.maintainSourceInfo import MaintainSourceInfoPG
+from pro2_google_scholar.get_author_by_title import GetAuthorByTitle
 
 class spider_arxiv_org_ai_new:
     def __init__(self):
@@ -33,7 +34,7 @@ class spider_arxiv_org_ai_new:
         # 日志
         self.postgreSQL_handler = PostgreSQLHandler(db_name=self.db_name, table_name=self.table_name)
         test_url = self.site  #
-        test_url = None
+        # test_url = None
         self.headers = {
             "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
             "accept-language": "en,en-CN;q=0.9,zh-CN;q=0.8,zh;q=0.7",
@@ -51,11 +52,11 @@ class spider_arxiv_org_ai_new:
             "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
         }
         self.cookies = {
-            "_ga": "GA1.1.1070728378.1758572327",
-            "_ga_B1RR0QKWGQ": "GS2.1.s1758572327$o1$g1$t1758572386$j1$l0$h0",
-            "arxiv-search-parameters": "\"{\\\"order\\\": \\\"-announced_date_first\\\"\\054 \\\"size\\\": \\\"50\\\"\\054 \\\"abstracts\\\": \\\"show\\\"\\054 \\\"date-date_type\\\": \\\"submitted_date\\\"}\"",
-            "arxiv_bibex": "{%22active%22:false%2C%22ds_cs%22:%22S2%22}",
-            "arxiv_labs": "{%22sameSite%22:%22strict%22%2C%22expires%22:365%2C%22last_tab%22:%22tabtwo%22%2C%22bibex-toggle%22:%22disabled%22%2C%22connectedpapers-toggle%22:%22disabled%22%2C%22alphaxiv-toggle%22:%22enabled%22%2C%22gotitpub-toggle%22:%22enabled%22}"
+            # "_ga": "GA1.1.1070728378.1758572327",
+            # "_ga_B1RR0QKWGQ": "GS2.1.s1758572327$o1$g1$t1758572386$j1$l0$h0",
+            # "arxiv-search-parameters": "\"{\\\"order\\\": \\\"-announced_date_first\\\"\\054 \\\"size\\\": \\\"50\\\"\\054 \\\"abstracts\\\": \\\"show\\\"\\054 \\\"date-date_type\\\": \\\"submitted_date\\\"}\"",
+            # "arxiv_bibex": "{%22active%22:false%2C%22ds_cs%22:%22S2%22}",
+            # "arxiv_labs": "{%22sameSite%22:%22strict%22%2C%22expires%22:365%2C%22last_tab%22:%22tabtwo%22%2C%22bibex-toggle%22:%22disabled%22%2C%22connectedpapers-toggle%22:%22disabled%22%2C%22alphaxiv-toggle%22:%22enabled%22%2C%22gotitpub-toggle%22:%22enabled%22}"
          }
         # self.single_handler = SingleRequestHandler(
         #     test_url=test_url,  # 测试链接，避免请求过多导致IP被封
@@ -300,6 +301,9 @@ class spider_arxiv_org_ai_new:
                 self.lod_date.record_string(now_date.strftime("%Y-%m-%d"))
                 break
 
+        table_name_read = self.table_name
+        get_author = GetAuthorByTitle(table_name_read=table_name_read)
+        get_author.run_thread()
 if __name__ == "__main__":
     spider = spider_arxiv_org_ai_new()
     spider.run()

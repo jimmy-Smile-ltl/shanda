@@ -1,0 +1,21 @@
+2025-09-28 22:24:24 - GetAuthorByTitle_article_TopPublications5Year_AI - INFO - create table spider.article_search_by_google_scholar is_success: True, is_has_table: True
+2025-09-28 22:24:24 - GetAuthorByTitle_article_TopPublications5Year_AI - INFO - create table spider.scholar_author is_success: True, is_has_table: True
+2025-09-28 22:24:24 - GetAuthorByTitle_article_TopPublications5Year_AI - INFO - table:article_TopPublications5Year_AI max_id: 3519, min_id: 1
+2025-09-29 00:36:05 - GetAuthorByTitle_article_TopPublications5Year_AI - INFO - create table spider.article_search_by_google_scholar is_success: True, is_has_table: True
+2025-09-29 00:36:05 - GetAuthorByTitle_article_TopPublications5Year_AI - INFO - create table spider.scholar_author is_success: True, is_has_table: True
+2025-09-29 00:36:05 - GetAuthorByTitle_article_TopPublications5Year_AI - INFO - table:article_TopPublications5Year_AI max_id: 3519, min_id: 1
+2025-09-29 00:36:51 - GetAuthorByTitle_article_TopPublications5Year_AI - INFO - create table spider.article_search_by_google_scholar is_success: True, is_has_table: True
+2025-09-29 00:36:51 - GetAuthorByTitle_article_TopPublications5Year_AI - INFO - create table spider.scholar_author is_success: True, is_has_table: True
+2025-09-29 00:36:51 - GetAuthorByTitle_article_TopPublications5Year_AI - INFO - table:article_TopPublications5Year_AI max_id: 3519, min_id: 1
+2025-09-29 00:40:48 - GetAuthorByTitle_article_TopPublications5Year_AI - INFO - create table spider.article_search_by_google_scholar is_success: True, is_has_table: True
+2025-09-29 00:40:48 - GetAuthorByTitle_article_TopPublications5Year_AI - INFO - create table spider.scholar_author is_success: True, is_has_table: True
+2025-09-29 00:40:48 - GetAuthorByTitle_article_TopPublications5Year_AI - INFO - table:article_TopPublications5Year_AI max_id: 3519, min_id: 1
+2025-09-29 00:44:17 - GetAuthorByTitle_article_TopPublications5Year_AI - INFO - create table spider.article_search_by_google_scholar is_success: True, is_has_table: True
+2025-09-29 00:44:17 - GetAuthorByTitle_article_TopPublications5Year_AI - INFO - create table spider.scholar_author is_success: True, is_has_table: True
+2025-09-29 00:44:17 - GetAuthorByTitle_article_TopPublications5Year_AI - INFO - table:article_TopPublications5Year_AI max_id: 3519, min_id: 1
+2025-09-29 00:45:08 - GetAuthorByTitle_article_TopPublications5Year_AI - INFO - create table spider.article_search_by_google_scholar is_success: True, is_has_table: True
+2025-09-29 00:45:08 - GetAuthorByTitle_article_TopPublications5Year_AI - INFO - create table spider.scholar_author is_success: True, is_has_table: True
+2025-09-29 00:45:08 - GetAuthorByTitle_article_TopPublications5Year_AI - INFO - table:article_TopPublications5Year_AI max_id: 3519, min_id: 1
+2025-09-29 00:51:58 - GetAuthorByTitle_article_TopPublications5Year_AI - INFO - create table spider.article_search_by_google_scholar is_success: True, is_has_table: True
+2025-09-29 00:51:58 - GetAuthorByTitle_article_TopPublications5Year_AI - INFO - create table spider.scholar_author is_success: True, is_has_table: True
+2025-09-29 00:51:58 - GetAuthorByTitle_article_TopPublications5Year_AI - INFO - table:article_TopPublications5Year_AI max_id: 3519, min_id: 1
