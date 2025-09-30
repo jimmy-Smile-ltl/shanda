@@ -222,7 +222,7 @@ class SingleRequestHandler:
         else:
             self.proxies = None
 
-    def fetch(self, url, headers=None, cookies=None, method='GET', retry_count=10, **kwargs):
+    def fetch(self, url, headers=None, cookies=None, method='GET', retry_count=5, **kwargs):
         start_time = time.time()
         for attempt in range(retry_count):
             try:

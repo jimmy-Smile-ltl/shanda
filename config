@@ -97,3 +97,57 @@ redis-cli
 ping
 
 INFO server
+
+## 迁移本地的 redis 导出为快照文件,再上传到服务器,再导入
+
+
+生成 副本文件
+redis-cli BGSAVE
+得到redis 工作目录
+redis-cli CONFIG GET dir
+# 在`服务区 暂定redis 加载文件, 重启
+# 使用 systemctl
+sudo systemctl stop redis-server
+# 或者直接用 redis-cli
+redis-cli SHUTDOWN
+
+sudo cp  ~/spider/dump.rdb /var/lib/redis
+# 修正文件所有者
+sudo chown redis:redis /var/lib/redis/dump.rdb
+# 版本不一样 ,不行
+调用python 加json 搞定
+
+postgresql  怎么迁移数据呢
+
+本地备份文件
+        # 主机: 10.241.132.70
+        #   端口: 35432
+        #   数据库: talents
+        #   用户名: postgres
+        #   密码: 'BIJ$IkNkDH5{V4b_V3@T'
+pg_dump -h <源数据库IP> -p <源端口> -U <用户名> -n spider -F c -f spider_backup.dump <数据库名>
+pg_dump -h 10.241.132.70 -p 35432 -U postgres -n spider -F c -f spider_backup.dump talents
+
+现在使用dbeaver 把spider schema下面的几张表都 导出成了一个sql文件
+
+psql -h 127.0.0.1 -p 5432 -U postgres  -d  postgres  -f ~/spider/dump.sql
+权限不对
+cat ~/spider/dump.sql | sudo -u postgres psql -d postgres
+# 也可以先切换用户
+\q
+cat ~/spider/dump.sql | sudo -u postgres pg_restore -d postgres
+
+screen -ls
+screen -S arxiv
+python 定时执行.py
+ctrl+a d
+screen -r arxiv
+ctrl+a d
+
+screen -S topPub
+python -m pro2_google_scholar.get_author_from_TopPublications5Year.py
+ctrl+a d
+screen -r topPub
+ctrl+a d
+
+screen -ls

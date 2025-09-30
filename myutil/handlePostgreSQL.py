@@ -65,7 +65,7 @@ def parse_unique_violation(e: psycopg2.errors.UniqueViolation) -> str:
 PostgreSQL 数据库处理类
 """
 class PostgreSQLHandler:
-    def __init__(self, db_name, table_name, return_type="tuple",is_local:bool = False):
+    def __init__(self, db_name, table_name, return_type="tuple",is_local:bool = True):
         self.db_name = db_name # 数据库名称 无效了
         self.table_name = table_name
         self.schema = 'spider'
@@ -73,7 +73,7 @@ class PostgreSQLHandler:
         self.connection = self.get_db_connection(self.return_type, is_local)
         self.create_schema_if_not_exists(self.schema)
 
-    def get_db_connection(self, return_type="tuple",is_local:bool =False):
+    def get_db_connection(self, return_type="tuple",is_local:bool =True):
         # 主机: 10.241.132.70
         #   端口: 35432
         #   数据库: talents
@@ -83,7 +83,7 @@ class PostgreSQLHandler:
         if is_local:
             ip = '127.0.0.1'
             user =  'postgres'
-            password = ''
+            password = 'postgres'
             port = 5432
             db_name = 'postgres'
         else:
